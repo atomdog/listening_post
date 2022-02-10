@@ -1,20 +1,10 @@
 
 import tweepy
 import csv
-import credLib
-
-a,b,c,d=credLib.returnbykey("twitter", "api"), credLib.returnbykey("twitter", "api_secret"), credLib.returnbykey("twitter", "access_token"), credLib.returnbykey("twitter", "access_token_secret")
-auth = tweepy.OAuthHandler(a, b)
-auth.set_access_token(c, d)
-api = tweepy.API(auth)
-
 
 def tweet(text, api):
     api.update_status(text)
     pass
-#auth = tweepy.OAuthHandler("")
-#auth.set_access_token("")
-#api = tweepy.API(auth)
 
 def tweetsbyuser(screen_name, api):
     alltweets = []
@@ -28,7 +18,7 @@ def tweetsbyuser(screen_name, api):
         oldest = alltweets[-1].id - 1
         print(f"...{len(alltweets)} tweets downloaded so far")
     outtweets = [[tweet.id_str, tweet.created_at, tweet.text] for tweet in alltweets]
-    with open(f'tweets|{screen_name}|.csv', 'w') as f:
+    with open(f'raw_twit/tweets|{screen_name}|.csv', 'w') as f:
         writer = csv.writer(f)
         writer.writerow(["id","created_at","text"])
         writer.writerows(outtweets)
@@ -39,7 +29,7 @@ def repliesbyid(id, api):
         if hasattr(tweet, 'in_reply_to_status_id_str'):
             if (tweet.in_reply_to_status_id_str==tweet_id):
                 replies.append(tweet)
-    with open('replies|' + str(tweet_id) + '|.csv', 'a') as f:
+    with open('raw_twit/replies|' + str(tweet_id) + '|.csv', 'a') as f:
         csv_writer = csv.DictWriter(f, fieldnames=('user', 'text'))
         csv_writer.writeheader()
         for tweet in replies:
@@ -48,16 +38,17 @@ def repliesbyid(id, api):
 def followersbyuser(user, api):
     screen_name = user
     c = tweepy.Cursor(api.followers, screen_name)
-    with open('followers|' + str(user) + '|.csv', 'w') as f:
+    with open('raw_twit/followers|' + str(user) + '|.csv', 'w') as f:
         csv_writer = csv.DictWriter(f, fieldnames=('user',))
         csv_writer.writeheader()
         for follower in c.items():
             row = {'user': follower.screen_name}
+            
             csv_writer.writerow(row)
 def followingbyuser(user, api):
     screen_name = user
     c = tweepy.Cursor(api.friends, screen_name)
-    with open('following|' + str(user) + '|.csv', 'w') as f:
+    with open('raw_twit/following|' + str(user) + '|.csv', 'w') as f:
         csv_writer = csv.DictWriter(f, fieldnames=('user',))
         csv_writer.writeheader()
         for following in c.items():

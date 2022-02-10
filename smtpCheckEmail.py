@@ -1,6 +1,10 @@
+import credLib
+from smtplib import SMTP_SSL, SMTP_SSL_PORT
+from imap_tools import MailBox, AND
+import email
 def checkemail():
     inbox = []
-    with MailBox('imap.gmail.com').login('email', 'password', 'INBOX') as mailbox:
+    with MailBox('imap.gmail.com').login(credLib.returnbykey('email', 'emailU'), credLib.returnbykey('email', 'emailP'), 'INBOX') as mailbox:
     # get unseen emails from INBOX folder
         for msg in mailbox.fetch(AND(seen=False)):
             mtext = msg.html

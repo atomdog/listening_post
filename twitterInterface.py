@@ -3,9 +3,9 @@ import tweepy
 import csv
 import credLib
 
-
-auth = tweepy.OAuthHandler("", "")
-auth.set_access_token("", "")
+a,b,c,d=None,None,None,None
+auth = tweepy.OAuthHandler(a, b)
+auth.set_access_token(c, d)
 api = tweepy.API(auth)
 
 

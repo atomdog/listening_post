@@ -3,7 +3,7 @@ import tweepy
 import csv
 import credLib
 
-a,b,c,d=None,None,None,None
+a,b,c,d=credLib.returnbykey("twitter", "api"), credLib.returnbykey("twitter", "api_secret"), credLib.returnbykey("twitter", "access_token"), credLib.returnbykey("twitter", "access_token_secret")
 auth = tweepy.OAuthHandler(a, b)
 auth.set_access_token(c, d)
 api = tweepy.API(auth)

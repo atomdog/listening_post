@@ -43,8 +43,8 @@ def followersbyuser(user, api):
         csv_writer.writeheader()
         for follower in c.items():
             row = {'user': follower.screen_name}
-            
             csv_writer.writerow(row)
+            
 def followingbyuser(user, api):
     screen_name = user
     c = tweepy.Cursor(api.friends, screen_name)

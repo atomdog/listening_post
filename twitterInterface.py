@@ -1,6 +1,14 @@
 
 import tweepy
 import csv
+import credLib
+
+
+auth = tweepy.OAuthHandler("", "")
+auth.set_access_token("", "")
+api = tweepy.API(auth)
+
+
 def tweet(text, api):
     api.update_status(text)
     pass

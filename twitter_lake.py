@@ -1,4 +1,9 @@
 #twitter_lake.py
+
+import numpy as np
+import tables
+import matplotlib.pyplot as plt
+
 class twitterULog(tables.IsDescription):
     ID      = tables.StringCol(16)   # 16-character String
     time  = tables.StringCol(128)      # Signed 64-bit integer

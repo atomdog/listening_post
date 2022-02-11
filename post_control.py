@@ -13,7 +13,10 @@ class ctroller:
         print(smtpCheckEmail.checkemail())
     def log_user_followers(self, usn):
         print(twitterInterface.followersbyuser(usn, self.api))
+    def log_user_tweets(self, usn):
+        print(twitterInterface.tweetsbyuser(usn, self.api))
 
 q = ctroller()
 #q.log_emails()
-q.log_user_followers("@Bolick4Arizona")
+
+q.log_user_tweets("@reginaldbolding")

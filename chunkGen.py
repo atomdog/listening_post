@@ -3,12 +3,10 @@ import spacy
 from nltk import word_tokenize, pos_tag
 from spacy.pipeline import Sentencizer
 
-
 def only_nouns(txt):
     #takes string, nto list
     if(type(txt) is list):
         txt = " ".join(txt)
-
     doc = load_model()(txt)
     retval = []
     for np in doc.noun_chunks:
@@ -25,7 +23,6 @@ def load_model2():
     nlp.add_pipe("sentencizer")
     return(nlp)
 
-
 def sentsegment(txt, model):
     # Construction via add_pipe
     doc = model(txt)
@@ -33,7 +30,6 @@ def sentsegment(txt, model):
     for sentr in doc.sents:
         retval.append(sentr)
     return(retval)
-
 
 def docprocgen():
     model = load_model2()
@@ -48,10 +44,7 @@ def docprocgen():
         else:
             pass
 
-# Cons  truction from class
-
-
-
+# Construction from class
 def spaci(sentence, model):
     spacied = model(sentence)
 

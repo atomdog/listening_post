@@ -19,4 +19,4 @@ class ctroller:
 q = ctroller()
 #q.log_emails()
 
-q.log_user_tweets("@reginaldbolding")
+q.log_user_tweets("@RealMarkFinchem")

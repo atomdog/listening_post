@@ -16,7 +16,6 @@ def only_nouns(txt):
     retval = " ".join(retval)
     return(retval)
 
-
 def load_model():
     nlp = spacy.load("en_core_web_sm")
     return(nlp)
@@ -71,7 +70,6 @@ def spaci(sentence, model):
         chunks.append(chunk.text)
     package = [entities, tokens, chunks, plaintext]
     return(package)
-
 
 def chunkGenerator():
     model = load_model()

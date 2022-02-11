@@ -36,7 +36,8 @@ def u_dump_by_row(rowName):
     table.flush()
     h5file.close()
     return(arr)
-
+#max 5,000 following
+#
 def u_append_log(id, time, text, follows, followed, liked, tweeted):
     h5file = tables.open_file("twitter/twitterUser_log.h5", mode="a", title="twit")
     table = h5file.root.Null.Null

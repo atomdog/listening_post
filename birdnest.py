@@ -15,15 +15,15 @@ class twitterULog(tables.IsDescription):
 #creates empty twitter log
 #pass in twitterULog class
 def u_create_log(tL):
-    h5file = tables.open_file("twitter/logs/twitterUser_log.h5", mode="w", title="twit")
+    h5file = tables.open_file("twitter/twitterUser_log.h5", mode="w", title="twit")
     group = h5file.create_group("/", 'Null', 'Twitter')
-    table = h5file.create_table(group, 'Null', aL, "Twitter_Data")
+    table = h5file.create_table(group, 'Null', tL, "Twitter_Data")
     table.flush()
     h5file.close()
 
 #pass in row title,
 def u_dump_by_row(rowName):
-    h5file = tables.open_file("twitter/logs/twitterUser_log.h5", mode="a", title="twit")
+    h5file = tables.open_file("twitter/twitterUser_log.h5", mode="a", title="twit")
     table = h5file.root.Null.Null
     arr = []
     for row in table:
@@ -38,7 +38,7 @@ def u_dump_by_row(rowName):
     return(arr)
 
 def u_append_log(id, time, text, follows, followed, liked, tweeted):
-    h5file = tables.open_file("twitter/logs/twitterUser_log.h5", mode="a", title="twit")
+    h5file = tables.open_file("twitter/twitterUser_log.h5", mode="a", title="twit")
     table = h5file.root.Null.Null
     r = table.row
     r["ID"] = id #encrypt
@@ -59,17 +59,17 @@ class twitterTLog(tables.IsDescription):
     liked_pointers = tables.StringCol(5000)
 
 #creates empty twitter log
-#pass in twitterULog class
-def create_log(tL):
-    h5file = tables.open_file("twitter/logs/twitterTweet_log.h5", mode="w", title="twit2")
+#pass in twitterTLog class
+def t_create_log(tL):
+    h5file = tables.open_file("twitter/twitterTweet_log.h5", mode="w", title="twit2")
     group = h5file.create_group("/", 'Null', 'Twitter')
-    table = h5file.create_table(group, 'Null', aL, "Twitter_Data")
+    table = h5file.create_table(group, 'Null', tL, "Twitter_Data")
     table.flush()
     h5file.close()
 
 #pass in row title,
-def dump_by_row(rowName):
-    h5file = tables.open_file("twitter/logs/twitterTweet_log.h5", mode="a", title="twit2")
+def t_dump_by_row(rowName):
+    h5file = tables.open_file("twitter/twitterTweet_log.h5", mode="a", title="twit2")
     table = h5file.root.Null.Null
     arr = []
     for row in table:
@@ -83,8 +83,8 @@ def dump_by_row(rowName):
     h5file.close()
     return(arr)
 
-def append_log(id, time, text, author, liked):
-    h5file = tables.open_file("twitter/logs/twitterTweet_log.h5", mode="a", title="twit2")
+def t_append_log(id, time, text, author, liked):
+    h5file = tables.open_file("twitter/twitterTweet_log.h5", mode="a", title="twit2")
     table = h5file.root.Null.Null
     r = table.row
     r["ID"] = id #encrypt
@@ -95,3 +95,8 @@ def append_log(id, time, text, author, liked):
     r.append()
     table.flush()
     h5file.close()
+
+q = twitterTLog
+q2 = twitterULog
+u_create_log(q)
+t_create_log(q2)

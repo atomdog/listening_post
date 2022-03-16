@@ -22,6 +22,7 @@ def tweetsbyuser(screen_name, api):
         writer = csv.writer(f)
         writer.writerow(["id","created_at","text"])
         writer.writerows(outtweets)
+    return(oldest)
     pass
 
 def repliesbyid(id, api):

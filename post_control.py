@@ -15,8 +15,9 @@ class ctroller:
         print(twitterInterface.followersbyuser(usn, self.api))
     def log_user_tweets(self, usn):
         print(twitterInterface.tweetsbyuser(usn, self.api))
-
 q = ctroller()
 #q.log_emails()
+#get tweets in a swoop, store in h5, get additional info on each tweet from h5 as well
 
-q.log_user_tweets("@Adrian_Fontes")
+
+q.log_user_tweets("@reginaldbolding")

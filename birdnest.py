@@ -113,7 +113,7 @@ def t_append_log(id, time, text, author, liked):
     r.append()
     table.flush()
     h5file.close()
-
+    
 #===================================== edges side =======================
 class twitterELog(tables.IsDescription):
     ID_A  = tables.StringCol(32)
@@ -150,7 +150,7 @@ def e_append_log(ID_A, ID_B, type):
     r.append()
     table.flush()
     h5file.close()
-    
+
 q = twitterTLog
 q2 = twitterULog
 u_create_log(q)

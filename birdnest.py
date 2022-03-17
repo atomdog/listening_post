@@ -14,6 +14,7 @@ class twitterULog(tables.IsDescription):
     followed_pointers = tables.StringCol(5000) #5000-character string # 16-character String
     liked_pointers = tables.StringCol(5000)
     tweeted_pointers = tables.StringCol(5000)
+
 #creates empty twitter log
 #pass in twitterULog class
 def u_create_log(tL):
@@ -38,8 +39,8 @@ def u_dump_by_row(rowName):
     table.flush()
     h5file.close()
     return(arr)
+
 #max 5,000 following
-#
 def u_append_log(id, time, text, follows, followed, liked, tweeted):
     h5file = tables.open_file("twitter/twitterUser_log.h5", mode="a", title="twit")
     table = h5file.root.Null.Null
@@ -55,9 +56,9 @@ def u_append_log(id, time, text, follows, followed, liked, tweeted):
     h5file.close()
 
 class twitterTLog(tables.IsDescription):
-    ID      = tables.StringCol(16)   # 16-character String
-    time  = tables.StringCol(128)      # Signed 64-bit integer
-    text  = tables.StringCol(500)   #500-character string
+    ID      = tables.StringCol(16)
+    time  = tables.StringCol(128)
+    text  = tables.StringCol(500)
     author  = tables.StringCol(500)
     liked_pointers = tables.StringCol(5000)
 
@@ -90,11 +91,11 @@ def t_append_log(id, time, text, author, liked):
     h5file = tables.open_file("twitter/twitterTweet_log.h5", mode="a", title="twit2")
     table = h5file.root.Null.Null
     r = table.row
-    r["ID"] = id #encrypt
-    r["time"] = time #encrypt
-    r["text"] = text #encrypt
-    r["author"] = follows #encrypt
-    r["liked"] = followed #encrypt
+    r["ID"] = id
+    r["time"] = time
+    r["text"] = text
+    r["author"] = follows
+    r["liked"] = followed
     r.append()
     table.flush()
     h5file.close()

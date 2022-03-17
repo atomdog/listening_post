@@ -22,8 +22,7 @@ def tweetsbyuser(screen_name, api):
         writer = csv.writer(f)
         writer.writerow(["id","created_at","text"])
         writer.writerows(outtweets)
-    return(oldest)
-    pass
+
 
 def repliesbyid(id, api):
     replies=[]
@@ -37,6 +36,7 @@ def repliesbyid(id, api):
         for tweet in replies:
             row = {'user': tweet.user.screen_name, 'text': tweet.text.replace('\n', ' ')}
             csv_writer.writerow(row)
+
 def followersbyuser(user, api):
     screen_name = user
     c = tweepy.Cursor(api.followers, screen_name)
@@ -56,5 +56,11 @@ def followingbyuser(user, api):
         for following in c.items():
             row = {'user': following.screen_name}
             csv_writer.writerow(row)
+
+def usertoid(username, api):
+    userid = api.get_user(username)
+    ID = userid.id_str
+    return(ID)
+
 def replybyid(id, user, text, tuser):
     api.update_status('@'+str(user)+' ' + str(text),tweetId)

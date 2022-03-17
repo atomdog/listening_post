@@ -1,11 +1,10 @@
 #twitter_lake.py
-
 import numpy as np
 import tables
 import matplotlib.pyplot as plt
-#supreme court
-#by term lookup
 
+
+#================== user database ========================
 class twitterULog(tables.IsDescription):
     ID            = tables.StringCol(32)    #32-character string
     username      = tables.StringCol(128)
@@ -13,19 +12,12 @@ class twitterULog(tables.IsDescription):
     username      = tables.StringCol(128)   #128-character string
     bio           = tables.StringCol(500)   #500-character string
 
-    #need to track : following, followed, liked
-
-    #follow_pointers = tables.StringCol(5000) #5000-character string
-    #followed_pointers = tables.StringCol(5000) #5000-character string # 16-character String
-    #liked_pointers = tables.StringCol(5000)
-    #tweeted_pointers = tables.StringCol(5000)
-
-#creates empty twitter log
-#pass in twitterULog class
-def u_create_log(tL):
+#creates empty user log
+#pass in instance of twitterULog class
+def u_create_log(uL):
     h5file = tables.open_file("twitter/userStore.h5", mode="w", title="twit")
     group = h5file.create_group("/", 'Null', 'Twitter')
-    table = h5file.create_table(group, 'Null', tL, "Twitter_Data")
+    table = h5file.create_table(group, 'Null', uL, "Twitter_Data")
     table.flush()
     h5file.close()
 
@@ -45,25 +37,20 @@ def u_dump_by_row(rowName):
     h5file.close()
     return(arr)
 
-#max 5,000 following
-def u_append_log(id, time, text, follows, followed, liked, tweeted):
+def u_append_log(id, username, time_observed, bio):
     h5file = tables.open_file("twitter/userStore.h5", mode="a", title="twit")
     table = h5file.root.Null.Null
     r = table.row
-    r["ID"] = id #encrypt
-    r["username"] = time #encrypt
-    r["time_observed"] = text #encrypt
-    r["bio"] = follows #encrypt
-    r["followed"] = followed #encrypt
-    r["liked"] = liked #encrypt
+    r["ID"] = id
+    r["username"] = username
+    r["time_observed"] = time_observed
+    r["bio"] = bio
     r.append()
     table.flush()
     h5file.close()
 
-
-
-
-#===================================== tweets side =======================
+#=========================================================
+#================== tweet database =======================
 class twitterTLog(tables.IsDescription):
     tweet_ID      = tables.StringCol(32)
     time  = tables.StringCol(128)
@@ -72,14 +59,10 @@ class twitterTLog(tables.IsDescription):
     authorID  = tables.StringCol(128)
     likesNum = tables.StringCol(128)
 
-    #liked_pointers = tables.StringCol(5000)
-    #liked_pointers = tables.StringCol(5000)
-    #liked_pointers = tables.StringCol(5000)
-
-#creates empty twitter log
-#pass in twitterTLog class
+#creates empty tweet log
+#pass in instance of twitterTLog class
 def t_create_log(tL):
-    h5file = tables.open_file("twitter/tweetStore.h5", mode="w", title="twit2")
+    h5file = tables.open_file("memory/twitter/tweetStore.h5", mode="w", title="twit2")
     group = h5file.create_group("/", 'Null', 'Twitter')
     table = h5file.create_table(group, 'Null', tL, "Twitter_Data")
     table.flush()
@@ -87,7 +70,7 @@ def t_create_log(tL):
 
 #pass in row title,
 def t_dump_by_row(rowName):
-    h5file = tables.open_file("twitter/tweetStore.h5", mode="a", title="twit2")
+    h5file = tables.open_file("memory/twitter/tweetStore.h5", mode="a", title="twit2")
     table = h5file.root.Null.Null
     arr = []
     for row in table:
@@ -102,7 +85,7 @@ def t_dump_by_row(rowName):
     return(arr)
 
 def t_append_log(id, time, text, author, liked):
-    h5file = tables.open_file("twitter/tweetStore.h5", mode="a", title="twit2")
+    h5file = tables.open_file("memory/twitter/tweetStore.h5", mode="a", title="twit2")
     table = h5file.root.Null.Null
     r = table.row
     r["ID"] = id
@@ -113,21 +96,27 @@ def t_append_log(id, time, text, author, liked):
     r.append()
     table.flush()
     h5file.close()
-    
-#===================================== edges side =======================
+
+#=========================================================
+#=================== edge database =======================
 class twitterELog(tables.IsDescription):
     ID_A  = tables.StringCol(32)
     ID_B  = tables.StringCol(32)
     #reply to, tweeted, follows, followed, liked
     type  = tables.StringCol(32)
+
+#creates empty edge log
+#pass in instance of twitterELog class
 def e_create_log(eL):
-    h5file = tables.open_file("twitter/edgeStore.h5", mode="w", title="twit3")
+    h5file = tables.open_file("memory/twitter/edgeStore.h5", mode="w", title="twit3")
     group = h5file.create_group("/", 'Null', 'Twitter')
     table = h5file.create_table(group, 'Null', eL, "Twitter_Data")
     table.flush()
     h5file.close()
+
+#pass in name of row
 def e_dump_by_row(rowName):
-    h5file = tables.open_file("twitter/edgeStore.h5", mode="a", title="twit3")
+    h5file = tables.open_file("memory/twitter/edgeStore.h5", mode="a", title="twit3")
     table = h5file.root.Null.Null
     arr = []
     for row in table:
@@ -141,7 +130,7 @@ def e_dump_by_row(rowName):
     h5file.close()
     return(arr)
 def e_append_log(ID_A, ID_B, type):
-    h5file = tables.open_file("twitter/edgeStore.h5", mode="a", title="twit3")
+    h5file = tables.open_file("memory/twitter/edgeStore.h5", mode="a", title="twit3")
     table = h5file.root.Null.Null
     r = table.row
     r["ID_A"] = ID_A
@@ -150,8 +139,7 @@ def e_append_log(ID_A, ID_B, type):
     r.append()
     table.flush()
     h5file.close()
+#=========================================================
 
-q = twitterTLog
-q2 = twitterULog
 u_create_log(q)
 t_create_log(q2)

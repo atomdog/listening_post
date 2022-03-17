@@ -1,6 +1,6 @@
 # listening_post
 
-Some notes: 
+Some notes:
 https://en.wikipedia.org/wiki/Community_structure
 
 Our notes:

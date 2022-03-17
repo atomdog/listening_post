@@ -6,6 +6,23 @@ def tweet(text, api):
     api.update_status(text)
     pass
 
+def tweets_since_x_by_user(screen_name, api, since):
+    alltweets = []
+    new_tweets = api.user_timeline(screen_name = screen_name,count=200)
+    alltweets.extend(new_tweets)
+    oldest = alltweets[-1].id - 1
+    while len(new_tweets) > 0:
+        print(f"getting tweets since {since}")
+        new_tweets = api.user_timeline(screen_name = screen_name,count=200,max_id=oldest)
+        alltweets.extend(new_tweets)
+        oldest = alltweets[-1].id - 1
+        print(oldest)
+        print(f"...{len(alltweets)} tweets downloaded so far")
+    outtweets = [[tweet.id_str, tweet.created_at, tweet.text] for tweet in alltweets]
+    return(outtweets)
+
+
+
 def tweetsbyuser(screen_name, api):
     alltweets = []
     new_tweets = api.user_timeline(screen_name = screen_name,count=200)

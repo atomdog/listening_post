@@ -60,15 +60,15 @@ class authority:
                             for x in range(0, len(row)):
                                 new_target.meta[col_names[x]] = row[x]
                             new_target.fuzz_self_init()
-                            if(new_target.meta['twitter'] != None and new_target.meta['twitter'] != 'Link' and new_target.meta['twitter'] != ''):
+                            if('@' in new_target.meta['twitter']):
                                 tw_id = self.controller.convert_username(new_target.meta['twitter'])
-                                
+                                new_target.twitter_init(tw_id, new_target.meta['twitter'])
+                            self.targets.append(new_target)
+        
+        #freeze_authority(self)
 
 
-                            #print(new_target.meta)
 
-                            #print(f'Processed {line_count} lines.')
-                            #print(row)
-torch_authority()
 q = thaw_authority()
+print(q.targets)
 q.load_targets()

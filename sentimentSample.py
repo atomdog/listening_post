@@ -3,9 +3,10 @@ from nltk.corpus import twitter_samples, stopwords
 from nltk.tag import pos_tag
 from nltk.tokenize import word_tokenize
 from nltk import FreqDist, classify, NaiveBayesClassifier
+import nltk
 import pickle
 import re, string, random
-
+#WARNING!!!!! MAY HAVE TO BE RUN AS SUDO!!
 def remove_noise(tweet_tokens, stop_words = ()):
     cleaned_tokens = []
     for token, tag in pos_tag(tweet_tokens):
@@ -31,6 +32,7 @@ def get_tweets_for_model(cleaned_tokens_list):
     for tweet_tokens in cleaned_tokens_list:
         yield dict([token, True] for token in tweet_tokens)
 def train_model():
+    nltk.download('twitter_samples')
     positive_tweets = twitter_samples.strings('positive_tweets.json')
     negative_tweets = twitter_samples.strings('negative_tweets.json')
     text = twitter_samples.strings('tweets.20150430-223406.json')
@@ -58,12 +60,13 @@ def train_model():
     classifier = NaiveBayesClassifier.train(train_data)
     print("Accuracy is:", classify.accuracy(classifier, test_data))
     print(classifier.show_most_informative_features(10))
-    filename = 'sentimentmodel.sav'
+    filename = 'memory/models/sentimentmodel.sav'
     pickle.dump(classifier, open(filename, 'wb'))
 
 def retsent(inptweet):
-    classifier = pickle.load(open('sentimentmodel.sav', 'rb'))
+    classifier = pickle.load(open('memory/models/sentimentmodel.sav', 'rb'))
     custom_tokens = remove_noise(word_tokenize(inptweet))
     print(classifier.classify(dict([token, True] for token in custom_tokens)))
 
+#train_model()
 #retsent("I feel really super good today.")

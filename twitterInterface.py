@@ -2,9 +2,12 @@
 import tweepy
 import csv
 
+#============not relevant functions===========
 def tweet(text, api):
     api.update_status(text)
-    pass
+def replybyid(id, user, text, tuser):
+    api.update_status('@'+str(user)+' ' + str(text),tweetId)
+#=============================================
 
 def tweets_since_x_by_user(screen_name, api, since):
     alltweets = []
@@ -35,10 +38,7 @@ def tweetsbyuser(screen_name, api):
         oldest = alltweets[-1].id - 1
         print(f"...{len(alltweets)} tweets downloaded so far")
     outtweets = [[tweet.id_str, tweet.created_at, tweet.text] for tweet in alltweets]
-    with open(f'raw_twit/tweets|{screen_name}|.csv', 'w') as f:
-        writer = csv.writer(f)
-        writer.writerow(["id","created_at","text"])
-        writer.writerows(outtweets)
+    return(outtweets)
 
 
 def repliesbyid(id, api):
@@ -64,20 +64,40 @@ def followersbyuser(user, api):
             row = {'user': follower.screen_name}
             csv_writer.writerow(row)
 
+#===========polished functions=============
+
+def tweetsbyuser(screen_name, api):
+    alltweets = []
+    new_tweets = api.user_timeline(screen_name = screen_name,count=200)
+    alltweets.extend(new_tweets)
+    oldest = alltweets[-1].id - 1
+    while len(new_tweets) > 0:
+        print(f"getting tweets before {oldest}")
+        new_tweets = api.user_timeline(screen_name = screen_name,count=200,max_id=oldest)
+        alltweets.extend(new_tweets)
+        oldest = alltweets[-1].id - 1
+        print(f"...{len(alltweets)} tweets downloaded so far")
+    outtweets = [[tweet.id_str, tweet.created_at, tweet.text] for tweet in alltweets]
+    return(outtweets)
+
 def followingbyuser(user, api):
     screen_name = user
     c = tweepy.Cursor(api.friends, screen_name)
-    with open('raw_twit/following|' + str(user) + '|.csv', 'w') as f:
-        csv_writer = csv.DictWriter(f, fieldnames=('user',))
-        csv_writer.writeheader()
-        for following in c.items():
-            row = {'user': following.screen_name}
-            csv_writer.writerow(row)
+    following_list = []
+    for following in c.items():
+        following_list.append(following.screen_name)
+    return(following_list)
+
+def followersbyuser(user, api):
+    screen_name = user
+    c = tweepy.Cursor(api.followers, screen_name)
+    follower_list = []
+    for follower in c.items():
+        follower_list.append(follower.screen_name)
+    return(follower_list)
 
 def usertoid(username, api):
     userid = api.get_user(username)
     ID = userid.id_str
     return(ID)
-
-def replybyid(id, user, text, tuser):
-    api.update_status('@'+str(user)+' ' + str(text),tweetId)
+#==========================================

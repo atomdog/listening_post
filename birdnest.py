@@ -1,4 +1,4 @@
-#twitter_lake.py
+#birdnest.py
 import numpy as np
 import tables
 import matplotlib.pyplot as plt
@@ -8,14 +8,14 @@ import matplotlib.pyplot as plt
 class twitterULog(tables.IsDescription):
     ID            = tables.StringCol(32)    #32-character string
     username      = tables.StringCol(128)
-    time_observed = tables.StringCol(128)   #128-character string
+    time_observed_first = tables.StringCol(128)   #128-character string
     username      = tables.StringCol(128)   #128-character string
     bio           = tables.StringCol(500)   #500-character string
 
 #creates empty user log
 #pass in instance of twitterULog class
 def u_create_log(uL):
-    h5file = tables.open_file("twitter/userStore.h5", mode="w", title="twit")
+    h5file = tables.open_file("memory/twitter/userStore.h5", mode="w", title="twit")
     group = h5file.create_group("/", 'Null', 'Twitter')
     table = h5file.create_table(group, 'Null', uL, "Twitter_Data")
     table.flush()
@@ -23,7 +23,7 @@ def u_create_log(uL):
 
 #pass in row title,
 def u_dump_by_row(rowName):
-    h5file = tables.open_file("twitter/userStore.h5", mode="a", title="twit")
+    h5file = tables.open_file("memory/twitter/userStore.h5", mode="a", title="twit")
     table = h5file.root.Null.Null
     arr = []
     for row in table:
@@ -38,7 +38,7 @@ def u_dump_by_row(rowName):
     return(arr)
 
 def u_append_log(id, username, time_observed, bio):
-    h5file = tables.open_file("twitter/userStore.h5", mode="a", title="twit")
+    h5file = tables.open_file("memory/twitter/userStore.h5", mode="a", title="twit")
     table = h5file.root.Null.Null
     r = table.row
     r["ID"] = id
@@ -141,5 +141,14 @@ def e_append_log(ID_A, ID_B, type):
     h5file.close()
 #=========================================================
 
-u_create_log(q)
-t_create_log(q2)
+
+def create_empty_logs():
+    qU = twitterULog
+    qT = twitterTLog
+    qE = twitterELog
+    #create logs from scratch
+    u_create_log(qU)
+    t_create_log(qT)
+    e_create_log(qE)
+
+create_empty_logs()

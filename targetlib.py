@@ -31,4 +31,5 @@ class target:
         if(self.twitterflag == False):
             print("<--- ERROR: Checking in on a target without a configured twitter --->")
             return(False)
-        handoff.
+
+        #handoff.

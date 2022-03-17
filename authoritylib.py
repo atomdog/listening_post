@@ -44,6 +44,7 @@ class authority:
         for file in q:
             if file.endswith(".csv"):
                 with open(path+file, mode='r') as csv_file:
+                    print("===== Processing " + str(file) + " ===========")
                     csv_reader = csv.reader(csv_file, delimiter=',')
                     line_count = 0
                     col_names = []
@@ -64,11 +65,11 @@ class authority:
                                 tw_id = self.controller.convert_username(new_target.meta['twitter'])
                                 new_target.twitter_init(tw_id, new_target.meta['twitter'])
                             self.targets.append(new_target)
-        
-        #freeze_authority(self)
+                    print("====== Processed " + str(file) + " ===========")
+        freeze_authority(self)
 
 
-
+q = torch_authority()
 q = thaw_authority()
 print(q.targets)
 q.load_targets()

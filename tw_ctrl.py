@@ -19,6 +19,8 @@ class ctrl:
     def convert_username(self, usn):
         return(twitterInterface.usertoid(usn, self.api))
 
+    def twitter_routine(self, usn):
+        pass
 
 
 

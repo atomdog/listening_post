@@ -141,7 +141,6 @@ def e_append_log(ID_A, ID_B, type):
     h5file.close()
 #=========================================================
 
-
 def create_empty_logs():
     qU = twitterULog
     qT = twitterTLog

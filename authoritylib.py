@@ -7,7 +7,7 @@ import os
 import csv
 import json
 import tw_ctrl
-
+import timeline
 # -----                   ------
 
 def freeze_authority(author):
@@ -33,10 +33,9 @@ class authority:
         self.target_parameters = data['target_parameters']
         self.controller = tw_ctrl.ctrl()
 
-    #fuzzy loading csv so we can be lazy later on
     def load_controller(self):
         self.controller = tw_ctrl.ctrl()
-
+    #fuzzy loading csv so we can be lazy later on
     def load_targets(self):
         path = "targeting/"
         q = os.listdir(path)

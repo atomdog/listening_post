@@ -20,6 +20,7 @@ class ctrl:
         return(followers)
     def log_user_tweets(self, usn):
         tweets = twitterInterface.tweetsbyuser(usn, self.api)
+        return(tweets)
     def convert_username(self, usn):
         try:
             q = twitterInterface.usertoid(usn, self.api)

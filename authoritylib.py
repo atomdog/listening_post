@@ -66,6 +66,14 @@ class authority:
                             self.targets.append(new_target)
                     print("====== Processed " + str(file) + " ===========")
         freeze_authority(self)
+    def first_pass_tweets(self):
+        pass
+    def first_pass_follower(self):
+        pass
+    def first_pass_following(self):
+        pass
+    def first_pass_likes(self):
+        pass
 
 
 q = torch_authority()

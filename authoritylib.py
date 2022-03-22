@@ -7,7 +7,7 @@ import os
 import csv
 import json
 import tw_ctrl
-import timeline
+import grandtimeline
 # -----                   ------
 
 def freeze_authority(author):

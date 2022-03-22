@@ -1,2 +1,2 @@
-{"target_parameters": ["state", "candidate", "party", "website", "twitter", "facebook", "youtube", "email", "incumbent", "compensation", "funding"],
+{"target_parameters": ["state", "name", "party", "website", "twitter", "facebook", "youtube", "email", "incumbent", "compensation", "funding"],
   "twitter_aggro": 1}

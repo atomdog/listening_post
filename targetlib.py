@@ -1,7 +1,7 @@
 #target.py
 # ----- import statements ------
 import hashlib
-
+#https://www.opensecrets.org/personal-finances
 # -----                   ------
 
 class target:

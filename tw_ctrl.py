@@ -17,7 +17,17 @@ class ctrl:
     def log_user_tweets(self, usn):
         return(twitterInterface.tweetsbyuser(usn, self.api))
     def convert_username(self, usn):
-        return(twitterInterface.usertoid(usn, self.api))
+        try:
+            q = twitterInterface.usertoid(usn, self.api)
+            return(q)
+        except Exception as e:
+            print("EXCEPTION IN USERNAME CONVERSION FOR "+ str(usn))
+            print("    ")
+            print("    ")
+            print(e)
+            print("    ")
+            print("Returning...")
+
 
     def twitter_routine(self, usn):
         pass

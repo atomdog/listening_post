@@ -13,24 +13,38 @@ class ctrl:
     def log_emails(self):
         return(smtpCheckEmail.checkemail())
     def log_user_followers(self, usn):
-        return(twitterInterface.followersbyuser(usn, self.api))
+        followers = twitterInterface.followersbyuser(usn, self.api)
     def log_user_tweets(self, usn):
-        return(twitterInterface.tweetsbyuser(usn, self.api))
+        tweets = twitterInterface.tweetsbyuser(usn, self.api)
     def convert_username(self, usn):
         try:
             q = twitterInterface.usertoid(usn, self.api)
             return(q)
         except Exception as e:
-            print("EXCEPTION IN USERNAME CONVERSION FOR "+ str(usn))
+            print("<--- ERROR: Exception in Username to ID conversion --->")
+            print(usn)
             print("    ")
             print("    ")
             print(e)
             print("    ")
-            print("Returning...")
-
-
+            print("    ")
+            print("<----------------------------------------------------->")
     def twitter_routine(self, usn):
         pass
+    def get_bio(self, usn):
+        try:
+            q = twitterInterface.user_bio(usn, self.api)
+            print(len(q))
+            return(q)
+        except Exception as e:
+            print("<--- ERROR: Exception Retrieving User Bio --->")
+            print(usn)
+            print("    ")
+            print("    ")
+            print(e)
+            print("    ")
+            print("    ")
+            print("<-------------------------------------------->")
 
 
 

@@ -8,6 +8,8 @@ import csv
 import json
 import tw_ctrl
 import grandtimeline
+import birdnest
+from datetime import datetime
 # -----                   ------
 
 def freeze_authority(author):
@@ -33,7 +35,7 @@ class authority:
         self.target_parameters = data['target_parameters']
         self.controller = tw_ctrl.ctrl()
 
-    def load_controller(self):
+    def reload_controller(self):
         self.controller = tw_ctrl.ctrl()
     #fuzzy loading csv so we can be lazy later on
     def load_targets(self):
@@ -47,7 +49,7 @@ class authority:
                     csv_reader = csv.reader(csv_file, delimiter=',')
                     line_count = 0
                     col_names = []
-                    self.load_controller()
+                    self.reload_controller()
                     for row in csv_reader:
                         if line_count == 0:
                             col_names = row
@@ -63,11 +65,25 @@ class authority:
                             if('@' in new_target.meta['twitter']):
                                 tw_id = self.controller.convert_username(new_target.meta['twitter'])
                                 new_target.twitter_init(tw_id, new_target.meta['twitter'])
+                                new_target.own_twitter_bio = self.controller.get_bio(new_target.meta['twitter'])
                             self.targets.append(new_target)
                     print("====== Processed " + str(file) + " ===========")
+        #Save self
         freeze_authority(self)
+
+    def create_target_users(self):
+        for x in range(0, len(self.targets)):
+            c = self.targets[x]
+            if(c.check_in()):
+                now = datetime.now()
+                dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+                birdnest.u_append_log(c.twitter_user_pointer, c.twitter_username, str(dt_string), c.own_twitter_bio)
+                print(c.id, c.twitter_username, dt_string, c.own_twitter_bio)
+
     def first_pass_tweets(self):
-        pass
+        for x in range(0, len(self.targets)):
+            #self.controller.
+            pass
     def first_pass_follower(self):
         pass
     def first_pass_following(self):
@@ -78,5 +94,5 @@ class authority:
 
 q = torch_authority()
 q = thaw_authority()
-print(q.targets)
 q.load_targets()
+q.create_target_users()

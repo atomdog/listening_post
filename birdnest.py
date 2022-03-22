@@ -2,15 +2,17 @@
 import numpy as np
 import tables
 import matplotlib.pyplot as plt
-
+import os
+from datetime import datetime
+import shutil
 
 #================== user database ========================
 class twitterULog(tables.IsDescription):
     ID            = tables.StringCol(32)    #32-character string
     username      = tables.StringCol(128)
-    time_observed_first = tables.StringCol(128)   #128-character string
+    time_observed = tables.StringCol(128)   #128-character string
     username      = tables.StringCol(128)   #128-character string
-    bio           = tables.StringCol(500)   #500-character string
+    bio           = tables.StringCol(1024)   #500-character string
 
 #creates empty user log
 #pass in instance of twitterULog class
@@ -150,4 +152,9 @@ def create_empty_logs():
     t_create_log(qT)
     e_create_log(qE)
 
-create_empty_logs()
+def snapshot():
+    now = datetime.now()
+    dt_string = now.strftime("%d:%m:%Y:%H:%M:%S")
+    shutil.copy("memory/twitter/edgeStore.h5", "memory/twitter/edgeStore_" + dt_string + ".h5")
+    shutil.copy("memory/twitter/userStore.h5", "memory/twitter/userStore_" + dt_string + ".h5")
+    shutil.copy("memory/twitter/tweetStore.h5", "memory/twitter/tweetStore_" + dt_string + ".h5")

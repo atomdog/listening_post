@@ -18,6 +18,7 @@ class target:
         self.twitter_username = None
         self.last_collected_twitter = None
         self.earliest_tweet = None
+        self.own_twitter_bio = ""
     def fuzz_self_init(self):
         checked = ""
         for key in self.meta:
@@ -27,9 +28,13 @@ class target:
         self.twitter_user_pointer = id
         self.twitter_username = username
         self.twitterflag = True
-    def check_in(self, handoff):
+    def check_in(self):
         if(self.twitterflag == False):
             print("<--- ERROR: Checking in on a target without a configured twitter --->")
             return(False)
+        else:
+            return(True)
+
+
 
         #handoff.

@@ -62,6 +62,9 @@ def usertoid(username, api):
     userid = api.get_user(username)
     ID = userid.id_str
     return(ID)
+def user_bio(username, api):
+    user = api.get_user(username)
+    return(user.description)
 
 def repliestotweet(id, api):
     replies=[]

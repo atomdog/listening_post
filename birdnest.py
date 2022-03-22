@@ -33,11 +33,21 @@ def u_dump_by_row(rowName):
         q = (row[rowName].decode()).split(",")
         q = list(filter(None, q))
         for x in range(0, len(q)):
-            q[x] = float(q[x])
+            q[x] = q[x]
         arr.append(q)
     table.flush()
     h5file.close()
     return(arr)
+    
+def u_length():
+    h5file = tables.open_file("memory/twitter/userStore.h5", mode="a", title="twit")
+    table = h5file.root.Null.Null
+    count=0
+    for row in table:
+        count+=1
+    table.flush()
+    h5file.close()
+    return(count)
 
 def u_append_log(id, username, time_observed, bio):
     h5file = tables.open_file("memory/twitter/userStore.h5", mode="a", title="twit")
@@ -80,7 +90,7 @@ def t_dump_by_row(rowName):
         q = (row[rowName].decode()).split(",")
         q = list(filter(None, q))
         for x in range(0, len(q)):
-            q[x] = float(q[x])
+            q[x] = q[x]
         arr.append(q)
     table.flush()
     h5file.close()
@@ -126,7 +136,7 @@ def e_dump_by_row(rowName):
         q = (row[rowName].decode()).split(",")
         q = list(filter(None, q))
         for x in range(0, len(q)):
-            q[x] = float(q[x])
+            q[x] = q[x]
         arr.append(q)
     table.flush()
     h5file.close()
@@ -158,3 +168,4 @@ def snapshot():
     shutil.copy("memory/twitter/edgeStore.h5", "memory/twitter/edgeStore_" + dt_string + ".h5")
     shutil.copy("memory/twitter/userStore.h5", "memory/twitter/userStore_" + dt_string + ".h5")
     shutil.copy("memory/twitter/tweetStore.h5", "memory/twitter/tweetStore_" + dt_string + ".h5")
+create_empty_logs()

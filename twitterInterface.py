@@ -47,7 +47,7 @@ def followingbyuser(user, api):
     c = tweepy.Cursor(api.friends, screen_name)
     following_list = []
     for following in c.items():
-        following_list.append(following.screen_name)
+        following_list.append([following.id_str,following.screen_name,following.description])
     return(following_list)
 
 def followersbyuser(user, api):
@@ -55,7 +55,7 @@ def followersbyuser(user, api):
     c = tweepy.Cursor(api.followers, screen_name)
     follower_list = []
     for follower in c.items():
-        follower_list.append(follower.screen_name)
+        follower_list.append([follower.id_str,follower.screen_name,follower.description])
     return(follower_list)
 
 def usertoid(username, api):

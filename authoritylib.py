@@ -65,7 +65,8 @@ class authority:
                             if('@' in new_target.meta['twitter']):
                                 tw_id = self.controller.convert_username(new_target.meta['twitter'])
                                 new_target.twitter_init(tw_id, new_target.meta['twitter'])
-                                new_target.own_twitter_bio = self.controller.get_bio(new_target.meta['twitter'])
+                                if(self.controller.get_bio(new_target.meta['twitter']) != None):
+                                    new_target.own_twitter_bio = self.controller.get_bio(new_target.meta['twitter'])
                             self.targets.append(new_target)
                     print("====== Processed " + str(file) + " ===========")
         #Save self
@@ -76,19 +77,49 @@ class authority:
             c = self.targets[x]
             if(c.check_in()):
                 now = datetime.now()
-                dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-                birdnest.u_append_log(c.twitter_user_pointer, c.twitter_username, str(dt_string), c.own_twitter_bio)
-                print(c.id, c.twitter_username, dt_string, c.own_twitter_bio)
-
+                dt_string = now.strftime("%d:%m:%Y:s%H:%M:%S")
+                birdnest.u_append_log(c.twitter_user_pointer, c.twitter_username, str(dt_string), c.own_twitter_bio.encode('utf-8'))
+                #print(c.id, c.twitter_username, dt_string, c.own_twitter_bio.encode('utf-8'))
     def first_pass_tweets(self):
         for x in range(0, len(self.targets)):
             #self.controller.
             pass
-    def first_pass_follower(self):
-        pass
+    def first_pass_followers(self):
+        self.reload_controller()
+
+        for x in range(0, len(self.targets)):
+            c = self.targets[x]
+            print("<---------- Followers for: ------------>")
+            print(c.twitter_username)
+            if(c.check_in()):
+                followers = self.controller.log_user_followers(c.twitter_username)
+                for y in range(0, len(followers)):
+                    now = datetime.now()
+                    dt_string = now.strftime("%d:%m:%Y:s%H:%M:%S")
+                    birdnest.u_append_log(followers[y][0],followers[y][1], str(dt_string), followers[y][2].encode('utf-8'))
+                    birdnest.e_append_log(followers[y][0], c.twitter_user_pointer, 'follows')
+            print("<------------- COMPLETE --------------->")
+
     def first_pass_following(self):
-        pass
+        self.reload_controller()
+
+        for x in range(0, len(self.targets)):
+            c = self.targets[x]
+            print("<---------- Followers for: ------------>")
+            print(c.twitter_username)
+            if(c.check_in()):
+                followers = self.controller.log_user_following(c.twitter_username)
+                for y in range(0, len(followers)):
+                    now = datetime.now()
+                    dt_string = now.strftime("%d:%m:%Y:s%H:%M:%S")
+                    birdnest.u_append_log(followers[y][0],followers[y][1], str(dt_string), followers[y][2].encode('utf-8'))
+                    birdnest.e_append_log(followers[y][0], c.twitter_user_pointer, 'follows')
+            print("<------------- COMPLETE --------------->")
+
     def first_pass_likes(self):
+        pass
+
+    def first_pass_tweets(self):
         pass
 
 
@@ -96,3 +127,4 @@ q = torch_authority()
 q = thaw_authority()
 q.load_targets()
 q.create_target_users()
+q.first_pass_followers()

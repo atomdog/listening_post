@@ -33,8 +33,6 @@ def tweetsbyuser(screen_name, api):
     new_tweets = api.user_timeline(screen_name = screen_name,count=200)
     alltweets.extend(new_tweets)
     oldest = alltweets[-1].id - 1
-    oldest2 = alltweets[len(alltweets)].id - 1
-    print(oldest2)
     print(oldest)
     while len(new_tweets) > 0:
         print(f"getting tweets before {oldest}")
@@ -44,7 +42,6 @@ def tweetsbyuser(screen_name, api):
         print(f"...{len(alltweets)} tweets downloaded so far")
     outtweets = [[tweet.id_str, tweet.created_at, tweet.text,tweet.retweet_count,tweet.favorite_count,tweet.user.screen_name] for tweet in alltweets]
     return(outtweets)
-
 
 def followingbyuser(user, api):
     screen_name = user

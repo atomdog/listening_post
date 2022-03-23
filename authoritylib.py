@@ -62,6 +62,7 @@ class authority:
                             for x in range(0, len(row)):
                                 new_target.meta[col_names[x]] = row[x]
                             new_target.fuzz_self_init()
+                            print("Creating Target For: " + str(new_target.meta['name']))
                             if('@' in new_target.meta['twitter']):
                                 tw_id = self.controller.convert_username(new_target.meta['twitter'])
                                 new_target.twitter_init(tw_id, new_target.meta['twitter'])
@@ -93,7 +94,6 @@ class authority:
                 for y in range(0, len(followers)):
                     now = datetime.now()
                     dt_string = now.strftime("%d:%m:%Y:s%H:%M:%S")
-                    print(followers[y])
                     birdnest.u_append_log(followers[y][0],followers[y][1], str(dt_string), followers[y][2].encode('utf-8'))
                     birdnest.e_append_log(followers[y][0], c.twitter_user_pointer, 'follows')
             print("<------------- COMPLETE --------------->")
@@ -113,7 +113,6 @@ class authority:
                     birdnest.u_append_log(followers[y][0],followers[y][1], str(dt_string), followers[y][2].encode('utf-8'))
                     birdnest.e_append_log(followers[y][0], c.twitter_user_pointer, 'follows')
 
-
     def first_pass_likes(self):
         pass
 
@@ -130,7 +129,7 @@ class authority:
                 for y in range(0, len(tweets)):
                     #now = datetime.now()
                     #dt_string = now.strftime("%d:%m:%Y:s%H:%M:%S")
-                    birdnest.t_append_log(tweets[y][0],tweets[y][1],tweets[y][2],c.twitter_username, followers[y][3])
+                    birdnest.t_append_log(tweets[y][0],tweets[y][1],tweets[y][2],c.twitter_username, tweets[y][3])
                     birdnest.e_append_log(c.twitter_user_pointer, c.tweets[y][0], 'tweeted')
 
 
@@ -138,5 +137,6 @@ q = torch_authority()
 q = thaw_authority()
 q.load_targets()
 q.create_target_users()
+q.first_pass_tweets()
 q.first_pass_following()
 q.first_pass_followers()

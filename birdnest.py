@@ -168,6 +168,7 @@ def create_empty_logs():
     u_create_log(qU)
     t_create_log(qT)
     e_create_log(qE)
+    
 def snapshot():
     now = datetime.now()
     dt_string = now.strftime("%d:%m:%Y:%H:%M:%S")

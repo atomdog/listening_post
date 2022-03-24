@@ -15,11 +15,11 @@ def only_nouns(txt):
     return(retval)
 
 def load_model():
-    nlp = spacy.load("en_core_web_sm")
+    nlp = spacy.load("en_core_web_trf")
     return(nlp)
 
 def load_model2():
-    nlp = spacy.load("en_core_web_sm")
+    nlp = spacy.load("en_core_web_trf")
     nlp.add_pipe("sentencizer")
     return(nlp)
 

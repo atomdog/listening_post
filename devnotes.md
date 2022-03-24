@@ -9,3 +9,8 @@
       ⋅⋅ Inefficiences in creating targets (repeated calls to user increases API activity)
 - [ ] Complete runtime
       ⋅⋅ Non-initialization collection and management of snapshots
+## Tuesday, March 29, 2022
+
+## Thursday, March 31, 2022
+
+## Thursday, April 5, 2022

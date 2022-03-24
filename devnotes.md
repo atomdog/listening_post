@@ -10,6 +10,8 @@
       ⋅⋅ Inefficiences in creating targets (repeated calls to user increases API activity)
 - [ ] Complete runtime
       ⋅⋅ Non-initialization collection and management of snapshots, timings, and analysis
+- [ ] Ensure key uniqueness and persistency in DB / [target library](targetlib.py)
+      ⋅⋅ Non-initialization collection and management of snapshots, timings, and analysis
 ### Recent progress
 - Vastly advanced persistency
 - Updated and improved target list
@@ -22,3 +24,4 @@
 ## Thursday, March 31, 2022
 
 ## Thursday, April 5, 2022
+

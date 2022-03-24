@@ -81,10 +81,8 @@ class authority:
                 dt_string = now.strftime("%d:%m:%Y:s%H:%M:%S")
                 birdnest.u_append_log(c.twitter_user_pointer, c.twitter_username, str(dt_string), c.own_twitter_bio.encode('utf-8'))
                 #print(c.id, c.twitter_username, dt_string, c.own_twitter_bio.encode('utf-8'))
-
     def first_pass_followers(self):
         self.reload_controller()
-
         for x in range(0, len(self.targets)):
             c = self.targets[x]
             print("<---------- Followers for: ------------>")
@@ -133,10 +131,10 @@ class authority:
                     birdnest.e_append_log(c.twitter_user_pointer, c.tweets[y][0], 'tweeted')
 
 
-q = torch_authority()
+#q = torch_authority()
 q = thaw_authority()
 q.load_targets()
-q.create_target_users()
+#q.create_target_users()
 q.first_pass_tweets()
-q.first_pass_following()
-q.first_pass_followers()
+#q.first_pass_following()
+#q.first_pass_followers()

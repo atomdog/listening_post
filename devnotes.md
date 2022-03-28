@@ -24,21 +24,23 @@
 ## Tuesday, March 29, 2022
 
 ### Known tasks
-- [ ] Convert Twitter interface calls into generators to return single Tweets
+- [ ] Convert Twitter interface calls into generators to return single Tweets (IN PROGRESS)
       ⋅⋅ Undesirable behavior in twitter interface slows down program
 - [ ] Extensive documentation
       ⋅⋅ Code is cryptic, esoteric, and confusing in both appearance and function
-- [ ] Streamline initialization
+- [x] Streamline initialization
       ⋅⋅ Inefficiences in creating targets (repeated calls to user increases API activity)
-- [ ] Complete runtime
+- [ ] Complete runtime (IN PROGRESS)
+      ⋅⋅ Non-initialization collection and management of snapshots, timings, and analysis 
+- [ ] Ensure key uniqueness and persistency in DB / [target library](targetlib.py) (IN PROGRESS)
       ⋅⋅ Non-initialization collection and management of snapshots, timings, and analysis
-- [ ] Ensure key uniqueness and persistency in DB / [target library](targetlib.py)
-      ⋅⋅ Non-initialization collection and management of snapshots, timings, and analysis
-      
- ### Recent progress
-
+- [ ] Data request form (IN PROGRESS)
+      ⋅⋅ HTML page for custom data retrieval/analysis requests plus autonomous visualizations
+### Recent progress
+ See (IN PROGRESS)
 ### General Notes
-Moving more slowly than intended
+Moving more slowly than intended, collecting data nonetheless, improving system robustness.
+Hosting plus SSL secured for webpage.
 ## Thursday, March 31, 2022
 
 ## Thursday, April 5, 2022

@@ -3,15 +3,15 @@
 
 ### Known tasks
 - [ ] Convert Twitter interface calls into generators to return single Tweets
-      - Undesirable behavior in twitter interface slows down program
+ - Undesirable behavior in twitter interface slows down program
 - [ ] Extensive documentation
-      - Code is cryptic, esoteric, and confusing in both appearance and function
+- Code is cryptic, esoteric, and confusing in both appearance and function
 - [ ] Streamline initialization
-      - Inefficiences in creating targets (repeated calls to user increases API activity)
+- Inefficiences in creating targets (repeated calls to user increases API activity)
 - [ ] Complete runtime
-      - Non-initialization collection and management of snapshots, timings, and analysis
+- Non-initialization collection and management of snapshots, timings, and analysis
 - [ ] Ensure key uniqueness and persistency in DB / [target library](targetlib.py)
-      - Non-initialization collection and management of snapshots, timings, and analysis
+- Non-initialization collection and management of snapshots, timings, and analysis
 ### Recent progress
 - Vastly advanced persistency
 - Updated and improved target list
@@ -25,17 +25,17 @@
 
 ### Known tasks
 - [ ] Convert Twitter interface calls into generators to return single Tweets (IN PROGRESS)
-      - Undesirable behavior in twitter interface slows down program
+- Undesirable behavior in twitter interface slows down program
 - [ ] Extensive documentation
-      - Code is cryptic, esoteric, and confusing in both appearance and function
+- Code is cryptic, esoteric, and confusing in both appearance and function
 - [x] Streamline initialization
-      - Inefficiences in creating targets (repeated calls to user increases API activity)
+- Inefficiences in creating targets (repeated calls to user increases API activity)
 - [ ] Complete runtime (IN PROGRESS)
-      - Non-initialization collection and management of snapshots, timings, and analysis 
+- Non-initialization collection and management of snapshots, timings, and analysis 
 - [ ] Ensure key uniqueness and persistency in DB / [target library](targetlib.py) (IN PROGRESS)
-      - Non-initialization collection and management of snapshots, timings, and analysis
+- Non-initialization collection and management of snapshots, timings, and analysis
 - [ ] Data request form (IN PROGRESS)
-      - HTML page for custom data retrieval/analysis requests plus autonomous visualizations
+- HTML page for custom data retrieval/analysis requests plus autonomous visualizations
 ### Recent progress
  See (IN PROGRESS)
 ### General Notes

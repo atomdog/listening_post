@@ -4,8 +4,11 @@ import sentimentSample
 #import chunkGen
 import matplotlib.pyplot as plt
 import matplotlib.dates
+import seaborn as sns
 from datetime import datetime
 import re
+import json
+
 
 import more_itertools as itools
 from multiprocessing import Pool
@@ -25,8 +28,12 @@ def generate_tweet_timeline_x(timestring):
 def coresent(clist):
     returnlist = []
     for iterat in range(0, len(clist)):
-        returnlist.append(sentimentSample.retsent(clist[iterat]))
+        q = sentimentSample.retsent(clist[iterat])
+        returnlist.append(q)
+        print(q)
+        print(str((iterat/len(clist)*100))+"%")
     return(returnlist)
+
 def core_rip_sentiment(cores):
     tweet_row = birdnest.t_dump_by_row('text')
     author = birdnest.t_dump_by_row('authorUSN')
@@ -37,11 +44,32 @@ def core_rip_sentiment(cores):
     tweetsforcores = [list(c) for c in itools.divide(cores, tweet_row)]
     with Pool(cores) as p:
         returnedlist = p.map(coresent, tweetsforcores)
-    returnedlist = returnedlist.join()
     retval = []
     for x in range(0, len(returnedlist)):
-        retval+= returnedlist[x]
+        retval.extend(returnedlist[x])
     return(retval)
+
+def stash_sentiment(di):
+    for keyq in di:
+        for x in range(0, len(di[keyq]['x'])):
+            di[keyq]['x'][x] = str(di[keyq]['x'][x])
+    with open('memory/analysis/sentimentstash.json', 'w') as outfile:
+        json.dump(di, outfile)
+
+def open_sentiment():
+    with open('json_data.json') as json_file:
+        data = json.load(json_file)
+    for keyq in data:
+        for x in range(0, len(data[keyq]['x'])):
+            data[keyq]['x'][x] = generate_tweet_timeline_x(data[keyq]['x'][x])
+    return(data)
+
+def vis_sentiment(di):
+    sns.set(style="darkgrid")
+    for key in graph_dict:
+        fig = sns.kdeplot(graph_dict[key]["x"], graph_dict[key]["y"], shade=True)
+    plt.legend()
+    plt.show()
 
 def sentiment_by_author_ripped():
     graph_dict = {}
@@ -51,24 +79,25 @@ def sentiment_by_author_ripped():
     time = birdnest.t_dump_by_row('time')
     rippedlist = core_rip_sentiment(15)
     for x in range(0, len(tweet_row)):
-        if( not (author[x][0] in graph_dict)):
+        if(not (author[x][0] in graph_dict)):
             print("Creating dict for author: " + author[x][0])
             graph_dict[author[x][0]] = {"x": [], "y": []}
-        #append x
+
         timex = generate_tweet_timeline_x(time[x][0])
         graph_dict[author[x][0]]["x"].append(timex)
-        #append sentiment
+
         sent = rippedlist[x]
         if(sent == 'Positive'):
             graph_dict[author[x][0]]["y"].append(1)
         elif(sent == 'Negative'):
-            graph_dict[author[x][0]]["y"].append(1)
+            graph_dict[author[x][0]]["y"].append(-1)
         else:
             graph_dict[author[x][0]]["y"].append(0)
-    for key in graph_dict:
-        plt.plot(graph_dict[key]["x"], graph_dict[key]["y"], label=key)
-    plt.legend()
-    plt.show()
+    stash_sentiment(graph_dict)
+    vis_sentiment(graph_dict)
+
+
+
 
 def sentiment_by_author_single_core():
     graph_dict = {}
@@ -107,4 +136,4 @@ def chunk_by_tweet():
         next(spGen)
         print(spGen.send(tweet_row[x][0])[2])
 #chunk_by_tweet()
-core_rip_sentiment(15)
+sentiment_by_author_ripped()

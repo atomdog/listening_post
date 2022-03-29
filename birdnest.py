@@ -168,11 +168,12 @@ def create_empty_logs():
     u_create_log(qU)
     t_create_log(qT)
     e_create_log(qE)
-    
+
 def snapshot():
     now = datetime.now()
     dt_string = now.strftime("%d:%m:%Y:%H:%M:%S")
     shutil.copy("memory/twitter/edgeStore.h5", "memory/twitter/edgeStore_" + dt_string + ".h5")
     shutil.copy("memory/twitter/userStore.h5", "memory/twitter/userStore_" + dt_string + ".h5")
     shutil.copy("memory/twitter/tweetStore.h5", "memory/twitter/tweetStore_" + dt_string + ".h5")
+
 create_empty_logs()

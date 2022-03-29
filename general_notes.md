@@ -9,3 +9,7 @@
 
 - Mark Fincham
 - Reginald Bolding (D)
+
+##Analysis direction
+- All claim to be making an effort to unify
+- Topics, sentiment over time

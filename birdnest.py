@@ -175,5 +175,5 @@ def snapshot():
     shutil.copy("memory/twitter/edgeStore.h5", "memory/twitter/edgeStore_" + dt_string + ".h5")
     shutil.copy("memory/twitter/userStore.h5", "memory/twitter/userStore_" + dt_string + ".h5")
     shutil.copy("memory/twitter/tweetStore.h5", "memory/twitter/tweetStore_" + dt_string + ".h5")
-
+#snapshot()
 #create_empty_logs()

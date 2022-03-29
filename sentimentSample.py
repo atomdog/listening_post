@@ -66,7 +66,8 @@ def train_model():
 def retsent(inptweet):
     classifier = pickle.load(open('memory/models/sentimentmodel.sav', 'rb'))
     custom_tokens = remove_noise(word_tokenize(inptweet))
-    print(classifier.classify(dict([token, True] for token in custom_tokens)))
+    sentlist = ((classifier.classify(dict([token, True] for token in custom_tokens))))
+    return(sentlist)
 
 #train_model()
 #retsent("I feel really super good today.")

@@ -2,7 +2,7 @@
 import hashlib
 import _pickle as pickle
 import inspect#needed?
-import dateLib
+
 import json
 import nltk
 from nltk.corpus import stopwords
@@ -387,7 +387,7 @@ class sw:
         vectorized.track = self.semTrack
         vectorized.frame = sentFrame
         vectorized.text = sentFrame['plaintext']
-        vectorized.t = dateLib.getNow()
+    
         #if we have a sentence type prediction, fill it in
         if(sentFrame['sent_type_pred']!=None):
             vectorized.type = sentFrame['sent_type_pred']

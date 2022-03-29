@@ -1,4 +1,3 @@
-#wernicke.py
 
 #non-native libraries
 import sys
@@ -7,13 +6,13 @@ import hashlib
 import time
 
 #adjust system path to include Language folder
-sys.path.insert(0, './Language/STClassifier')
+
 sys.path.insert(0, './Language')
 
 #import native generator libraries
 
-import STGenerator
-import spacyGenerator
+import chunkGen
+import chunkGen
 import AdjectiveCorpex
 
 def construct_empty_sentence_frame():
@@ -43,16 +42,9 @@ def create_hash_id(wtext, wform):
 def runnable():
     valid_corpexed = ['JJ', 'advmod', 'adj', 'WRB' 'JJ', 'JJR', 'JJS', 'advmod']
     print("< ------- Wernicke Area Initializing ------ >")
-    #Initialize Sentence Type Generator
-    STGen = STGenerator.STClassGen()
-    #Wait until generator is alive
-    while(next(STGen)!=True):
-        time.sleep(0.1)
-    print("< ------- Sentence Type Gen Online ------ >")
-
 
     #Initialize Spacy Generator
-    spGen = spacyGenerator.chunkGenerator()
+    spGen = chunkGen.chunkGenerator()
 
     #wait until generator is alive
     while(next(spGen)!=True):
@@ -60,7 +52,7 @@ def runnable():
     print("< ------- Spacy Gen Online ------ >")
 
     #Flush generator lines
-    currentSTPred = next(STGen)
+
     currentspGen = next(spGen)
     yield(True)
     while(True):
@@ -72,13 +64,12 @@ def runnable():
         if(sentence is not None):
             speaker = sentence[0]
             #get next from each generator
-            next(STGen)
             next(spGen)
 
             f = sentence[1]
 
             #ship input to generators
-            currentSTPred = STGen.send(f)
+
             currentspGen = spGen.send(f)
             #print(currentSTPred)
 
@@ -98,8 +89,8 @@ def runnable():
             #construct sentence frame
             #sentence_frame ["text"]
 
-            if(currentspGen!=None and currentSTPred!=None):
-                sentence_frame['sent_type_pred'] = currentSTPred[0]
+            if(currentspGen!=None):
+                sentence_frame['sent_type_pred'] = 0
                 sentence_frame['emotional_charge_vector'] = emotional_charge_vector
                 sentence_frame['plaintext'] = currentspGen[3]
                 sentence_frame['entities'] = currentspGen[0]

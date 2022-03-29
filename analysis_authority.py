@@ -8,9 +8,12 @@ import seaborn as sns
 from datetime import datetime
 import re
 import json
-
-
+import pandas as pd
+import numpy as np
+from wordcloud import WordCloud
+import chunkGen
 import more_itertools as itools
+import textflow
 from multiprocessing import Pool
 #THIS IS A TERRIBLE FUNCTION IT NEEDS TO BE CHANGED
 def generate_tweet_timeline_x(timestring):
@@ -57,7 +60,7 @@ def stash_sentiment(di):
         json.dump(di, outfile)
 
 def open_sentiment():
-    with open('json_data.json') as json_file:
+    with open('memory/analysis/sentimentstash.json') as json_file:
         data = json.load(json_file)
     for keyq in data:
         for x in range(0, len(data[keyq]['x'])):
@@ -65,9 +68,13 @@ def open_sentiment():
     return(data)
 
 def vis_sentiment(di):
-    sns.set(style="darkgrid")
-    for key in graph_dict:
-        fig = sns.kdeplot(graph_dict[key]["x"], graph_dict[key]["y"], shade=True)
+    fig, ax = plt.subplots()
+    colors  = sns.color_palette(None, len(di))
+    it = 0
+    for key in di:
+        color = colors[it]
+
+
     plt.legend()
     plt.show()
 
@@ -82,7 +89,6 @@ def sentiment_by_author_ripped():
         if(not (author[x][0] in graph_dict)):
             print("Creating dict for author: " + author[x][0])
             graph_dict[author[x][0]] = {"x": [], "y": []}
-
         timex = generate_tweet_timeline_x(time[x][0])
         graph_dict[author[x][0]]["x"].append(timex)
 
@@ -94,10 +100,6 @@ def sentiment_by_author_ripped():
         else:
             graph_dict[author[x][0]]["y"].append(0)
     stash_sentiment(graph_dict)
-    vis_sentiment(graph_dict)
-
-
-
 
 def sentiment_by_author_single_core():
     graph_dict = {}
@@ -136,4 +138,25 @@ def chunk_by_tweet():
         next(spGen)
         print(spGen.send(tweet_row[x][0])[2])
 #chunk_by_tweet()
-sentiment_by_author_ripped()
+#sentiment_by_author_ripped()
+graph_dict = open_sentiment()
+
+class language_loop:
+    def __init__(self):
+        print("< ------- Text Flow Initializing ------ >")
+        self.flow = textflow.stream().routine()
+        self.seg_s = chunkGen.docprocgen()
+        while(next(self.flow)!=True):
+            time.sleep(0.1)
+        while(next(self.seg_s)!=True):
+            time.sleep(0.1)
+        print("< ------- Text Flow Online ------ >")
+    def read_complete_tweets(self):
+        tweet_row = birdnest.t_dump_by_row('text')
+        author = birdnest.t_dump_by_row('authorUSN')
+        time = birdnest.t_dump_by_row('time')
+        for x in range(0, len(tweet_row)):
+            self.flow.send([author[x][0], tweet_row[x][0]])
+
+q = language_loop()
+q.read_complete_tweets()

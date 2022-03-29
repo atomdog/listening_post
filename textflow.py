@@ -22,6 +22,7 @@ class stream():
 
     def routine(self):
         print("<--- Thawing Semantic Web --->")
+        self.webo = semanticweb.torch_web()
         self.webo = semanticweb.thaw_web()
         print("<--- Semantic Web Thawed --->")
         #instantiate coroutines
@@ -29,7 +30,7 @@ class stream():
         self.wern = mod_wern.runnable()
         while(next(self.wern)!=True):
             time.sleep(0.1)
-        print("<--- Flow to Wernicke Initialized --->")
+        print("<--- Flow to w Initialized --->")
         #init coroutines
         self.currentSF = next(self.wern)
         #enter loop
@@ -46,7 +47,7 @@ class stream():
             if(fpack is not None):
                 fpack[1] = text = re.sub(r"(@\[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)|^rt|", "", fpack[1])
                 #f = fpack[1]
-                #send to wernicke
+                #send to w
                 next(self.wern)
 
 
@@ -55,9 +56,9 @@ class stream():
                 #print(self.currentSF)
                 nom = self.currentSF
                 if(nom == None):
-                    print("<---- ERR: WERNICKE OFFLINE ---->")
+                    print("<---- ERR: w OFFLINE ---->")
 
-                #check if wernicke returned a viable processed sentence frame
+                #check if w returned a viable processed sentence frame
                 if(nom!= True and nom != None and nom['plaintext']!= None and len(nom['plaintext'])!=0):
                     #encounter in semantic web
                     self.webo.sentenceEncounter(self.currentSF, None)

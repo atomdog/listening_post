@@ -4,8 +4,8 @@
 - Jody Hice (GA)
 - Brad Raffensperger (Incumbent GA)
 
-- Kristina Karamo
-- Jocelyn Benson
+- Kristina Karamo (MI)  
+- Jocelyn Benson (Incumbent )
 
-- Mark Finchem
+- Mark Fincham
 - Reginald Bolding (D)

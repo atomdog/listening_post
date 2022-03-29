@@ -19,6 +19,8 @@ class target:
         self.last_collected_twitter = None
         self.earliest_tweet = None
         self.own_twitter_bio = ""
+    #         |
+    #fix here v
     def fuzz_self_init(self):
         checked = ""
         for key in self.meta:

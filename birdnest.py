@@ -104,13 +104,13 @@ def t_append_log(id, time, text, author, liked, retweets):
     h5file = tables.open_file("memory/twitter/tweetStore.h5", mode="a", title="twit2")
     table = h5file.root.Null.Null
     r = table.row
-    print("Storing Tweet: @" + str(author) + ": " + str(text) +"("+str(ID_B)+")")
-    r["ID"] = id
-    r["time"] = time
-    r["text"] = text
-    r["author"] = author
-    r["likesNum"] = liked
-    r['retweetsNum']
+    print("Storing Tweet: @" + str(author) + ": " + str(text) +"("+str(id)+")")
+    r["authorID"] = id.encode('utf-8')
+    r["time"] = str(time).encode('utf-8')
+    r["text"] = text.encode('utf-8')
+    r["authorUSN"] = author.encode('utf-8')
+    r["likesNum"] = str(liked).encode('utf-8')
+    r['retweetsNum'] = str(retweets).encode('utf-8')
     r.append()
     table.flush()
     h5file.close()
@@ -176,4 +176,4 @@ def snapshot():
     shutil.copy("memory/twitter/userStore.h5", "memory/twitter/userStore_" + dt_string + ".h5")
     shutil.copy("memory/twitter/tweetStore.h5", "memory/twitter/tweetStore_" + dt_string + ".h5")
 
-create_empty_logs()
+#create_empty_logs()

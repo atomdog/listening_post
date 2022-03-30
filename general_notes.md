@@ -13,6 +13,8 @@
 ##Analysis direction
 - All claim to be making an effort to unify
 - Topics, sentiment over time
+- Lay users next to each other, y axis is according to time and x is according to user, each vector has a topic cluster
+- View shared topics and also over time
 
 
 ##notes

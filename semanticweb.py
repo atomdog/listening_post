@@ -122,6 +122,7 @@ class sem_vector:
         self.obj = None
         self.relation = None
         self.sentiment = None
+        self.topic_clustering = None
 
     def resolve_chunk_indices(self):
         #print(self.frame['chunks'])
@@ -221,13 +222,9 @@ class sw:
         self.init_special_nodes()
         self.e_types = [    "CARDINAL", "DATE",  "EVENT",  "FAC",        "GPE",       "LANGUAGE", "LAW",   "LOC",       "MONEY",    "NORP",   "ORDINAL",  "ORG",           "PERCENT",   "PERSON", "PRODUCT", "QUANTITY",     "TIME",  "WORK_OF_ART"]
         self.type_lookup = {"CARDINAL":0,"DATE":2,"EVENT":4,"FAC":6, "GPE":8, "LANGUAGE":10, "LAW":12, "LOC":14, "MONEY":16, "NORP":18, "ORDINAL":20, "ORG":22, "PERCENT":24, "PERSON":26, "PRODUCT":28, "QUANTITY":30, "TIME":32, "WORK_OF_ART":34}
-        self.root_rep = []
-
-
     def init_special_nodes(self):
         types = [    "CARDINAL", "DATE",  "EVENT",  "FAC",        "GPE",       "LANGUAGE", "LAW",   "LOC",       "MONEY",    "NORP",   "ORDINAL",  "ORG",           "PERCENT",   "PERSON", "PRODUCT", "QUANTITY",     "TIME",  "WORK_OF_ART"]
         types_name = ["numbers", "dates", "events", "facilities", "countries", "language", "laws",  "locations", "monetary", "groups", "order",    "organization", "percentage", "people", "objects", "measurements", "times", "titles"]
-
         ctrack = []
         #make node for each type
 
@@ -387,7 +384,6 @@ class sw:
         vectorized.track = self.semTrack
         vectorized.frame = sentFrame
         vectorized.text = sentFrame['plaintext']
-
         #if we have a sentence type prediction, fill it in
         if(sentFrame['sent_type_pred']!=None):
             vectorized.type = sentFrame['sent_type_pred']
@@ -396,22 +392,7 @@ class sw:
         vectorized.sentiment = sentiment
         #slide in vector to web
         self.semWeb.append(vectorized)
-        #self.update_root_rep()
-        #clear semTrack
         self.semTrack = []
-
-
-
-    #resolve relevancies
-    #match to 'pool' of relevant information in profiles, states, previous webs
-    #vertically insert
-    #find occurence of each node's hash in web
-
-    #try iterating upwards until find nearest matching node and then connecting the two
-    #rather than connecting all at once
-
-    #stop connecting stopwords
-
     def spinentitytrace(self):
         self.traces = []
         totrace = {}

@@ -426,6 +426,7 @@ class sw:
             if(self.nodeList[iterator].text in nltk.corpus.stopwords.words('english') or self.nodeList[iterator].text == " "):
                 pass
             else:
+                #+ O(n)
                 totracelist = self.find_web_index_by_hash(self.nodeList[iterator].semHash)
                 for iterator2 in range(0, len(totracelist)):
                     self.semWeb[totracelist[iterator2][1]].track[totracelist[iterator2][0]].individual_traces = []

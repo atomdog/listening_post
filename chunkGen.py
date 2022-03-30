@@ -37,7 +37,6 @@ def docprocgen():
     while(True):
         val = yield
         #print(val)
-
         if(val is not None):
             pred = sentsegment(val, model)
             yield(pred)

@@ -144,7 +144,8 @@ graph_dict = open_sentiment()
 class language_loop:
     def __init__(self):
         print("< ------- Text Flow Initializing ------ >")
-        self.flow = textflow.stream().routine()
+        self.tfobj = textflow.stream()
+        self.flow = self.tfobj.routine()
         self.seg_s = chunkGen.docprocgen()
         while(next(self.flow)!=True):
             time.sleep(0.1)
@@ -152,11 +153,20 @@ class language_loop:
             time.sleep(0.1)
         print("< ------- Text Flow Online ------ >")
     def read_complete_tweets(self):
+        self.tfobj.spin_trace()
         tweet_row = birdnest.t_dump_by_row('text')
         author = birdnest.t_dump_by_row('authorUSN')
         time = birdnest.t_dump_by_row('time')
+        graph_dict = open_sentiment()
+        totaltweetsentlist = []
+        for key in graph_dict:
+            for x in range(0, len(graph_dict[key]['y'])):
+                totaltweetsentlist.append(int(graph_dict[key]['y'][x]))
         for x in range(0, len(tweet_row)):
-            self.flow.send([author[x][0], tweet_row[x][0]])
-
+            self.flow.send([author[x][0], tweet_row[x][0], totaltweetsentlist[x]])
+        self.tfobj.spin_trace()
+    def spin(self):
+        self.tfobj.spin_trace()
 q = language_loop()
 q.read_complete_tweets()
+q.spin()

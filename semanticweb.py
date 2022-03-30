@@ -122,6 +122,7 @@ class sem_vector:
         self.subj = None
         self.obj = None
         self.relation = None
+        self.sentiment = None
 
     def resolve_chunk_indices(self):
         #print(self.frame['chunks'])
@@ -142,7 +143,7 @@ class sem_vector:
                     if(self.track[x].text in chunks):
                         ci.append(x)
             self.chunk_indices = ci
-        print(chunks)
+        #print(chunks)
         return(self.chunk_indices)
 
     def entify(self):
@@ -264,7 +265,7 @@ class sw:
             if(bookmark[x].qual == "node"):
                 current_root_rep.append(bookmark[x].text)
         self.root_rep.append(current_root_rep)
-        print(self.root_rep)
+        #print(self.root_rep)
 
 
     def recent_entry(self):
@@ -370,7 +371,7 @@ class sw:
         self.semTrack.append(q)
 
     #encounter sentence, words into nodes, create
-    def sentenceEncounter(self, sentFrame, sourceFrame):
+    def sentenceEncounter(self, sentFrame, sourceFrame, sentiment):
         if(sentFrame == None):
             return False
         #print(sentFrame['plaintext'])
@@ -387,14 +388,16 @@ class sw:
         vectorized.track = self.semTrack
         vectorized.frame = sentFrame
         vectorized.text = sentFrame['plaintext']
-    
+
         #if we have a sentence type prediction, fill it in
         if(sentFrame['sent_type_pred']!=None):
             vectorized.type = sentFrame['sent_type_pred']
         vectorized.entify()
+        vectorized.speaker = sentFrame['speaker']
+        vectorized.sentiment = sentiment
         #slide in vector to web
         self.semWeb.append(vectorized)
-        self.update_root_rep()
+        #self.update_root_rep()
         #clear semTrack
         self.semTrack = []
 
@@ -414,6 +417,7 @@ class sw:
 
     def spintrace(self):
         self.traces = []
+        print("<------ Spinning traces ----->")
         for iterator in range(0, len(self.nodeList)):
             cx = self.nodeList[iterator].node_x
             cy = self.nodeList[iterator].node_y
@@ -471,11 +475,11 @@ class sw:
         key = self.type_lookup[type]
         elist = self.semWeb[0].track[key].individual_traces
         print(key)
-        print(elist)
+        #print(elist)
         aggregated =[]
         for x in range(0, len(elist)):
-            print(elist[x].by)
-            aggregated.append(self.semWeb[elist[x].by].track[elist[x].bx].text)
+            #print(elist[x].by)
+            aggregated.append([self.semWeb[elist[x].by].speaker,self.semWeb[elist[x].by].sentiment, self.semWeb[elist[x].by].track[elist[x].bx].text])
         return(aggregated)
 
     def aggregate_recent_conversation(self):

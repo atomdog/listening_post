@@ -414,64 +414,45 @@ class sw:
 
     def spinentitytrace(self):
         self.traces = []
+        totrace = {}
         for iterator in range(0, len(self.nodeList)):
             print(str(iterator)+ " of " + str(len(self.nodeList))+" (Entities)")
             cx = self.nodeList[iterator].node_x
             cy = self.nodeList[iterator].node_y
             self.nodeList[iterator].individual_traces = []
             self.semWeb[cy].track[cx].individual_traces = []
-            if(self.nodeList[iterator].text in nltk.corpus.stopwords.words('english') or self.nodeList[iterator].text == " "):
+            if((self.nodeList[iterator].text in nltk.corpus.stopwords.words('english') or self.nodeList[iterator].text == " ") and self.nodeList[iterator].entity_tag!='none'):
                 pass
             else:
                 if(self.nodeList[iterator].entity_tag!='none' and self.nodeList[iterator].qual != 'entity_node'):
                     targetx = self.type_lookup[self.nodeList[iterator].entity_tag]
-                    #print(targetx)
-                    cnode = self.nodeList[iterator]
+                    print(targetx)
+                    #cnode = self.nodeList[iterator]
                     #print(self.semWeb[0].track[targetx].entity_tag + ": " + cnode.text)
                     #print(str(cnode.node_x) + ", " + str(cnode.node_y) + "--->" + str(targetx) + ', 0')
-                    self.semWeb[cnode.node_y].track[cnode.node_x].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, 0))
-                    self.semWeb[0].track[targetx].individual_traces.append(sem_trace(targetx, 0, cnode.node_x, cnode.node_y))
-                    self.nodeList[iterator].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, 0))
-                    self.traces.append(sem_trace(cnode.node_x,cnode.node_y, targetx, 0))
-                self.export_to_json()
+                    #self.semWeb[cnode.node_y].track[cnode.node_x].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, 0))
+                    #self.semWeb[0].track[targetx].individual_traces.append(sem_trace(targetx, 0, cnode.node_x, cnode.node_y))
+                    #self.nodeList[iterator].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, 0))
+                    #self.traces.append(sem_trace(cnode.node_x,cnode.node_y, targetx, 0))
+                    if(not(self.nodeList[iterator].text in totrace)):
+                        totrace[self.nodeList[iterator].text] = []
+                        totrace[self.nodeList[iterator].text].append(iterator)
+                    else:
+                        totrace[self.nodeList[iterator].text].append(iterator)
+        for key in totrace:
+            if(len(totrace[key])>1):
+                for x in range(1, len(totrace[key])):
+                    cnode = self.nodeList[totrace[key][x]]
+                    targetx = self.nodeList[totrace[key][x-1]].node_x
+                    targety = self.nodeList[totrace[key][x-1]].node_y
+                    self.semWeb[cnode.node_y].track[cnode.node_x].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, targety))
+                    self.semWeb[targety].track[targetx].individual_traces.append(sem_trace(targetx, targety, cnode.node_x, cnode.node_y))
+                    self.nodeList[totrace[key][x]].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, targety))
+                    self.traces.append(sem_trace(cnode.node_x,cnode.node_y, targetx, targety))
+        print(totrace)
+        self.export_to_json()
 
-    def spintrace(self):
-        self.traces = []
-        for iterator in range(0, len(self.nodeList)):
-            print(str(iterator)+ " of " + str(len(self.nodeList))+" ")
-            cx = self.nodeList[iterator].node_x
-            cy = self.nodeList[iterator].node_y
-            self.nodeList[iterator].individual_traces = []
-            self.semWeb[cy].track[cx].individual_traces = []
-            if(self.nodeList[iterator].text in nltk.corpus.stopwords.words('english') or self.nodeList[iterator].text == " "):
-                pass
-            else:
-                #+ O(n)
-                totracelist = self.find_web_index_by_hash(self.nodeList[iterator].semHash)
-                # + O(num matches)
-                for iterator2 in range(0, len(totracelist)):
-                    self.semWeb[totracelist[iterator2][1]].track[totracelist[iterator2][0]].individual_traces = []
-                    for iterator3 in range(0, len(totracelist)):
-                        if(iterator2!=iterator3 and len(totracelist[iterator2])>1 and len(totracelist[iterator3])>1):
-                            ax = totracelist[iterator2][0]
-                            ay = totracelist[iterator2][1]
-                            bx = totracelist[iterator3][0]
-                            by = totracelist[iterator3][1]
-                            self.traces.append(sem_trace(ax, ay, bx, by))
-                            self.semWeb[by].track[bx].individual_traces.append(sem_trace(bx,by,ax,ay))
-                            self.semWeb[ay].track[ax].individual_traces.append(sem_trace(ax,ay,bx,by))
-                            self.nodeList[iterator].individual_traces.append(sem_trace(bx,by,ax,ay))
-            if(self.nodeList[iterator].entity_tag!='none' and self.nodeList[iterator].qual != 'entity_node'):
-                targetx = self.type_lookup[self.nodeList[iterator].entity_tag]
-                #print(targetx)
-                cnode = self.nodeList[iterator]
-                #print(self.semWeb[0].track[targetx].entity_tag + ": " + cnode.text)
-                #print(str(cnode.node_x) + ", " + str(cnode.node_y) + "--->" + str(targetx) + ', 0')
-                self.semWeb[cnode.node_y].track[cnode.node_x].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, 0))
-                self.semWeb[0].track[targetx].individual_traces.append(sem_trace(targetx, 0, cnode.node_x, cnode.node_y))
-                self.nodeList[iterator].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, 0))
-                self.traces.append(sem_trace(cnode.node_x,cnode.node_y, targetx, 0))
-            self.export_to_json()
+
 
 
     def aggregate_by_noun_chunks(self, row_index):
@@ -498,7 +479,7 @@ class sw:
     def get_by_entity(self, type):
         key = self.type_lookup[type]
         elist = self.semWeb[0].track[key].individual_traces
-        print(key)
+        #print(key)
         #print(elist)
         aggregated =[]
         for x in range(0, len(elist)):

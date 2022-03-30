@@ -161,7 +161,6 @@ class language_loop:
                 totaltweetsentlist.append(int(graph_dict[key]['y'][x]))
         for x in range(0, len(tweet_row)):
             self.flow.send([author[x][0], tweet_row[x][0], totaltweetsentlist[x]])
-        self.tfobj.spin_trace()
     def spin(self):
         self.tfobj.spin_trace()
 

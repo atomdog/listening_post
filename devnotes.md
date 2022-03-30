@@ -46,5 +46,29 @@
 - Hosting plus SSL secured for webpage.
 - Some temporary changes to authority just to focus for the pitch
 ## Thursday, March 31, 2022
+- [ ] Convert Twitter interface calls into generators to return single Tweets (IN PROGRESS)
+- Undesirable behavior in twitter interface slows down program
+- [ ] Extensive documentation
+- Code is cryptic, esoteric, and confusing in both appearance and function
+- [x] Streamline initialization
+- Inefficiences in creating targets (repeated calls to user increases API activity)
+- [ ] Complete runtime (IN PROGRESS)
+- Non-initialization collection and management of snapshots, timings, and analysis
+- [ ] Ensure key uniqueness and persistency in DB / [target library](targetlib.py) (IN PROGRESS)
+- Non-initialization collection and management of snapshots, timings, and analysis
+- [ ] Data request form
+- [ ] HTML page for custom data retrieval/analysis requests plus autonomous visualizations  (In progress)
+### Recent progress
+- Tons of bugs fixed in [acquisition authority](aquisition_authority.py)
+- Renamed and reorganized
+- Completed many analysis functions
+- Added LFS
+- Added multiprocessing to accelerate sentiment computation
+- Added [semantic web](semanticweb.py) and [auxiliary coroutines](textflow.py)
+- Added [visualization webpage](interface/assets/interface.html)
 
+### General Notes
+- Moving more slowly than intended, collecting data nonetheless, improving system robustness.
+- Hosting plus SSL secured for webpage.
+- Some temporary changes to authority just to focus for the pitch
 ## Thursday, April 5, 2022

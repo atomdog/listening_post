@@ -428,6 +428,7 @@ class sw:
             else:
                 #+ O(n)
                 totracelist = self.find_web_index_by_hash(self.nodeList[iterator].semHash)
+                # + O(num matches)
                 for iterator2 in range(0, len(totracelist)):
                     self.semWeb[totracelist[iterator2][1]].track[totracelist[iterator2][0]].individual_traces = []
                     for iterator3 in range(0, len(totracelist)):
@@ -439,6 +440,7 @@ class sw:
                             self.traces.append(sem_trace(ax, ay, bx, by))
                             self.semWeb[by].track[bx].individual_traces.append(sem_trace(bx,by,ax,ay))
                             self.semWeb[ay].track[ax].individual_traces.append(sem_trace(ax,ay,bx,by))
+                            self.nodeList[iterator].individual_traces.append(sem_trace(bx,by,ax,ay))
             if(self.nodeList[iterator].entity_tag!='none' and self.nodeList[iterator].qual != 'entity_node'):
                 targetx = self.type_lookup[self.nodeList[iterator].entity_tag]
                 #print(targetx)
@@ -449,7 +451,6 @@ class sw:
                 self.semWeb[0].track[targetx].individual_traces.append(sem_trace(targetx, 0, cnode.node_x, cnode.node_y))
                 self.nodeList[iterator].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, 0))
                 self.traces.append(sem_trace(cnode.node_x,cnode.node_y, targetx, 0))
-
 
     def aggregate_by_noun_chunks(self, row_index):
         print("<--- Retrieving relevant sentences via noun chunks for:   -->")

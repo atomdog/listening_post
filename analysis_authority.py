@@ -73,8 +73,6 @@ def vis_sentiment(di):
     it = 0
     for key in di:
         color = colors[it]
-
-
     plt.legend()
     plt.show()
 

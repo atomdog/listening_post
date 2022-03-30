@@ -20,8 +20,11 @@ class stream():
     def subject_swap(self):
         pass
     def spin_trace(self):
+        semanticweb.freeze_web(self.webo)
         print("< ------- Spinning Traces ------ >")
+        self.webo.spinentitytrace()
         self.webo.spintrace()
+
         print("< ------- Traces Spun ------ >")
         semanticweb.freeze_web(self.webo)
         print(self.webo.get_by_entity("PERSON"))
@@ -31,7 +34,6 @@ class stream():
     def routine(self):
         print("<--- Thawing Semantic Web --->")
         #self.webo = semanticweb.torch_web()
-        self.webo = semanticweb.torch_web()
         self.webo = semanticweb.thaw_web()
         print("<--- Semantic Web Thawed --->")
         #instantiate coroutines

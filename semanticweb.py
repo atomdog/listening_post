@@ -23,7 +23,6 @@ def torch_web():
     pickle.dump(web_cl, fh)
 
 def thaw_web():
-    torch_web()
     fh = open("memory/serialized-instances/chillyWeb.obj", 'rb')
     wewb = pickle.load(fh)
     return(wewb)
@@ -413,12 +412,33 @@ class sw:
 
     #stop connecting stopwords
 
-
+    def spinentitytrace(self):
+        self.traces = []
+        for iterator in range(0, len(self.nodeList)):
+            print(str(iterator)+ " of " + str(len(self.nodeList))+" (Entities)")
+            cx = self.nodeList[iterator].node_x
+            cy = self.nodeList[iterator].node_y
+            self.nodeList[iterator].individual_traces = []
+            self.semWeb[cy].track[cx].individual_traces = []
+            if(self.nodeList[iterator].text in nltk.corpus.stopwords.words('english') or self.nodeList[iterator].text == " "):
+                pass
+            else:
+                if(self.nodeList[iterator].entity_tag!='none' and self.nodeList[iterator].qual != 'entity_node'):
+                    targetx = self.type_lookup[self.nodeList[iterator].entity_tag]
+                    #print(targetx)
+                    cnode = self.nodeList[iterator]
+                    #print(self.semWeb[0].track[targetx].entity_tag + ": " + cnode.text)
+                    #print(str(cnode.node_x) + ", " + str(cnode.node_y) + "--->" + str(targetx) + ', 0')
+                    self.semWeb[cnode.node_y].track[cnode.node_x].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, 0))
+                    self.semWeb[0].track[targetx].individual_traces.append(sem_trace(targetx, 0, cnode.node_x, cnode.node_y))
+                    self.nodeList[iterator].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, 0))
+                    self.traces.append(sem_trace(cnode.node_x,cnode.node_y, targetx, 0))
+                self.export_to_json()
 
     def spintrace(self):
         self.traces = []
-        print("<------ Spinning traces ----->")
         for iterator in range(0, len(self.nodeList)):
+            print(str(iterator)+ " of " + str(len(self.nodeList))+" ")
             cx = self.nodeList[iterator].node_x
             cy = self.nodeList[iterator].node_y
             self.nodeList[iterator].individual_traces = []
@@ -451,6 +471,8 @@ class sw:
                 self.semWeb[0].track[targetx].individual_traces.append(sem_trace(targetx, 0, cnode.node_x, cnode.node_y))
                 self.nodeList[iterator].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, 0))
                 self.traces.append(sem_trace(cnode.node_x,cnode.node_y, targetx, 0))
+            self.export_to_json()
+
 
     def aggregate_by_noun_chunks(self, row_index):
         print("<--- Retrieving relevant sentences via noun chunks for:   -->")

@@ -69,5 +69,6 @@ def retsent(inptweet):
     sentlist = ((classifier.classify(dict([token, True] for token in custom_tokens))))
     return(sentlist)
 
+
 #train_model()
 #retsent("I feel really super good today.")

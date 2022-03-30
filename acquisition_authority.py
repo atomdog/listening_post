@@ -131,10 +131,28 @@ class authority:
                     birdnest.t_append_log(tweets[y][0],tweets[y][1],tweets[y][2],c.twitter_username, tweets[y][4], tweets[y][3])
                     birdnest.e_append_log(c.twitter_user_pointer, tweets[y][0], 'tweeted')
 
+    def author_max_tweets(self, username):
+        max_retweets = 0
+        mrindex = 0
+        max_likes = 0
+        mlindex = 0
+        tweets = self.controller.log_user_tweets(username)
+        for x in range(0, len(tweets)):
+            if(int(tweets[x][3][0])>max_retweets):
+                max_retweets = int(tweets[x][3][0])
+                mrindex = x
+            if(int(tweets[x][4][0])>max_retweets):
+                max_likes = int(tweets[x][4][0])
+                mlindex = x
+        print(tweets[mlindex])
+        print(tweets[mrindex])
+
+
 #q = torch_authority()
 q = thaw_authority()
-q.load_targets()
+#q.load_targets()
 #q.create_target_users()
-q.first_pass_tweets()
+#q.first_pass_tweets()
+q.author_max_tweets("@CongressmanHice")
 #q.first_pass_following()
 #q.first_pass_followers()

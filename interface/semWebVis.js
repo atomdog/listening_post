@@ -15,6 +15,7 @@ class node
   }
   display()
   {
+    stroke(153);
     ellipse(this.x, this.y, this.diameter, this.diameter);
     text(this.text_value, this.x, this.y);
   }
@@ -31,7 +32,12 @@ class edge
   }
   display()
   {
-    stroke(153);
+    if(this.endy < 2000)
+    {
+      stroke(color(this.endx*this.endx%255, this.endx*this.endx%255, (this.endx+this.endx)%255));
+    }
+
+
     line(this.startx,this.starty,this.endx,this.endy);
   }
 }
@@ -56,8 +62,8 @@ function setup()
     if(key.includes("-"))
     {
       coords = key.split("-");
-      x = parseInt(coords[0]);
-      y =  parseInt(coords[1]);
+      x = parseInt(coords[0])*2;
+      y =  parseInt(coords[1])*2;
       text = prison[key]['text'];
       hash = prison[key]['hash'];
       node_list[ncounter] = new node(x,y,text,hash)
@@ -71,11 +77,11 @@ function setup()
 
     s_coords = prison["edges"][key]['startkey'].split("-");
     e_coords = prison["edges"][key]['endkey'].split("-");
-    edge_list[ecounter] = new edge(parseInt(s_coords[0]),parseInt(s_coords[1]),parseInt(e_coords[0]),parseInt(e_coords[1]))
+    edge_list[ecounter] = new edge(parseInt(s_coords[0]*2),parseInt(s_coords[1]*2),parseInt(e_coords[0]*2),parseInt(e_coords[1]*2))
     ecounter= ecounter+1;
   }
 
-  createCanvas(2000, 8192);
+  createCanvas(5000, 8192);
   textFont(font);
   textSize(fontsize);
   textAlign(CENTER, CENTER);

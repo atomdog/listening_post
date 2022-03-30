@@ -151,7 +151,6 @@ class language_loop:
             time.sleep(0.1)
         print("< ------- Text Flow Online ------ >")
     def read_complete_tweets(self):
-        self.tfobj.spin_trace()
         tweet_row = birdnest.t_dump_by_row('text')
         author = birdnest.t_dump_by_row('authorUSN')
         time = birdnest.t_dump_by_row('time')
@@ -165,6 +164,7 @@ class language_loop:
         self.tfobj.spin_trace()
     def spin(self):
         self.tfobj.spin_trace()
+
 q = language_loop()
-q.read_complete_tweets()
+#q.read_complete_tweets()
 q.spin()

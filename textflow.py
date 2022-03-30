@@ -36,21 +36,17 @@ class stream():
         #enter loop
         yield(True)
         while(True):
-            print("<--- Flow to Sage Initialized --->")
 
-            #next(self.wern)
-            #next(self.q_answer)
+
             fpack = yield
             print("<-- Text Flow Processing Input -->")
             #print(fpack)
             #print("<---------------------------------->")
             if(fpack is not None):
-                fpack[1] = text = re.sub(r"(@\[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)|^rt|", "", fpack[1])
+                fpack[1] = re.sub(r"(@\[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)|^rt|", "", fpack[1])
                 #f = fpack[1]
                 #send to w
                 next(self.wern)
-
-
                 self.currentSF = self.wern.send(fpack)
 
                 #print(self.currentSF)
@@ -61,7 +57,7 @@ class stream():
                 #check if w returned a viable processed sentence frame
                 if(nom!= True and nom != None and nom['plaintext']!= None and len(nom['plaintext'])!=0):
                     #encounter in semantic web
-                    self.webo.sentenceEncounter(self.currentSF, None)
+                    self.webo.sentenceEncounter(self.currentSF, fpack[0])
                     #spin traces in semantic web
                     self.webo.spintrace()
                     #webbedcontext = self.webo.aggregate_by_noun_chunks(self.webo.recent_entry())

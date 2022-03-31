@@ -5,7 +5,7 @@
 - Brad Raffensperger (Incumbent GA)
 
 - Kristina Karamo (MI)  
-- Jocelyn Benson (Incumbent )
+- Jocelyn Benson (Incumbent)
 
 - Mark Fincham
 - Reginald Bolding (D)
@@ -13,7 +13,6 @@
 ##Analysis direction
 - All claim to be making an effort to unify
 - Topics, sentiment over time
-
 
 ##notes
 - Karamo tweets about reading Common Sense by Thomas Paine and promptly changes most of the content of her tweets, going from talking about Downtown Abbey and Boardwalk Empire and being a substitute teacher to political philosophy
@@ -24,3 +23,5 @@
 - "I have a theory Musk has talked about the dangers of unrestrained technology"
 - "ABAesq senjudiciary You guys are pathetic"
 - "tomselliott Shut up"
+- Finding legislators, laws
+- Botometer

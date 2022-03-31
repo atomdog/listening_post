@@ -165,6 +165,22 @@ class language_loop:
     def spin(self):
         self.tfobj.spin_trace()
 
-q = language_loop()
+def print_author_tweets(authorUSN):
+    tweet_row = birdnest.t_dump_by_row('text')
+    retweet_row = birdnest.t_dump_by_row('retweetsNum')
+    like_tweet_row = birdnest.t_dump_by_row('likesNum')
+    author = birdnest.t_dump_by_row('authorUSN')
+    time = birdnest.t_dump_by_row('time')
+    for x in range(0, len(tweet_row)):
+        if(author[x][0] == authorUSN):
+            print("============")
+            print(tweet_row[x])
+            print(retweet_row[x])
+            print(like_tweet_row[x])
+            print(time[x])
+            print("============")
+
+#q = language_loop()
 #q.read_complete_tweets()
-q.spin()
+#q.spin()
+print_author_tweets('@KristinaKaramo')

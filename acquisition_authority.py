@@ -10,6 +10,7 @@ import tw_ctrl
 import grandtimeline
 import birdnest
 from datetime import datetime
+import smtpCheckEmail
 # -----                   ------
 
 def freeze_authority(author):
@@ -25,6 +26,33 @@ def thaw_authority():
     fh = open("memory/authorityonice.obj", 'rb')
     author = pickle.load(fh)
     return(author)
+
+
+def freeze_emails(inbo):
+    fh = open("memory/inbox.obj", 'wb')
+    pickle.dump(inbo, fh)
+
+def torch_email():
+    inbo = []
+    fh = open("memory/inbox.obj", 'wb')
+    pickle.dump(inbo, fh)
+
+def thaw_email():
+    fh = open("memory/inbox.obj", 'rb')
+    inbo = pickle.load(fh)
+    return(inbo)
+
+
+def pull_emails():
+    appInbox = thaw_email()
+    print("<--- Checking emails --->")
+    inbox = smtpCheckEmail.checkemail()
+    print(inbox)
+    inbox = appInbox + inbox
+    freeze_emails(inbox)
+
+
+
 
 class authority:
     def __init__(self):
@@ -133,26 +161,38 @@ class authority:
 
     def author_max_tweets(self, username):
         max_retweets = 0
+        topr = []
         mrindex = 0
+        topl = []
         max_likes = 0
         mlindex = 0
         tweets = self.controller.log_user_tweets(username)
         for x in range(0, len(tweets)):
-            if(int(tweets[x][3][0])>max_retweets):
-                max_retweets = int(tweets[x][3][0])
+            if(int(tweets[x][3])>max_retweets):
+                max_retweets = int(tweets[x][3])
                 mrindex = x
-            if(int(tweets[x][4][0])>max_retweets):
-                max_likes = int(tweets[x][4][0])
+                topr.append(mrindex)
+            if(int(tweets[x][4])>max_likes):
+                max_likes = int(tweets[x][4])
                 mlindex = x
-        print(tweets[mlindex])
-        print(tweets[mrindex])
+                topl.append(mlindex)
 
+        print("-------")
+        print("Likes")
+        for x in range(len(topl)-5, len(topl)):
+            print(tweets[x])
+        print("-------")
+        print("Retweets")
+        for x in range(len(topr)-5, len(topr)):
+            print(tweets[x])
+
+pull_emails()
 
 #q = torch_authority()
-q = thaw_authority()
+#q = thaw_authority()
 #q.load_targets()
 #q.create_target_users()
 #q.first_pass_tweets()
-q.author_max_tweets("@CongressmanHice")
+#q.author_max_tweets("@CongressmanHice")
 #q.first_pass_following()
 #q.first_pass_followers()

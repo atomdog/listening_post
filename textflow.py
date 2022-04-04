@@ -23,8 +23,6 @@ class stream():
         semanticweb.freeze_web(self.webo)
         print("< ------- Spinning Traces ------ >")
         self.webo.spinentitytrace()
-        self.webo.spintrace()
-
         print("< ------- Traces Spun ------ >")
         semanticweb.freeze_web(self.webo)
         print(self.webo.get_by_entity("PERSON"))

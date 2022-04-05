@@ -1,0 +1,8 @@
+mutate(text = str_replace_all(text, "&quot;|&#x2F;", "'"),    ## hex encoding
+         text = str_replace_all(text, "&#x2F;", "/"),           ## more hex
+         text = str_replace_all(text, "<a(.*?)>", " "),         ## links
+         text = str_replace_all(text, "&gt;|&lt;", " "),        ## html yuck
+         text = str_replace_all(text, "<[^>]*>", " ")) %>%
+word over time
+structured corpus
+representation of conversation

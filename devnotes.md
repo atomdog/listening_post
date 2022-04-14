@@ -66,33 +66,22 @@
 - Added multiprocessing to accelerate sentiment computation
 - Added [semantic web](semanticweb.py) and [auxiliary coroutines](textflow.py)
 - Added [visualization webpage](interface/assets/interface.html)
-
 ### General Notes
 - Moving more slowly than intended, collecting data nonetheless, improving system robustness.
 - Hosting plus SSL secured for webpage.
 - Some temporary changes to authority just to focus for the pitch
-## Tuesday, April 3, 2022
-
+## ------ Split for understanding -----
+## Thursday, April 14, 2022
 ### Known tasks
-- [ ] Convert Twitter interface calls into generators to return single Tweets (IN PROGRESS)
-- Undesirable behavior in twitter interface slows down program
-- [ ] Extensive documentation
-- Code is cryptic, esoteric, and confusing in both appearance and function
-- [x] Streamline initialization
-- Inefficiences in creating targets (repeated calls to user increases API activity)
-- [ ] Complete runtime (IN PROGRESS)
-- Non-initialization collection and management of snapshots, timings, and analysis
-- [ ] Ensure key uniqueness and persistency in DB / [target library](targetlib.py) (IN PROGRESS)
-- Non-initialization collection and management of snapshots, timings, and analysis
-- [ ] Data request form (IN PROGRESS)
-- [ ] HTML page for custom data retrieval/analysis requests plus autonomous visualizations
+- [ ]
 ### Recent progress
-- Tons of bugs fixed in [acquisition authority](aquisition_authority.py)
-- Renamed and reorganized
-- Began analysis
-- Included smaller subsection for quick turn-around on analysis
+- Made progress towards a clean gmail parse
+- Updated to gmail api
+- Increased size of dataset by 50% by including incorrectly filtered spam mail
 ### General Notes
 - Moving more slowly than intended, collecting data nonetheless, improving system robustness.
 - Hosting plus SSL secured for webpage.
 - Some temporary changes to authority just to focus for the pitch
-## Thursday, April 5, 2022
+### General Questions
+- What to do with the twitter code?
+- What's the most critical avenue?

@@ -29,7 +29,8 @@
 # Hice
 
 # Fincham
-they knew if there was going to be a war, 27.359, 4.481, 
+- extraordinarily militant
+- "they knew if there was going to be a war, 27.359, 4.481,
 let it start here, 30.16, 4.559,
 that was a conscious decision why, 31.84, 4.16,
 because they were sick and tired of, 34.719, 3.761,
@@ -46,4 +47,4 @@ when satan wants to extinguish a light, 59.76, 3.04,
 he will, 62.32, 5.2,
 stop at nothing so be on your guard, 62.8, 7.44,
 put on the full armor of god and be, 67.52, 4.81,
-prepared to fight, 70.24, 8.2,
+prepared to fight, 70.24, 8.2,"

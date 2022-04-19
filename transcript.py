@@ -17,3 +17,14 @@ def a_return_transcript(id, start, finish):
             if(transcript[x]["start"]>=startpost and transcript[x]["start"]<=finishpost):
                 clippedtranscript.append(startpost)
     return(clippedtranscript)
+
+def pull_by_file():
+    file1 = open('/targeting/youtubevideos.txt', 'r')
+    Lines = file1.readlines()
+    transcripts = []
+    count = 0
+    for line in Lines:
+        count += 1
+        line = line.strip()
+        line = line.split(",")
+        transcripts.append(a_return_transcript(line[0], line[1], line[2]))

@@ -123,7 +123,7 @@ class authority:
                     birdnest.u_append_log(followers[y][0],followers[y][1], str(dt_string), followers[y][2].encode('utf-8'))
                     birdnest.e_append_log(followers[y][0], c.twitter_user_pointer, 'follows')
             print("<------------- COMPLETE --------------->")
-    
+
     def first_pass_following(self):
         self.reload_controller()
         for x in range(0, len(self.targets)):

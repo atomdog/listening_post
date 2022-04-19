@@ -69,7 +69,6 @@ class live_node:
         self.qual = "live_node"
         self.type = type
         self.entity_tag = self.type
-
         #semantic hash initialization
         self.semHash = None
         self.semHasher()

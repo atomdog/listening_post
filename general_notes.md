@@ -10,13 +10,13 @@
 - Mark Fincham
 - Reginald Bolding (D)
 
-##Analysis direction
+## Analysis direction
 - All claim to be making an effort to unify
 - Topics, sentiment over time
 - Lay users next to each other, y axis is according to time and x is according to user, each vector has a topic cluster
 - View shared topics and also over time
 
-##notes
+## notes
 - Karamo tweets about reading Common Sense by Thomas Paine and promptly changes most of the content of her tweets, going from talking about Downtown Abbey and Boardwalk Empire and being a substitute teacher to political philosophy
 - Karamo has a strong anti-technology tilt to her Twitter after resurfacing as well
 - Twists womens' issues on their head to portray democratic positions as hypocritical

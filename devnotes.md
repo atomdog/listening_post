@@ -85,3 +85,13 @@
 ### General Questions
 - What to do with the twitter code?
 - What's the most critical avenue?
+
+## Tuesday, April 19, 2022
+### Known tasks
+- [ ] Fix up authorities
+- [ ] Finish UI
+### Recent progress
+- Data sources all shored up, ready to visualize
+### General Notes
+
+### General Questions

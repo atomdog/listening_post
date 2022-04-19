@@ -28,3 +28,4 @@ def pull_by_file():
         line = line.strip()
         line = line.split(",")
         transcripts.append(a_return_transcript(line[0], line[1], line[2]))
+    return(transcripts)

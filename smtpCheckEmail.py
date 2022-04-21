@@ -57,11 +57,11 @@ def readFullInbox():
         time.sleep(0.01)
 
 def readNewInbox():
-q = gmailfunctions.readAllMail()
-print(len(q))
-for x in range(0, len(q)):
-    print(q[x])
-    f = input()
-    print(" ")
-    print(" ")
+    q = gmailfunctions.readAllMail()
+    print(len(q))
+    for x in range(0, len(q)):
+        print(q[x])
+        f = input()
+        print(" ")
+        print(" ")
 #write_to_txt(receiveMail())

@@ -163,7 +163,7 @@ class language_loop:
             self.flow.send([author[x][0], tweet_row[x][0], totaltweetsentlist[x]])
     def spin(self):
         self.tfobj.spin_trace()
-    
+
 
 def print_author_tweets(authorUSN):
     tweet_row = birdnest.t_dump_by_row('text')
@@ -183,4 +183,4 @@ def print_author_tweets(authorUSN):
 #q = language_loop()
 #q.read_complete_tweets()
 #q.spin()
-print_author_tweets('@KristinaKaramo')
+#print_author_tweets('@KristinaKaramo')

@@ -286,18 +286,13 @@ class sw:
 
     def export_to_json(self):
         json_node_form = {}
+        
         for row in range(0, len(self.semWeb)):
             for nodec in range(0, len(self.semWeb[row].track)):
                 if(self.semWeb[row].track[nodec].qual == "node" or self.semWeb[row].track[nodec].qual == "entity_node"):
                     #self.semWeb[row].track[nodec].text
-                    toadd = {'key':None,'label':self.semWeb[row].track[nodec].text,'tag':None,'url':None,'cluster':None,'x':None,'y':None}
-                    json_slot = str(row)+'-'+str(nodec)
-
-                    json_node_form[json_slot] = {"text": None, "hash": None}
-                    json_node_form[json_slot]["text"] = self.semWeb[row].track[nodec].text
-                    json_node_form[json_slot]["hash"] = self.semWeb[row].track[nodec].semHash
+                    toadd = {'key':str(row)+'-'+str(nodec),'label':self.semWeb[row].track[nodec].text,'tag':None,'url':'','cluster':self.semWeb[row].track[nodec].speaker,'x':nodec,'y':row}
                     json_node_form.update(toadd)
-        json_edge_form = {}
         for x in range(0, len(self.traces)):
             json_edge_form[x] = {"startkey": None, "endkey": None}
             json_edge_form[x]["startkey"] = str(self.traces[x].ax) +'-'+str(self.traces[x].ay)

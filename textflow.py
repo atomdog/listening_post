@@ -62,6 +62,7 @@ class stream():
                 if(nom!= True and nom != None and nom['plaintext']!= None and len(nom['plaintext'])!=0):
                     #encounter in semantic web
                     self.webo.sentenceEncounter(self.currentSF, fpack[0], fpack[2])
+                    semanticweb.freeze_web(self.webo)
                     #spin traces in semantic web
                     #self.webo.spintrace()
                     #self.webo.export_to_json()

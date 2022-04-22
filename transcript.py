@@ -4,20 +4,24 @@ def a_return_transcript(id, start, finish):
     startpost = -1
     endpost = 100000000000000
     clippedtranscript = []
+    isfloat = False
+
     if(start=="start" and finish =="finish"):
+        print(id)
         print("Full video...")
         transcript = YouTubeTranscriptApi.get_transcript(id)
         return(transcript)
     else:
         if(finish != "finish"):
-            endpost = finish
+            endpost = float(finish)
         if(start!="start"):
-            startpost = start
+            startpost = float(start)
         transcript = YouTubeTranscriptApi.get_transcript(id)
-        print(transcript)
-        print(start, finish)
+        #print(transcript)
+        print(id)
+        print(str(start), "->", str(finish))
         for x in range(0, len(transcript)):
-            if(transcript[x]["start"] >=startpost and transcript[x]["start"]<=finishpost):
+            if(transcript[x]["start"] >=startpost and transcript[x]["start"]<=endpost):
                 clippedtranscript.append(transcript[x])
     return(clippedtranscript)
 
@@ -32,9 +36,11 @@ def pull_by_file():
         line = line.split(",")
         try:
             q = a_return_transcript(line[0], line[1], line[2])#,# line[3])
-        except:
+        except Exception as e:
             q = []
             print("Exception...")
+            print(e)
+            print("Ignoring video.......")
         #print(q)
         transcripts_item = []
         with open("memory/youtube/"+ line[3]+"_"+line[0] + ".txt", 'w') as out:

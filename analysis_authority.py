@@ -12,6 +12,7 @@ import pandas as pd
 import numpy as np
 from wordcloud import WordCloud
 import chunkGen
+import os
 import more_itertools as itools
 import textflow
 from multiprocessing import Pool
@@ -161,6 +162,19 @@ class language_loop:
                 totaltweetsentlist.append(int(graph_dict[key]['y'][x]))
         for x in range(0, len(tweet_row)):
             self.flow.send([author[x][0], tweet_row[x][0], totaltweetsentlist[x]])
+    def read_complete_youtube(self):
+            path = "memory/youtube"
+            q = os.listdir(path)
+            q = sorted(q)
+            for file in q:
+                speaker = file.split("_")[0]
+                filetr = open(path+"/"+file, 'r')
+                Lines = filetr.readlines()
+                for line in Lines:
+                    line = line.strip()
+                    line = line.split(",")
+                    words = line[0].split(":")[1]
+                    self.flow.send([speaker, words, 0])
     def spin(self):
         self.tfobj.spin_trace()
 
@@ -180,7 +194,7 @@ def print_author_tweets(authorUSN):
             print(time[x])
             print("============")
 
-#q = language_loop()
-#q.read_complete_tweets()
+q = language_loop()
+q.read_complete_youtube()
 #q.spin()
 #print_author_tweets('@KristinaKaramo')

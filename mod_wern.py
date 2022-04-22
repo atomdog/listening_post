@@ -41,7 +41,7 @@ def create_hash_id(wtext, wform):
 
 def runnable():
     valid_corpexed = ['JJ', 'advmod', 'adj', 'WRB' 'JJ', 'JJR', 'JJS', 'advmod']
-    print("< ------- Wernicke Area Initializing ------ >")
+    print("< ------- w Area Initializing ------ >")
 
     #Initialize Spacy Generator
     spGen = chunkGen.chunkGenerator()
@@ -59,7 +59,7 @@ def runnable():
         #insert sentence
         sentence = yield
         print(sentence)
-        print("< ------- Wernicke Looping ------ >")
+        print("< ------- w Looping ------ >")
         sentence_frame = construct_empty_sentence_frame()
         if(sentence is not None):
             speaker = sentence[0]
@@ -99,7 +99,7 @@ def runnable():
                 sentence_frame['chunks'] = currentspGen[2]
                 sentence_frame['speaker'] = speaker
             yield(sentence_frame)
-            print("<-- Wernicke Loop complete -->")
+            print("<-- w Loop complete -->")
         else:
             pass
 

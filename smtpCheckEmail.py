@@ -58,10 +58,12 @@ def readFullInbox():
 
 def readNewInbox():
     q = gmailfunctions.readAllMail()
-    print(len(q))
-    for x in range(0, len(q)):
-        print(q[x])
-        f = input()
-        print(" ")
-        print(" ")
+    with open("memory/inbox.txt", 'w') as out:
+        for x in range(0, len(q)):
+            towrite = q[x]
+            out.write(str(towrite))
+            out.write("\n")
+            out.write("==INTERRUPT==")
+            out.write("\n")
+readNewInbox()
 #write_to_txt(receiveMail())

@@ -30,16 +30,21 @@ def pull_by_file():
         count += 1
         line = line.strip()
         line = line.split(",")
-        q = a_return_transcript(line[0], line[1], line[2])
-        print(q)
-        transcripts.append(q)
-        with open("memory/youtube/"+ line[0] + ".txt", 'w') as out:
+        try:
+            q = a_return_transcript(line[0], line[1], line[2])#,# line[3])
+        except:
+            q = []
+            print("Exception...")
+        #print(q)
+        transcripts_item = []
+        with open("memory/youtube/"+ line[3]+"_"+line[0] + ".txt", 'w') as out:
             for b in range(0, len(q)):
-                towrite = ""
+                towrite = str(line[3])+ ': '
                 for key in q[b]:
-                    print(q[b][key])
                     towrite += str(q[b][key]) + ", "
+                transcripts_item.append(str(towrite))
                 out.write(str(towrite))
                 out.write("\n")
+        transcripts.append(transcripts_item)
     return(transcripts)
 pull_by_file()

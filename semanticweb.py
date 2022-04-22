@@ -286,7 +286,7 @@ class sw:
 
     def export_to_json(self):
         json_node_form = {}
-        
+
         for row in range(0, len(self.semWeb)):
             for nodec in range(0, len(self.semWeb[row].track)):
                 if(self.semWeb[row].track[nodec].qual == "node" or self.semWeb[row].track[nodec].qual == "entity_node"):
@@ -445,7 +445,7 @@ class sw:
         self.export_to_json()
 
 
-
+#while loop for mutex, parse if semicolon
 
     def aggregate_by_noun_chunks(self, row_index):
         print("<--- Retrieving relevant sentences via noun chunks for:   -->")

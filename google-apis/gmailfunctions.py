@@ -117,11 +117,15 @@ def fetch_messages(service, userid):
     #print(messagelist)
     return(messagelist)
 
-def fetch_all_messages(service, userid):
-    results = service.users().messages().list(userId=userid,labelIds = ['INBOX']).execute()
+def fetch_all_messages(service, userid, boxname):
+    results = service.users().messages().list(userId=userid,labelIds = [boxname]).execute()
     messages = results.get('messages', [])
     messagelist = []
+    best_decode = []
+    count = 0
     for message in messages:
+        print(str(count)+" of "+ str(len(messages))+ " emails...")
+        count+=1
         msg = service.users().messages().get(userId=userid, id=message['id']).execute()
         payload = msg['payload']
         headers = payload['headers']
@@ -137,35 +141,24 @@ def fetch_all_messages(service, userid):
             data = data.replace("-","+").replace("_","/")
             decoded_data = base64.b64decode(data)
             soup = BeautifulSoup(decoded_data , "lxml")
-            if(data!=None):
-                body = soup.body()
+            if(data!=None and soup!=None):
+                try:
+                    body = soup.body()
+                except:
+                    body = decoded_data
             else:
                 body = decoded_data
-            print("Subject: ", subject)
-            print("From: ", sender)
-            print("Message: ", body)
-            print('\n')
-
-    results = service.users().messages().list(userId=userid,labelIds = ['SPAM']).execute()
-    messages = results.get('messages', [])
-    for message in messages:
-        msg = service.users().messages().get(userId=userid, id=message['id']).execute()
-        time = msg['payload']['headers'][1]['value']
-        whena = time.find(";")+1
-        when = time[whena:len(time)]
-        x = 0
-        while(when[x] == ' '):
-            when = when[1:len(when)]
-        contents = msg['snippet']
-        contents= html.unescape(contents)
-        messagelist.append([when,msg['payload']['headers'][19]['value'], contents])
-        service.users().messages().modify(userId=userid, id=message['id'], body={'removeLabelIds': ['UNREAD']}).execute()
+            best_decode.append({"Subject": subject, "From": sender, "Message": body})
+            #print("Subject: ", subject)
+            #print("From: ", sender)
+            #print("Message: ", body)
+            #print('\n')
     #print(messagelist)
-    return(messagelist)
+    return(best_decode)
 def readMail():
     return(fetch_messages(initservice(), "usatodaytwitter7@gmail.com"))
 
 def readAllMail():
-    return(fetch_all_messages(initservice(), "usatodaytwitter7@gmail.com"))
+    return(fetch_all_messages(initservice(), "usatodaytwitter7@gmail.com", 'SPAM') + fetch_all_messages(initservice(), "usatodaytwitter7@gmail.com", 'INBOX'))
 #fetch_messages(initservice(), "cleomessaging@gmail.com")
 #send_message(initservice(), "cleomessaging@gmail.com", create_message("cleomessaging@gmail.com", "8438197750@mms.att.net", " ",  "hi"))

@@ -10,6 +10,7 @@ import GraphDataController from "./GraphDataController";
 import DescriptionPanel from "./DescriptionPanel";
 import { Dataset, FiltersState } from "../types";
 import ClustersPanel from "./ClustersPanel";
+import SourcesPanel from "./SourcesPanel";
 import SearchField from "./SearchField";
 import drawLabel from "../canvas-utils";
 import GraphTitle from "./GraphTitle";
@@ -27,6 +28,7 @@ const Root: FC = () => {
   const [filtersState, setFiltersState] = useState<FiltersState>({
     clusters: {},
     tags: {},
+    sources: {},
   });
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
 
@@ -39,6 +41,7 @@ const Root: FC = () => {
         setFiltersState({
           clusters: mapValues(keyBy(dataset.clusters, "key"), constant(true)),
           tags: mapValues(keyBy(dataset.tags, "key"), constant(true)),
+          sources: mapValues(keyBy(dataset.sources, "key"), constant(true)),
         });
         requestAnimationFrame(() => setDataReady(true));
       });
@@ -65,6 +68,9 @@ const Root: FC = () => {
       >
         <GraphSettingsController hoveredNode={hoveredNode} />
         <GraphEventsController setHoveredNode={setHoveredNode} />
+
+
+
         <GraphDataController dataset={dataset} filters={filtersState} />
 
         {dataReady && (
@@ -138,6 +144,22 @@ const Root: FC = () => {
                     setFiltersState((filters) => ({
                       ...filters,
                       tags: filters.tags[tag] ? omit(filters.tags, tag) : { ...filters.tags, [tag]: true },
+                    }));
+                  }}
+                />
+                <SourcesPanel
+                  sources={dataset.sources}
+                  filters={filtersState}
+                  setSources={(sources) =>
+                    setFiltersState((filters) => ({
+                      ...filters,
+                      sources,
+                    }))
+                  }
+                  toggleSource={(source) => {
+                    setFiltersState((filters) => ({
+                      ...filters,
+                      sources: filters.sources[source] ? omit(filters.sources, source) : { ...filters.sources, [source]: true },
                     }));
                   }}
                 />

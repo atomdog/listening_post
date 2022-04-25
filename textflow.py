@@ -58,8 +58,8 @@ class stream():
                 #check if w returned a viable processed sentence frame
                 if(nom!= True and nom != None and nom['plaintext']!= None and len(nom['plaintext'])!=0):
                     #encounter in semantic web
-                    self.webo.sentenceEncounter(self.currentSF, fpack[0], fpack[2])
-                    semanticweb.freeze_web(self.webo)
+                    self.webo.sentenceEncounter(self.currentSF, fpack[0], fpack[2], fpack[3], fpack[4], fpack[5])
+                    #semanticweb.freeze_web(self.webo)
                     #spin traces in semantic web
                     #self.webo.spintrace()
                     #self.webo.export_to_json()

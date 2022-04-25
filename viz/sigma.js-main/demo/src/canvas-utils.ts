@@ -77,11 +77,82 @@ export function drawHover(context: CanvasRenderingContext2D, data: PlainObject, 
   context.fillStyle = TEXT_COLOR;
   context.font = `${weight} ${size}px ${font}`;
   context.fillText(label, data.x + data.size + 3, data.y + size / 3);
-
+  context.fillText(label, data.x + data.size + 3, data.y + size / 3);
   if (subLabel) {
     context.fillStyle = TEXT_COLOR;
     context.font = `${weight} ${subLabelSize}px ${font}`;
-    context.fillText(subLabel, data.x + data.size + 3, data.y - (2 * size) / 3 - 2);
+    
+  }
+
+  context.fillStyle = data.color;
+  context.font = `${weight} ${subLabelSize}px ${font}`;
+  context.fillText(clusterLabel, data.x + data.size + 3, data.y + size / 3 + 3 + subLabelSize);
+}
+
+export function drawClick(context: CanvasRenderingContext2D, data: PlainObject, settings: PlainObject) {
+  const size = settings.labelSize;
+  const font = settings.labelFont;
+  const weight = settings.labelWeight;
+  const subLabelSize = size - 2;
+
+  const label = data.label;
+  const subLabel = data.tag !== "unknown" ? data.tag : "";
+  const source = data.source;
+  const time = data.date_spoken;
+  const clusterLabel = data.clusterLabel;
+
+  // Then we draw the label background
+  context.beginPath();
+  context.fillStyle = "#fff";
+  context.shadowOffsetX = 0;
+  context.shadowOffsetY = 2;
+  context.shadowBlur = 8;
+  context.shadowColor = "#000";
+
+  context.font = `${weight} ${size}px ${font}`;
+  const labelWidth = context.measureText(label).width;
+  context.font = `${weight} ${subLabelSize}px ${font}`;
+  const subLabelWidth = subLabel ? context.measureText(subLabel).width : 0;
+
+  context.font = `${weight} ${subLabelSize}px ${font}`;
+  const sourceWidth = source ? context.measureText(source).width : 0;
+
+  context.font = `${weight} ${subLabelSize}px ${font}`;
+  const timeWidth = time ? context.measureText(time).width : 0;
+
+  context.font = `${weight} ${subLabelSize}px ${font}`;
+  const clusterLabelWidth = clusterLabel ? context.measureText(clusterLabel).width : 0;
+
+  const textWidth = Math.max(labelWidth, subLabelWidth, sourceWidth, timeWidth, clusterLabelWidth);
+
+  const x = Math.round(data.x);
+  const y = Math.round(data.y);
+  const w = Math.round(textWidth + size / 2 + data.size + 3);
+  const hLabel = Math.round(size / 2 + 4);
+  const hSubLabel = Math.round(size / 2 + 4);;
+  const hSource = Math.round(size / 2 + 4);;
+  const hTime = Math.round(size / 2 + 4);;
+
+  const hClusterLabel = Math.round(subLabelSize / 2 + 9);
+
+  drawRoundRect(context, x, y - hSubLabel - 12, w, hClusterLabel + hLabel + hTime + hSource + hSubLabel + 12, 5);
+  context.closePath();
+  context.fill();
+
+  context.shadowOffsetX = 0;
+  context.shadowOffsetY = 0;
+  context.shadowBlur = 0;
+
+  // And finally we draw the labels
+  context.fillStyle = TEXT_COLOR;
+  context.font = `${weight} ${size}px ${font}`;
+  context.fillText(label, data.x + data.size + 3, data.y + size / 3);
+  context.fillText(source, data.x + data.size + 3, data.y + (size / 3)-2);
+  context.fillText(time, data.x + data.size + 3, data.y + (size / 3)-4);
+  if (subLabel) {
+    context.fillStyle = TEXT_COLOR;
+    context.font = `${weight} ${subLabelSize}px ${font}`;
+    context.fillText(subLabel, data.x + data.size + 3, data.y - (2 * size) / 3 - 6);
   }
 
   context.fillStyle = data.color;

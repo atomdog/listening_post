@@ -2,7 +2,10 @@ export interface NodeData {
   key: string;
   label: string;
   tag: string;
-  URL: string;
+  date_spoken: string;
+  source: string;
+  url: string;
+  score: number;
   cluster: string;
   x: number;
   y: number;
@@ -19,14 +22,22 @@ export interface Tag {
   image: string;
 }
 
+export interface Source {
+  key: string;
+  image: string;
+}
+
 export interface Dataset {
   nodes: NodeData[];
   edges: [string, string][];
   clusters: Cluster[];
+  sources: Source[];
   tags: Tag[];
+
 }
 
 export interface FiltersState {
   clusters: Record<string, boolean>;
   tags: Record<string, boolean>;
+  sources: Record<string, boolean>;
 }

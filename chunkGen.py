@@ -54,8 +54,9 @@ def spaci(sentence, model):
     tokens = []
     plaintext = []
     for token in spacied:
-        tokens.append([token.text, token.tag_, token.pos_, token.head.text, token.dep_])
-        plaintext.append(token.text)
+        if(token.text!=" " and token.text!=""):
+            tokens.append([token.text, token.tag_, token.pos_, token.head.text, token.dep_])
+            plaintext.append(token.text)
 
     chunks = []
     for chunk in spacied.noun_chunks:

@@ -168,13 +168,19 @@ class language_loop:
             q = sorted(q)
             for file in q:
                 speaker = file.split("_")[0]
+                vid_ext = file.split("_")[1]
                 filetr = open(path+"/"+file, 'r')
                 Lines = filetr.readlines()
                 for line in Lines:
                     line = line.strip()
                     line = line.split(",")
+                    timespoken = line[len(line)-1]
+                    timeend = line[len(line)-2].split(".")[0]
+                    timestart = line[len(line)-3].split(".")[0][1:len(line[len(line)-3].split(".")[0])]
                     words = line[0].split(":")[1]
-                    self.flow.send([speaker, words, 0])
+                    if(words[0]==" "):
+                        words = words[1:len(words)]
+                    self.flow.send([speaker, words, 0, "https://www.youtube.com/watch?v="+vid_ext[0:len(vid_ext)-4], timespoken,"https://www.youtube.com/watch?v="+vid_ext[0:len(vid_ext)-4]+"?t="+str(timestart)+"s"])
     def spin(self):
         self.tfobj.spin_trace()
 

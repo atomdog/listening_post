@@ -44,10 +44,12 @@ class sem_node:
         self.text = stringinit
         #semantic POS
         self.form = POS
+        self.score = 0
         self.alt_form = opos
         self.entity_tag = 'none'
         self.qual = "node"
         self.bind = None
+
         #semantic hash initialization
         self.semHash = None
         self.semHasher()
@@ -92,7 +94,9 @@ class entity_node:
         self.qual = "entity_node"
         self.type = type
         self.entity_tag = self.type
-
+        self.score = 1
+        self.source = ""
+        self.url = ""
         #semantic hash initialization
         self.semHash = None
         self.semHasher()
@@ -109,7 +113,9 @@ class sem_vector:
         self.speaker = None
         self.frame = None
         #time metadata
-        self.t = 0.0
+        self.t = ""
+        self.source = ""
+        self.url = ""
         #sentence type
         self.type = None
         #actual vector
@@ -285,17 +291,19 @@ class sw:
         #}
 
     def export_to_json(self):
+        print("<--- EXPORTING TO JSON --->")
         json_node_form = []
         json_edge_form = []
         final_json = {}
         diff_ents = []
         diff_spk = ["symbolic"]
         diff_spk_y = [0]
+        diff_source = [""]
         bumpbool = False
         #ry = r = lambda: random.randint()
         for row in range(0, len(self.semWeb)):
             for nodec in range(0, len(self.semWeb[row].track)):
-                if(self.semWeb[row].track[nodec].qual == "node" or self.semWeb[row].track[nodec].qual == "entity_node"):
+                if((self.semWeb[row].track[nodec].qual == "node" or self.semWeb[row].track[nodec].qual == "entity_node") and self.semWeb[row].track[nodec].text != " "):
                     #self.semWeb[row].track[nodec].text
                     if(self.semWeb[row].track[nodec].entity_tag not in diff_ents):
                         diff_ents.append(self.semWeb[row].track[nodec].entity_tag)
@@ -303,11 +311,13 @@ class sw:
                         if(self.semWeb[row].speaker not in diff_spk):
                             diff_spk.append(self.semWeb[row].speaker)
                             diff_spk_y.append(10)
+                        if(self.semWeb[row].source not in diff_source):
+                            diff_source.append(self.semWeb[row].source)
                         x_start = (diff_spk.index(self.semWeb[row].speaker)*20)+20
                         y_start = diff_spk_y[diff_spk.index(self.semWeb[row].speaker)]
-                        toadd = {'key':str(row)+'-'+str(nodec),'label':self.semWeb[row].track[nodec].text,'tag':self.semWeb[row].track[nodec].entity_tag,'url':'','cluster':self.semWeb[row].speaker,'x':x_start+nodec,'y':y_start}
+                        toadd = {'key':str(row)+'-'+str(nodec),'label':self.semWeb[row].track[nodec].text,'tag':self.semWeb[row].track[nodec].entity_tag,'date_spoken':self.semWeb[row].t,'score':self.semWeb[row].track[nodec].score, 'source':self.semWeb[row].source,'url':self.semWeb[row].url, 'cluster':self.semWeb[row].speaker,'x':x_start+nodec,'y':y_start}
                     else:
-                        toadd={'key':str(row)+'-'+str(nodec),'label':self.semWeb[row].track[nodec].text,'tag':self.semWeb[row].track[nodec].entity_tag,'url':'','cluster':'symbolic','x':nodec,'y':row}
+                        toadd={'key':str(row)+'-'+str(nodec),'label':self.semWeb[row].track[nodec].text,'tag':self.semWeb[row].track[nodec].entity_tag,'date_spoken':self.semWeb[row].t, 'source':self.semWeb[row].source,'score':self.semWeb[row].track[nodec].score, 'url':self.semWeb[row].url, 'cluster':'symbolic','x':nodec,'y':row}
                     json_node_form.append(toadd)
             if(self.semWeb[row].speaker!=None):
                 diff_spk_y[diff_spk.index(self.semWeb[row].speaker)]+=2
@@ -324,16 +334,20 @@ class sw:
 
         tagbuilder = []
         clusterbuilder = []
+        sourcebuilder = []
         r = lambda: random.randint(0,255)
 
         for x in range(0, len(diff_spk)):
             clusterbuilder.append({'key': diff_spk[x], "color": '#%02X%02X%02X' % (r(),r(),r()), "clusterLabel":str(diff_spk[x])})
         for x in range(0, len(diff_ents)):
             tagbuilder.append({'key': diff_ents[x], "image":str(diff_ents[x])+".svg"})
+        for x in range(0, len(diff_source)):
+            sourcebuilder.append({'key': diff_source[x], "image":str(diff_source[x])+".svg"})
         final_json['tags']=tagbuilder
         final_json['clusters']=clusterbuilder
-        print(final_json)
-        with open('./viz/sigma.js-main/demo/public/imprisoned_web.json', 'w') as outfile:
+        final_json['sources']=sourcebuilder
+        #print(final_json)
+        with open('./viz/sigma.js-main/demo/public/dataset.json', 'w') as outfile:
             json.dump(final_json, outfile)
 
     def hash_word_combo(self, wordText, pos_tag):
@@ -369,6 +383,8 @@ class sw:
         pos_tag = frame['tokens'][current][1]
         opos_tag = frame['tokens'][current][4]
         ents = frame['entities']
+        if(wordText=="nt"):
+            wordText = "not"
         #check if text is within an entity
         #initialize node index as None
         currentNodeIndex = None
@@ -413,11 +429,13 @@ class sw:
         self.semTrack.append(q)
 
     #encounter sentence, words into nodes, create
-    def sentenceEncounter(self, sentFrame, sourceFrame, sentiment):
+    def sentenceEncounter(self, sentFrame, sourceFrame, sentiment, source, time, url):
         if(sentFrame == None):
             return False
         #print(sentFrame['plaintext'])
         for x in range(0, len(sentFrame['plaintext'])):
+            if(sentFrame['plaintext'][x] == "nt"):
+                sentFrame['plaintext'][x] == "not"
             current_nodeXval, sentcharge = self.nodeEncounter(sentFrame, x)
             #print(sentFrame['tokens'][x])
             if(current_nodeXval!=None):
@@ -430,6 +448,9 @@ class sw:
         vectorized.track = self.semTrack
         vectorized.frame = sentFrame
         vectorized.text = sentFrame['plaintext']
+        vectorized.source = source
+        vectorized.url = url
+        vectorized.t = time
         #if we have a sentence type prediction, fill it in
         if(sentFrame['sent_type_pred']!=None):
             vectorized.type = sentFrame['sent_type_pred']
@@ -442,8 +463,11 @@ class sw:
     def spinentitytrace(self):
         self.traces = []
         totrace = {}
+        scoredict = {}
+        for x in range(0, len(self.nodeList)):
+            scoredict[self.nodeList[x].text] = 0
         for iterator in range(0, len(self.nodeList)):
-            print(str(iterator)+ " of " + str(len(self.nodeList))+" (nodes)")
+            #print(str(iterator)+ " of " + str(len(self.nodeList))+" (nodes)")
             cx = self.nodeList[iterator].node_x
             cy = self.nodeList[iterator].node_y
             self.nodeList[iterator].individual_traces = []
@@ -451,7 +475,13 @@ class sw:
             if((self.nodeList[iterator].text in nltk.corpus.stopwords.words('english') or self.nodeList[iterator].text == " " or self.nodeList[iterator].text == "")):
                 pass
             else:
+                cnode = self.nodeList[iterator]
+                cx = self.nodeList[iterator].node_x
+                cy = self.nodeList[iterator].node_y
+                '''
                 if(self.nodeList[iterator].qual == 'node'):
+                    scoredict[self.nodeList[iterator].text]+=1
+                    self.semWeb[cy].track[cx].score = scoredict[self.nodeList[iterator].text]
                     cnode = self.nodeList[iterator]
                     cx = self.nodeList[iterator].node_x
                     cy = self.nodeList[iterator].node_y
@@ -460,12 +490,13 @@ class sw:
                         self.semWeb[cy].track[cx].individual_traces.append(sem_trace(cx, cy, found[x][0], found[x][1]))
                         self.nodeList[iterator].individual_traces.append(sem_trace(cx, cy, found[x][0], found[x][1]))
                         self.traces.append(sem_trace(cx, cy, found[x][0], found[x][1]))
+                '''
                 if(self.nodeList[iterator].entity_tag!='none' and self.nodeList[iterator].qual != 'entity_node'):
                     targetx = self.type_lookup[self.nodeList[iterator].entity_tag]
-                    print(targetx)
+                    #print(targetx)
                     cnode = self.nodeList[iterator]
                     #print(self.semWeb[0].track[targetx].entity_tag + ": " + cnode.text)
-                    print(str(cnode.node_x) + ", " + str(cnode.node_y) + "--->" + str(targetx) + ', 0')
+                    print("Tying " + str(cnode.node_x) + ", " + str(cnode.node_y) + "--->" + str(targetx) + ', 0')
                     self.semWeb[cnode.node_y].track[cnode.node_x].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, 0))
                     self.semWeb[0].track[targetx].individual_traces.append(sem_trace(targetx, 0, cnode.node_x, cnode.node_y))
                     self.nodeList[iterator].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, 0))
@@ -485,8 +516,9 @@ class sw:
                     self.semWeb[targety].track[targetx].individual_traces.append(sem_trace(targetx, targety, cnode.node_x, cnode.node_y))
                     self.nodeList[totrace[key][x]].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, targety))
                     self.traces.append(sem_trace(cnode.node_x,cnode.node_y, targetx, targety))
+
         print(totrace)
-        self.export_to_json()
+        #self.export_to_json()
 
 
 #while loop for mutex, parse if semicolon

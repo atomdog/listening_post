@@ -1,290 +1,290 @@
-benson: all right good morning everyone thank, 0.88, 3.2, 
-benson: you for joining me, 2.639, 4.16, 
-benson: 2021 is coming to an end and it has been, 4.08, 5.04, 
-benson: a challenging year for all of us in, 6.799, 4.401, 
-benson: large part because the pandemic we all, 9.12, 4.399, 
-benson: hoped would end has continued to impact, 11.2, 5.28, 
-benson: our lives in countless ways what i want, 13.519, 5.281, 
-benson: you the people of michigan to know, 16.48, 4.16, 
-benson: is that the department of state we have, 18.8, 4.16, 
-benson: worked throughout this year to make our, 20.64, 5.12, 
-benson: services more convenient and efficient, 22.96, 4.479, 
-benson: and to make it easier for you to, 25.76, 3.08, 
-benson: interact with our, 27.439, 3.441, 
-benson: office and we've made tremendous, 28.84, 3.559, 
-benson: progress this year, 30.88, 3.92, 
-benson: office visits now take just an average, 32.399, 4.16, 
-benson: of 20 minutes, 34.8, 3.439, 
-benson: and it's easy to schedule visits for the, 36.559, 4.961, 
-benson: next day next week next month at offices, 38.239, 5.761, 
-benson: in every part of the state and we've, 41.52, 4.64, 
-benson: doubled the number of services available, 44.0, 4.719, 
-benson: online and at self-service stations so, 46.16, 4.32, 
-benson: most of you rarely have to visit our, 48.719, 4.0, 
-benson: offices at all and instead you can, 50.48, 4.64, 
-benson: conduct your business with us from the, 52.719, 4.48, 
-benson: comfort of your own home or while, 55.12, 4.079, 
-benson: grabbing groceries at the local grocery, 57.199, 3.2, 
-benson: store, 59.199, 3.441, 
-benson: to save you time and to make interacting, 60.399, 4.241, 
-benson: with our department easier we have, 62.64, 4.159, 
-benson: focused our efforts on improving three, 64.64, 5.04, 
-benson: key components of our operations, 66.799, 5.521, 
-benson: convenience efficiency and customer, 69.68, 4.56, 
-benson: service, 72.32, 3.839, 
-benson: right now the majority of residents, 74.24, 4.0, 
-benson: conduct their business with us in the, 76.159, 4.161, 
-benson: most convenient ways possible from their, 78.24, 3.919, 
-benson: homes or while getting groceries at a, 80.32, 3.6, 
-benson: local grocery store, 82.159, 3.841, 
-benson: this also lifts the burden of visiting, 83.92, 4.64, 
-benson: an office at all so that in fact now, 86.0, 4.88, 
-benson: sixty percent of your transactions with, 88.56, 4.48, 
-benson: the department are conducted without an, 90.88, 4.48, 
-benson: office visit more than double what that, 93.04, 4.48, 
-benson: was in 2018., 95.36, 4.24, 
-benson: meanwhile for those of you who do visit, 97.52, 4.0, 
-benson: our offices we're making them as, 99.6, 3.92, 
-benson: efficient as possible, 101.52, 4.16, 
-benson: as i mentioned we now get you in and out, 103.52, 4.72, 
-benson: in an average of just 20 minutes total, 105.68, 4.799, 
-benson: that's not a wait time that's the total, 108.24, 3.919, 
-benson: amount of time that people spend in our, 110.479, 4.241, 
-benson: office this is a dramatic turnaround, 112.159, 5.201, 
-benson: compared to 2018 when many offices, 114.72, 4.56, 
-benson: routinely had wait times that lasted, 117.36, 3.759, 
-benson: several hours before service was even, 119.28, 3.36, 
-benson: provided, 121.119, 3.6, 
-benson: finally while the department has always, 122.64, 4.479, 
-benson: had great employees for many years they, 124.719, 4.001, 
-benson: did not have the right structure to, 127.119, 2.721, 
-benson: support them, 128.72, 3.76, 
-benson: but our new operation model changes that, 129.84, 4.399, 
-benson: and as we see in the reviews of our, 132.48, 4.0, 
-benson: offices the public has been submitting, 134.239, 4.961, 
-benson: online customer service has improved, 136.48, 5.119, 
-benson: dramatically the reviews are now at more, 139.2, 5.039, 
-benson: than four out of five stars and many of, 141.599, 4.561, 
-benson: your comments sing the praises of our, 144.239, 3.601, 
-benson: staff for their friendliness and, 146.16, 3.68, 
-benson: commitment to public service, 147.84, 4.56, 
-benson: and i must say i'm especially grateful, 149.84, 4.479, 
-benson: for the work of our staff, 152.4, 4.16, 
-benson: many served as front-line workers and, 154.319, 4.081, 
-benson: kept our offices open nearly throughout, 156.56, 4.399, 
-benson: the entire pandemic and many more worked, 158.4, 4.32, 
-benson: behind the scenes to improve our, 160.959, 3.36, 
-benson: operations, 162.72, 3.04, 
-benson: one of the improvements we made was, 164.319, 3.2, 
-benson: replacing all of the self-service, 165.76, 3.759, 
-benson: stations that the department had before, 167.519, 4.641, 
-benson: i took office most of which were broken, 169.519, 4.641, 
-benson: through a public private partnership, 172.16, 4.88, 
-benson: that cost zero taxpayer dollars, 174.16, 4.24, 
-benson: and then we put most of the new, 177.04, 3.199, 
-benson: self-service stations in grocery stores, 178.4, 4.08, 
-benson: to make them easier for you to access, 180.239, 4.401, 
-benson: and use and we made them available on, 182.48, 4.0, 
-benson: evenings and weekends, 184.64, 3.84, 
-benson: we also work to upgrade our internal, 186.48, 3.759, 
-benson: technology over the course of more than, 188.48, 3.839, 
-benson: two years in order to double the number, 190.239, 4.401, 
-benson: of services that we provide online, 192.319, 4.721, 
-benson: the result is now that most of you skip, 194.64, 4.64, 
-benson: visiting our offices entirely making it, 197.04, 4.64, 
-benson: easier for those who do visit us to get, 199.28, 5.28, 
-benson: quickly in and out and on with their day, 201.68, 4.4, 
-benson: and now that we've gotten through the, 204.56, 3.52, 
-benson: bulk of the transaction backlog caused, 206.08, 3.6, 
-benson: by the pandemic, 208.08, 3.76, 
-benson: it is easy to schedule a visit for the, 209.68, 5.199, 
-benson: next day the next week the next month, 211.84, 4.72, 
-benson: all across the state, 214.879, 3.28, 
-benson: further because so many of you have, 216.56, 3.039, 
-benson: embraced the ability to schedule your, 218.159, 3.681, 
-benson: visits ahead of time the visits now get, 219.599, 4.72, 
-benson: spread across the staff offices we have, 221.84, 4.56, 
-benson: thereby balancing the public's demand, 224.319, 4.56, 
-benson: for in-person service with the supply of, 226.4, 3.759, 
-benson: our office staff, 228.879, 3.201, 
-benson: this enables everyone to get efficient, 230.159, 4.321, 
-benson: service and demonstrates we can make, 232.08, 4.32, 
-benson: government work, 234.48, 4.16, 
-benson: so as i said we have made tremendous, 236.4, 4.88, 
-benson: progress improving our systems this year, 238.64, 4.48, 
-benson: i know many of you have not experienced, 241.28, 3.92, 
-benson: these improvements yet and some of you, 243.12, 4.319, 
-benson: had frustrating experiences this spring, 245.2, 4.48, 
-benson: and summer when the transaction backlog, 247.439, 5.121, 
-benson: was at its worst or in the years after i, 249.68, 4.96, 
-benson: inherited a truly broken operating, 252.56, 3.039, 
-benson: system, 254.64, 3.279, 
-benson: it has taken us time to turn things, 255.599, 5.04, 
-benson: around after decades of neglect but i'm, 257.919, 4.56, 
-benson: proud of the work we've accomplished, 260.639, 4.241, 
-benson: because i know it is now saving time and, 262.479, 5.521, 
-benson: stress for thousands of you every day, 264.88, 5.039, 
-benson: and we're not done making improvements, 268.0, 3.52, 
-benson: in the year ahead we're going to keep, 269.919, 3.521, 
-benson: working to make our services even more, 271.52, 4.56, 
-benson: convenient efficient and accessible, 273.44, 5.12, 
-benson: first and foremost we're hiring and we, 276.08, 4.8, 
-benson: currently have more than 50 vacancies to, 278.56, 4.639, 
-benson: fill our current staff are committed to, 280.88, 4.319, 
-benson: public service and we're always looking, 283.199, 4.081, 
-benson: for more dedicated people so if you're, 285.199, 3.841, 
-benson: interested please check our website, 287.28, 3.6, 
-benson: regularly for openings, 289.04, 4.0, 
-benson: additionally to expand the footprint of, 290.88, 4.24, 
-benson: our service we've asked the legislature, 293.04, 4.0, 
-benson: to fund some of the positions needed to, 295.12, 4.88, 
-benson: staff a fleet of mobile offices we, 297.04, 4.719, 
-benson: currently have just one mobile office in, 300.0, 3.52, 
-benson: southeast michigan which we launched a, 301.759, 4.0, 
-benson: few months ago it brings our in-person, 303.52, 4.48, 
-benson: services directly to senior centers, 305.759, 3.921, 
-benson: homeless shelters and other places where, 308.0, 4.24, 
-benson: people have limited internet access or, 309.68, 5.12, 
-benson: otherwise typically underserved since we, 312.24, 4.64, 
-benson: launched the mobile office in october, 314.8, 3.76, 
-benson: we've made 10 trips to partner, 316.88, 4.08, 
-benson: organizations and helped more than 400, 318.56, 4.479, 
-benson: people get a state id card renew a, 320.96, 4.4, 
-benson: disability placard or replace a long, 323.039, 4.16, 
-benson: lost vehicle title, 325.36, 4.16, 
-benson: we want to add six more mobile offices, 327.199, 4.081, 
-benson: and base them in regions all across the, 329.52, 4.16, 
-benson: state so they can bring our services to, 331.28, 4.479, 
-benson: senior centers rural areas and other, 333.68, 4.959, 
-benson: communities statewide we're committed to, 335.759, 4.801, 
-benson: making government work for you and every, 338.639, 4.641, 
-benson: michigander we've made great progress in, 340.56, 5.199, 
-benson: 2021 and will continue working to serve, 343.28, 6.0, 
-benson: you even better in 2022 and on that note, 345.759, 7.081, 
-benson: i'll close for questions, 349.28, 3.56, 
-benson: and we're first going to take questions, 354.88, 3.039, 
-benson: from the folks who are here in person, 356.16, 3.36, 
-benson: and then we'll review the questions on, 357.919, 3.921, 
-benson: chat, 359.52, 2.32, 
-benson: hello hopefully you can hear me um, 362.96, 3.679, 
-benson: just wondering what the status of that, 364.96, 3.679, 
-benson: backlog that we saw over the spring has, 366.639, 3.68, 
-benson: that dissipated or are those still, 368.639, 3.441, 
-benson: causing uh effects and any kind of, 370.319, 4.401, 
-benson: slowdowns in offices branch locations, 372.08, 4.239, 
-benson: well what we know is that there's now, 374.72, 3.36, 
-benson: great available availability at our, 376.319, 4.0, 
-benson: offices all across the state the, 378.08, 4.959, 
-benson: legislature's expiration extensions did, 380.319, 4.88, 
-benson: cause the backlog those are mostly now, 383.039, 3.361, 
-benson: finished, 385.199, 2.961, 
-benson: and there's no way to say definitively, 386.4, 3.44, 
-benson: if the backlog itself is finished, 388.16, 4.24, 
-benson: especially as the pandemic continues, 389.84, 4.16, 
-benson: because we don't know if residents still, 392.4, 3.12, 
-benson: plan to conduct transactions they, 394.0, 3.759, 
-benson: skipped due to the pandemic but we're, 395.52, 4.399, 
-benson: confident that anyone who does need to, 397.759, 4.481, 
-benson: access our branch offices can do so, 399.919, 4.161, 
-benson: efficiently at a time of their, 402.24, 3.2, 
-benson: convenience, 404.08, 4.32, 
-benson: and we track that data daily to ensure, 405.44, 5.759, 
-benson: that remains the case, 408.4, 5.199, 
-benson: also curious if the pandemic is posing, 411.199, 5.28, 
-benson: any ongoing issues any kind of changes, 413.599, 5.04, 
-benson: in what you're able to do you know what, 416.479, 4.241, 
-benson: what the impact of that is now well like, 418.639, 4.801, 
-benson: a lot of offices uh we're conti we've, 420.72, 6.24, 
-benson: updated and uh um instituted protocols, 423.44, 5.52, 
-benson: to increase our efficiencies alongside, 426.96, 4.56, 
-benson: the improvements that i've mentioned uh, 428.96, 5.04, 
-benson: even during the pandemic so really right, 431.52, 4.239, 
-benson: now the only protocol that's still, 434.0, 4.56, 
-benson: apparent in our offices is that visitors, 435.759, 4.641, 
-benson: do still have to wear a mask in allstate, 438.56, 3.359, 
-benson: facilities and we make them available to, 440.4, 2.639, 
-benson: all visitors, 441.919, 3.601, 
-benson: upon arrival we still continue to use, 443.039, 4.241, 
-benson: pandemic cleaning and ventilating, 445.52, 2.959, 
-benson: procedures, 447.28, 4.4, 
-benson: and i and the challenge is often times, 448.479, 5.601, 
-benson: of office closures uh due to uh, 451.68, 5.12, 
-benson: exposures uh are oftentimes mitigated, 454.08, 4.32, 
-benson: because we've increased the number of, 456.8, 3.2, 
-benson: staff we have in our offices over the, 458.4, 2.96, 
-benson: past several months by filling many, 460.0, 4.16, 
-benson: vacancies so that enables us to ensure, 461.36, 4.559, 
-benson: we continue to remain, 464.16, 3.28, 
-benson: open and able to serve the public, 465.919, 3.521, 
-benson: oftentimes even if we have staff that, 467.44, 3.439, 
-benson: need to, 469.44, 3.52, 
-benson: be out of the office for a day or a week, 470.879, 4.961, 
-benson: due to the pandemic, 472.96, 2.88, 
-benson: hi i know a few weeks ago you announced, 476.56, 3.28, 
-benson: that residents can now choose a, 478.56, 3.52, 
-benson: non-binary option um is that going to be, 479.84, 4.72, 
-benson: available at the mobile offices as well, 482.08, 4.72, 
-benson: yes it's available um, 484.56, 4.88, 
-benson: anywhere that a license uh an in-person, 486.8, 4.72, 
-benson: transaction is is possible license, 489.44, 3.68, 
-benson: renewal in person transaction is, 491.52, 4.56, 
-benson: possible thank you, 493.12, 2.96, 
-benson: good morning hi uh sarah from the, 498.16, 4.0, 
-benson: detroit news i'm trying to find out how, 500.0, 4.319, 
-benson: far are people having to schedule, 502.16, 3.52, 
-benson: appointments, 504.319, 3.681, 
-benson: uh with people i we just heard an, 505.68, 3.84, 
-benson: account of someone deciding last night, 508.0, 2.8, 
-benson: they wanted to visit an office and, 509.52, 3.199, 
-benson: getting a 9 a.m slot the next day we, 510.8, 4.32, 
-benson: consistently monitor the availability, 512.719, 3.68, 
-benson: and have found, 515.12, 4.64, 
-benson: that uh that that as i mentioned uh in, 516.399, 5.52, 
-benson: my remarks uh, 519.76, 4.159, 
-benson: appointments are available the same day, 521.919, 4.081, 
-benson: the next day the following week later in, 523.919, 4.321, 
-benson: the month and that if for any reason, 526.0, 4.0, 
-benson: someone is unable to choose or find a, 528.24, 3.92, 
-benson: time that's convenient for them they can, 530.0, 3.68, 
-benson: simply walk up to the office at that, 532.16, 2.32, 
-benson: time, 533.68, 4.0, 
-benson: and the vast majority of those who walk, 534.48, 5.28, 
-benson: up will be seen either right away or, 537.68, 3.68, 
-benson: will be given an opportunity to return, 539.76, 6.12, 
-benson: within 24 hours to access the services, 541.36, 4.52, 
-benson: thanks we have one question coming in on, 548.88, 4.8, 
-benson: chat which is, 550.8, 2.88, 
-benson: kyle millen from mers sorry i'm just, 554.16, 4.799, 
-benson: trying to read it, 556.32, 2.639, 
-benson: do drivers have any excuse at this point, 559.76, 5.199, 
-benson: for driving around without a license, 562.72, 3.36, 
-benson: plate, 564.959, 2.641, 
-benson: no, 566.08, 4.16, 
-benson: thank you kyle, 567.6, 2.64, 
-benson: i will say um, 570.64, 3.36, 
-benson: to the folks gathered here as well as, 572.56, 2.719, 
-benson: online, 574.0, 2.72, 
-benson: that we have seen and i've talked to a, 575.279, 3.601, 
-benson: lot of residents who still uh are, 576.72, 4.88, 
-benson: unaware that they can simply you know, 578.88, 5.28, 
-benson: walk up to an office and be seen, 581.6, 4.4, 
-benson: and so we're really also trying to make, 584.16, 2.96, 
-benson: sure that, 586.0, 3.279, 
-benson: citizens and residents know that the, 587.12, 3.76, 
-benson: walk-up system enables thousands of, 589.279, 3.12, 
-benson: people each day, 590.88, 3.44, 
-benson: to visit our office without scheduling, 592.399, 4.321, 
-benson: ahead and to be served immediately, 594.32, 4.0, 
-benson: and so we want people to know and, 596.72, 4.08, 
-benson: oftentimes i'd like to stop people i see, 598.32, 4.56, 
-benson: driving without a plate and tell them, 600.8, 3.76, 
-benson: they can simply walk to an office and, 602.88, 3.36, 
-benson: have that plate renewed, 604.56, 3.279, 
-benson: and so we want people to know that that, 606.24, 4.64, 
-benson: is an option that's available and really, 607.839, 4.56, 
-benson: cut through some of the misinformation, 610.88, 3.519, 
-benson: out there about our offices, 612.399, 3.521, 
-benson: not being fully available because they, 614.399, 4.521, 
-benson: are, 615.92, 3.0, 
-benson: thank you all for joining us today all, 620.56, 4.64, 
-benson: right thanks everybody, 622.16, 3.04, 
+benson: all right good morning everyone thank, 0.88, 3.2, 2021-12-14
+benson: you for joining me, 2.639, 4.16, 2021-12-14
+benson: 2021 is coming to an end and it has been, 4.08, 5.04, 2021-12-14
+benson: a challenging year for all of us in, 6.799, 4.401, 2021-12-14
+benson: large part because the pandemic we all, 9.12, 4.399, 2021-12-14
+benson: hoped would end has continued to impact, 11.2, 5.28, 2021-12-14
+benson: our lives in countless ways what i want, 13.519, 5.281, 2021-12-14
+benson: you the people of michigan to know, 16.48, 4.16, 2021-12-14
+benson: is that the department of state we have, 18.8, 4.16, 2021-12-14
+benson: worked throughout this year to make our, 20.64, 5.12, 2021-12-14
+benson: services more convenient and efficient, 22.96, 4.479, 2021-12-14
+benson: and to make it easier for you to, 25.76, 3.08, 2021-12-14
+benson: interact with our, 27.439, 3.441, 2021-12-14
+benson: office and we've made tremendous, 28.84, 3.559, 2021-12-14
+benson: progress this year, 30.88, 3.92, 2021-12-14
+benson: office visits now take just an average, 32.399, 4.16, 2021-12-14
+benson: of 20 minutes, 34.8, 3.439, 2021-12-14
+benson: and it's easy to schedule visits for the, 36.559, 4.961, 2021-12-14
+benson: next day next week next month at offices, 38.239, 5.761, 2021-12-14
+benson: in every part of the state and we've, 41.52, 4.64, 2021-12-14
+benson: doubled the number of services available, 44.0, 4.719, 2021-12-14
+benson: online and at self-service stations so, 46.16, 4.32, 2021-12-14
+benson: most of you rarely have to visit our, 48.719, 4.0, 2021-12-14
+benson: offices at all and instead you can, 50.48, 4.64, 2021-12-14
+benson: conduct your business with us from the, 52.719, 4.48, 2021-12-14
+benson: comfort of your own home or while, 55.12, 4.079, 2021-12-14
+benson: grabbing groceries at the local grocery, 57.199, 3.2, 2021-12-14
+benson: store, 59.199, 3.441, 2021-12-14
+benson: to save you time and to make interacting, 60.399, 4.241, 2021-12-14
+benson: with our department easier we have, 62.64, 4.159, 2021-12-14
+benson: focused our efforts on improving three, 64.64, 5.04, 2021-12-14
+benson: key components of our operations, 66.799, 5.521, 2021-12-14
+benson: convenience efficiency and customer, 69.68, 4.56, 2021-12-14
+benson: service, 72.32, 3.839, 2021-12-14
+benson: right now the majority of residents, 74.24, 4.0, 2021-12-14
+benson: conduct their business with us in the, 76.159, 4.161, 2021-12-14
+benson: most convenient ways possible from their, 78.24, 3.919, 2021-12-14
+benson: homes or while getting groceries at a, 80.32, 3.6, 2021-12-14
+benson: local grocery store, 82.159, 3.841, 2021-12-14
+benson: this also lifts the burden of visiting, 83.92, 4.64, 2021-12-14
+benson: an office at all so that in fact now, 86.0, 4.88, 2021-12-14
+benson: sixty percent of your transactions with, 88.56, 4.48, 2021-12-14
+benson: the department are conducted without an, 90.88, 4.48, 2021-12-14
+benson: office visit more than double what that, 93.04, 4.48, 2021-12-14
+benson: was in 2018., 95.36, 4.24, 2021-12-14
+benson: meanwhile for those of you who do visit, 97.52, 4.0, 2021-12-14
+benson: our offices we're making them as, 99.6, 3.92, 2021-12-14
+benson: efficient as possible, 101.52, 4.16, 2021-12-14
+benson: as i mentioned we now get you in and out, 103.52, 4.72, 2021-12-14
+benson: in an average of just 20 minutes total, 105.68, 4.799, 2021-12-14
+benson: that's not a wait time that's the total, 108.24, 3.919, 2021-12-14
+benson: amount of time that people spend in our, 110.479, 4.241, 2021-12-14
+benson: office this is a dramatic turnaround, 112.159, 5.201, 2021-12-14
+benson: compared to 2018 when many offices, 114.72, 4.56, 2021-12-14
+benson: routinely had wait times that lasted, 117.36, 3.759, 2021-12-14
+benson: several hours before service was even, 119.28, 3.36, 2021-12-14
+benson: provided, 121.119, 3.6, 2021-12-14
+benson: finally while the department has always, 122.64, 4.479, 2021-12-14
+benson: had great employees for many years they, 124.719, 4.001, 2021-12-14
+benson: did not have the right structure to, 127.119, 2.721, 2021-12-14
+benson: support them, 128.72, 3.76, 2021-12-14
+benson: but our new operation model changes that, 129.84, 4.399, 2021-12-14
+benson: and as we see in the reviews of our, 132.48, 4.0, 2021-12-14
+benson: offices the public has been submitting, 134.239, 4.961, 2021-12-14
+benson: online customer service has improved, 136.48, 5.119, 2021-12-14
+benson: dramatically the reviews are now at more, 139.2, 5.039, 2021-12-14
+benson: than four out of five stars and many of, 141.599, 4.561, 2021-12-14
+benson: your comments sing the praises of our, 144.239, 3.601, 2021-12-14
+benson: staff for their friendliness and, 146.16, 3.68, 2021-12-14
+benson: commitment to public service, 147.84, 4.56, 2021-12-14
+benson: and i must say i'm especially grateful, 149.84, 4.479, 2021-12-14
+benson: for the work of our staff, 152.4, 4.16, 2021-12-14
+benson: many served as front-line workers and, 154.319, 4.081, 2021-12-14
+benson: kept our offices open nearly throughout, 156.56, 4.399, 2021-12-14
+benson: the entire pandemic and many more worked, 158.4, 4.32, 2021-12-14
+benson: behind the scenes to improve our, 160.959, 3.36, 2021-12-14
+benson: operations, 162.72, 3.04, 2021-12-14
+benson: one of the improvements we made was, 164.319, 3.2, 2021-12-14
+benson: replacing all of the self-service, 165.76, 3.759, 2021-12-14
+benson: stations that the department had before, 167.519, 4.641, 2021-12-14
+benson: i took office most of which were broken, 169.519, 4.641, 2021-12-14
+benson: through a public private partnership, 172.16, 4.88, 2021-12-14
+benson: that cost zero taxpayer dollars, 174.16, 4.24, 2021-12-14
+benson: and then we put most of the new, 177.04, 3.199, 2021-12-14
+benson: self-service stations in grocery stores, 178.4, 4.08, 2021-12-14
+benson: to make them easier for you to access, 180.239, 4.401, 2021-12-14
+benson: and use and we made them available on, 182.48, 4.0, 2021-12-14
+benson: evenings and weekends, 184.64, 3.84, 2021-12-14
+benson: we also work to upgrade our internal, 186.48, 3.759, 2021-12-14
+benson: technology over the course of more than, 188.48, 3.839, 2021-12-14
+benson: two years in order to double the number, 190.239, 4.401, 2021-12-14
+benson: of services that we provide online, 192.319, 4.721, 2021-12-14
+benson: the result is now that most of you skip, 194.64, 4.64, 2021-12-14
+benson: visiting our offices entirely making it, 197.04, 4.64, 2021-12-14
+benson: easier for those who do visit us to get, 199.28, 5.28, 2021-12-14
+benson: quickly in and out and on with their day, 201.68, 4.4, 2021-12-14
+benson: and now that we've gotten through the, 204.56, 3.52, 2021-12-14
+benson: bulk of the transaction backlog caused, 206.08, 3.6, 2021-12-14
+benson: by the pandemic, 208.08, 3.76, 2021-12-14
+benson: it is easy to schedule a visit for the, 209.68, 5.199, 2021-12-14
+benson: next day the next week the next month, 211.84, 4.72, 2021-12-14
+benson: all across the state, 214.879, 3.28, 2021-12-14
+benson: further because so many of you have, 216.56, 3.039, 2021-12-14
+benson: embraced the ability to schedule your, 218.159, 3.681, 2021-12-14
+benson: visits ahead of time the visits now get, 219.599, 4.72, 2021-12-14
+benson: spread across the staff offices we have, 221.84, 4.56, 2021-12-14
+benson: thereby balancing the public's demand, 224.319, 4.56, 2021-12-14
+benson: for in-person service with the supply of, 226.4, 3.759, 2021-12-14
+benson: our office staff, 228.879, 3.201, 2021-12-14
+benson: this enables everyone to get efficient, 230.159, 4.321, 2021-12-14
+benson: service and demonstrates we can make, 232.08, 4.32, 2021-12-14
+benson: government work, 234.48, 4.16, 2021-12-14
+benson: so as i said we have made tremendous, 236.4, 4.88, 2021-12-14
+benson: progress improving our systems this year, 238.64, 4.48, 2021-12-14
+benson: i know many of you have not experienced, 241.28, 3.92, 2021-12-14
+benson: these improvements yet and some of you, 243.12, 4.319, 2021-12-14
+benson: had frustrating experiences this spring, 245.2, 4.48, 2021-12-14
+benson: and summer when the transaction backlog, 247.439, 5.121, 2021-12-14
+benson: was at its worst or in the years after i, 249.68, 4.96, 2021-12-14
+benson: inherited a truly broken operating, 252.56, 3.039, 2021-12-14
+benson: system, 254.64, 3.279, 2021-12-14
+benson: it has taken us time to turn things, 255.599, 5.04, 2021-12-14
+benson: around after decades of neglect but i'm, 257.919, 4.56, 2021-12-14
+benson: proud of the work we've accomplished, 260.639, 4.241, 2021-12-14
+benson: because i know it is now saving time and, 262.479, 5.521, 2021-12-14
+benson: stress for thousands of you every day, 264.88, 5.039, 2021-12-14
+benson: and we're not done making improvements, 268.0, 3.52, 2021-12-14
+benson: in the year ahead we're going to keep, 269.919, 3.521, 2021-12-14
+benson: working to make our services even more, 271.52, 4.56, 2021-12-14
+benson: convenient efficient and accessible, 273.44, 5.12, 2021-12-14
+benson: first and foremost we're hiring and we, 276.08, 4.8, 2021-12-14
+benson: currently have more than 50 vacancies to, 278.56, 4.639, 2021-12-14
+benson: fill our current staff are committed to, 280.88, 4.319, 2021-12-14
+benson: public service and we're always looking, 283.199, 4.081, 2021-12-14
+benson: for more dedicated people so if you're, 285.199, 3.841, 2021-12-14
+benson: interested please check our website, 287.28, 3.6, 2021-12-14
+benson: regularly for openings, 289.04, 4.0, 2021-12-14
+benson: additionally to expand the footprint of, 290.88, 4.24, 2021-12-14
+benson: our service we've asked the legislature, 293.04, 4.0, 2021-12-14
+benson: to fund some of the positions needed to, 295.12, 4.88, 2021-12-14
+benson: staff a fleet of mobile offices we, 297.04, 4.719, 2021-12-14
+benson: currently have just one mobile office in, 300.0, 3.52, 2021-12-14
+benson: southeast michigan which we launched a, 301.759, 4.0, 2021-12-14
+benson: few months ago it brings our in-person, 303.52, 4.48, 2021-12-14
+benson: services directly to senior centers, 305.759, 3.921, 2021-12-14
+benson: homeless shelters and other places where, 308.0, 4.24, 2021-12-14
+benson: people have limited internet access or, 309.68, 5.12, 2021-12-14
+benson: otherwise typically underserved since we, 312.24, 4.64, 2021-12-14
+benson: launched the mobile office in october, 314.8, 3.76, 2021-12-14
+benson: we've made 10 trips to partner, 316.88, 4.08, 2021-12-14
+benson: organizations and helped more than 400, 318.56, 4.479, 2021-12-14
+benson: people get a state id card renew a, 320.96, 4.4, 2021-12-14
+benson: disability placard or replace a long, 323.039, 4.16, 2021-12-14
+benson: lost vehicle title, 325.36, 4.16, 2021-12-14
+benson: we want to add six more mobile offices, 327.199, 4.081, 2021-12-14
+benson: and base them in regions all across the, 329.52, 4.16, 2021-12-14
+benson: state so they can bring our services to, 331.28, 4.479, 2021-12-14
+benson: senior centers rural areas and other, 333.68, 4.959, 2021-12-14
+benson: communities statewide we're committed to, 335.759, 4.801, 2021-12-14
+benson: making government work for you and every, 338.639, 4.641, 2021-12-14
+benson: michigander we've made great progress in, 340.56, 5.199, 2021-12-14
+benson: 2021 and will continue working to serve, 343.28, 6.0, 2021-12-14
+benson: you even better in 2022 and on that note, 345.759, 7.081, 2021-12-14
+benson: i'll close for questions, 349.28, 3.56, 2021-12-14
+benson: and we're first going to take questions, 354.88, 3.039, 2021-12-14
+benson: from the folks who are here in person, 356.16, 3.36, 2021-12-14
+benson: and then we'll review the questions on, 357.919, 3.921, 2021-12-14
+benson: chat, 359.52, 2.32, 2021-12-14
+benson: hello hopefully you can hear me um, 362.96, 3.679, 2021-12-14
+benson: just wondering what the status of that, 364.96, 3.679, 2021-12-14
+benson: backlog that we saw over the spring has, 366.639, 3.68, 2021-12-14
+benson: that dissipated or are those still, 368.639, 3.441, 2021-12-14
+benson: causing uh effects and any kind of, 370.319, 4.401, 2021-12-14
+benson: slowdowns in offices branch locations, 372.08, 4.239, 2021-12-14
+benson: well what we know is that there's now, 374.72, 3.36, 2021-12-14
+benson: great available availability at our, 376.319, 4.0, 2021-12-14
+benson: offices all across the state the, 378.08, 4.959, 2021-12-14
+benson: legislature's expiration extensions did, 380.319, 4.88, 2021-12-14
+benson: cause the backlog those are mostly now, 383.039, 3.361, 2021-12-14
+benson: finished, 385.199, 2.961, 2021-12-14
+benson: and there's no way to say definitively, 386.4, 3.44, 2021-12-14
+benson: if the backlog itself is finished, 388.16, 4.24, 2021-12-14
+benson: especially as the pandemic continues, 389.84, 4.16, 2021-12-14
+benson: because we don't know if residents still, 392.4, 3.12, 2021-12-14
+benson: plan to conduct transactions they, 394.0, 3.759, 2021-12-14
+benson: skipped due to the pandemic but we're, 395.52, 4.399, 2021-12-14
+benson: confident that anyone who does need to, 397.759, 4.481, 2021-12-14
+benson: access our branch offices can do so, 399.919, 4.161, 2021-12-14
+benson: efficiently at a time of their, 402.24, 3.2, 2021-12-14
+benson: convenience, 404.08, 4.32, 2021-12-14
+benson: and we track that data daily to ensure, 405.44, 5.759, 2021-12-14
+benson: that remains the case, 408.4, 5.199, 2021-12-14
+benson: also curious if the pandemic is posing, 411.199, 5.28, 2021-12-14
+benson: any ongoing issues any kind of changes, 413.599, 5.04, 2021-12-14
+benson: in what you're able to do you know what, 416.479, 4.241, 2021-12-14
+benson: what the impact of that is now well like, 418.639, 4.801, 2021-12-14
+benson: a lot of offices uh we're conti we've, 420.72, 6.24, 2021-12-14
+benson: updated and uh um instituted protocols, 423.44, 5.52, 2021-12-14
+benson: to increase our efficiencies alongside, 426.96, 4.56, 2021-12-14
+benson: the improvements that i've mentioned uh, 428.96, 5.04, 2021-12-14
+benson: even during the pandemic so really right, 431.52, 4.239, 2021-12-14
+benson: now the only protocol that's still, 434.0, 4.56, 2021-12-14
+benson: apparent in our offices is that visitors, 435.759, 4.641, 2021-12-14
+benson: do still have to wear a mask in allstate, 438.56, 3.359, 2021-12-14
+benson: facilities and we make them available to, 440.4, 2.639, 2021-12-14
+benson: all visitors, 441.919, 3.601, 2021-12-14
+benson: upon arrival we still continue to use, 443.039, 4.241, 2021-12-14
+benson: pandemic cleaning and ventilating, 445.52, 2.959, 2021-12-14
+benson: procedures, 447.28, 4.4, 2021-12-14
+benson: and i and the challenge is often times, 448.479, 5.601, 2021-12-14
+benson: of office closures uh due to uh, 451.68, 5.12, 2021-12-14
+benson: exposures uh are oftentimes mitigated, 454.08, 4.32, 2021-12-14
+benson: because we've increased the number of, 456.8, 3.2, 2021-12-14
+benson: staff we have in our offices over the, 458.4, 2.96, 2021-12-14
+benson: past several months by filling many, 460.0, 4.16, 2021-12-14
+benson: vacancies so that enables us to ensure, 461.36, 4.559, 2021-12-14
+benson: we continue to remain, 464.16, 3.28, 2021-12-14
+benson: open and able to serve the public, 465.919, 3.521, 2021-12-14
+benson: oftentimes even if we have staff that, 467.44, 3.439, 2021-12-14
+benson: need to, 469.44, 3.52, 2021-12-14
+benson: be out of the office for a day or a week, 470.879, 4.961, 2021-12-14
+benson: due to the pandemic, 472.96, 2.88, 2021-12-14
+benson: hi i know a few weeks ago you announced, 476.56, 3.28, 2021-12-14
+benson: that residents can now choose a, 478.56, 3.52, 2021-12-14
+benson: non-binary option um is that going to be, 479.84, 4.72, 2021-12-14
+benson: available at the mobile offices as well, 482.08, 4.72, 2021-12-14
+benson: yes it's available um, 484.56, 4.88, 2021-12-14
+benson: anywhere that a license uh an in-person, 486.8, 4.72, 2021-12-14
+benson: transaction is is possible license, 489.44, 3.68, 2021-12-14
+benson: renewal in person transaction is, 491.52, 4.56, 2021-12-14
+benson: possible thank you, 493.12, 2.96, 2021-12-14
+benson: good morning hi uh sarah from the, 498.16, 4.0, 2021-12-14
+benson: detroit news i'm trying to find out how, 500.0, 4.319, 2021-12-14
+benson: far are people having to schedule, 502.16, 3.52, 2021-12-14
+benson: appointments, 504.319, 3.681, 2021-12-14
+benson: uh with people i we just heard an, 505.68, 3.84, 2021-12-14
+benson: account of someone deciding last night, 508.0, 2.8, 2021-12-14
+benson: they wanted to visit an office and, 509.52, 3.199, 2021-12-14
+benson: getting a 9 a.m slot the next day we, 510.8, 4.32, 2021-12-14
+benson: consistently monitor the availability, 512.719, 3.68, 2021-12-14
+benson: and have found, 515.12, 4.64, 2021-12-14
+benson: that uh that that as i mentioned uh in, 516.399, 5.52, 2021-12-14
+benson: my remarks uh, 519.76, 4.159, 2021-12-14
+benson: appointments are available the same day, 521.919, 4.081, 2021-12-14
+benson: the next day the following week later in, 523.919, 4.321, 2021-12-14
+benson: the month and that if for any reason, 526.0, 4.0, 2021-12-14
+benson: someone is unable to choose or find a, 528.24, 3.92, 2021-12-14
+benson: time that's convenient for them they can, 530.0, 3.68, 2021-12-14
+benson: simply walk up to the office at that, 532.16, 2.32, 2021-12-14
+benson: time, 533.68, 4.0, 2021-12-14
+benson: and the vast majority of those who walk, 534.48, 5.28, 2021-12-14
+benson: up will be seen either right away or, 537.68, 3.68, 2021-12-14
+benson: will be given an opportunity to return, 539.76, 6.12, 2021-12-14
+benson: within 24 hours to access the services, 541.36, 4.52, 2021-12-14
+benson: thanks we have one question coming in on, 548.88, 4.8, 2021-12-14
+benson: chat which is, 550.8, 2.88, 2021-12-14
+benson: kyle millen from mers sorry i'm just, 554.16, 4.799, 2021-12-14
+benson: trying to read it, 556.32, 2.639, 2021-12-14
+benson: do drivers have any excuse at this point, 559.76, 5.199, 2021-12-14
+benson: for driving around without a license, 562.72, 3.36, 2021-12-14
+benson: plate, 564.959, 2.641, 2021-12-14
+benson: no, 566.08, 4.16, 2021-12-14
+benson: thank you kyle, 567.6, 2.64, 2021-12-14
+benson: i will say um, 570.64, 3.36, 2021-12-14
+benson: to the folks gathered here as well as, 572.56, 2.719, 2021-12-14
+benson: online, 574.0, 2.72, 2021-12-14
+benson: that we have seen and i've talked to a, 575.279, 3.601, 2021-12-14
+benson: lot of residents who still uh are, 576.72, 4.88, 2021-12-14
+benson: unaware that they can simply you know, 578.88, 5.28, 2021-12-14
+benson: walk up to an office and be seen, 581.6, 4.4, 2021-12-14
+benson: and so we're really also trying to make, 584.16, 2.96, 2021-12-14
+benson: sure that, 586.0, 3.279, 2021-12-14
+benson: citizens and residents know that the, 587.12, 3.76, 2021-12-14
+benson: walk-up system enables thousands of, 589.279, 3.12, 2021-12-14
+benson: people each day, 590.88, 3.44, 2021-12-14
+benson: to visit our office without scheduling, 592.399, 4.321, 2021-12-14
+benson: ahead and to be served immediately, 594.32, 4.0, 2021-12-14
+benson: and so we want people to know and, 596.72, 4.08, 2021-12-14
+benson: oftentimes i'd like to stop people i see, 598.32, 4.56, 2021-12-14
+benson: driving without a plate and tell them, 600.8, 3.76, 2021-12-14
+benson: they can simply walk to an office and, 602.88, 3.36, 2021-12-14
+benson: have that plate renewed, 604.56, 3.279, 2021-12-14
+benson: and so we want people to know that that, 606.24, 4.64, 2021-12-14
+benson: is an option that's available and really, 607.839, 4.56, 2021-12-14
+benson: cut through some of the misinformation, 610.88, 3.519, 2021-12-14
+benson: out there about our offices, 612.399, 3.521, 2021-12-14
+benson: not being fully available because they, 614.399, 4.521, 2021-12-14
+benson: are, 615.92, 3.0, 2021-12-14
+benson: thank you all for joining us today all, 620.56, 4.64, 2021-12-14
+benson: right thanks everybody, 622.16, 3.04, 2021-12-14

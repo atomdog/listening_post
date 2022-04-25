@@ -1,11 +1,11 @@
-hobbs: STATES ARE FOLLOWING YOUR LEAD,, 39.211, 1.769, 
-hobbs: YOUR STATE’S LEAD, I SHOULD SAY., 40.981, 2.232, 
-hobbs: >> RESTRICTIVE VOTER LAWS ARE, 43.214, 1.624, 
-hobbs: NOT NEW IN ARIZONA, BUT WHAT, 44.839, 1.642, 
-hobbs: WE’RE SEEING THAT’S NEW THIS, 46.492, 1.338, 
-hobbs: YEAR IS THAT EVERYTHING IS TIED, 47.841, 2.118, 
-hobbs: TO THE 2020 ELECTION, AND THE, 49.993, 1.54, 
-hobbs: BIG LIE FROM THE 2020 ELECTION, 51.544, 3.514, 
-hobbs: AND THIS AUDIT, THIS SO-CALLED, 55.06, 3.25, 
-hobbs: AUDIT AND IT’S BEING LED BY, 58.311, 1.966, 
-hobbs: PEOPLE WHO ARE MAD ABOUT THE, 60.278, 1.626, 
+hobbs: states are following your lead, 39.211, 1.769, 2021-06-22
+hobbs: your state’s lead i should say., 40.981, 2.232, 2021-06-22
+hobbs:  restrictive voter laws are, 43.214, 1.624, 2021-06-22
+hobbs: not new in arizona but what, 44.839, 1.642, 2021-06-22
+hobbs: we’re seeing that’s new this, 46.492, 1.338, 2021-06-22
+hobbs: year is that everything is tied, 47.841, 2.118, 2021-06-22
+hobbs: to the 2020 election and the, 49.993, 1.54, 2021-06-22
+hobbs: big lie from the 2020 election, 51.544, 3.514, 2021-06-22
+hobbs: and this audit this so-called, 55.06, 3.25, 2021-06-22
+hobbs: audit and it’s being led by, 58.311, 1.966, 2021-06-22
+hobbs: people who are mad about the, 60.278, 1.626, 2021-06-22

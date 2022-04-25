@@ -12,7 +12,7 @@ sys.path.insert(0, './Language')
 #import native generator libraries
 
 import chunkGen
-import chunkGen
+
 import AdjectiveCorpex
 
 def construct_empty_sentence_frame():
@@ -69,7 +69,6 @@ def runnable():
             f = sentence[1]
 
             #ship input to generators
-
             currentspGen = spGen.send(f)
             #print(currentSTPred)
 

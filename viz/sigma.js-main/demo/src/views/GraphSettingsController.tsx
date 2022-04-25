@@ -14,7 +14,7 @@ const GraphSettingsController: FC<{ hoveredNode: string | null }> = ({ children,
   // Here we debounce the value to avoid having too much highlights refresh when
   // moving the mouse over the graph:
   const debouncedHoveredNode = useDebounce(hoveredNode, 40);
-
+  
   /**
    * Initialize here settings that require to know the graph and/or the sigma
    * instance:

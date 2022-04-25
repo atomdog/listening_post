@@ -25,13 +25,10 @@ class stream():
         self.webo.spinentitytrace()
         print("< ------- Traces Spun ------ >")
         semanticweb.freeze_web(self.webo)
-        print(self.webo.get_by_entity("PERSON"))
-        print(self.webo.get_by_entity("LOC"))
-        print(self.webo.get_by_entity("ORG"))
-        print(self.webo.get_by_entity("GPE"))
+        self.webo.export_to_json()
     def routine(self):
         print("<--- Thawing Semantic Web --->")
-        #self.webo = semanticweb.torch_web()
+        self.webo = semanticweb.torch_web()
         self.webo = semanticweb.thaw_web()
         print("<--- Semantic Web Thawed --->")
         #instantiate coroutines

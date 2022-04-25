@@ -196,5 +196,8 @@ def print_author_tweets(authorUSN):
 
 q = language_loop()
 q.read_complete_youtube()
+q.spin()
+#q.read_complete_youtube()
+#q.spin()
 #q.spin()
 #print_author_tweets('@KristinaKaramo')

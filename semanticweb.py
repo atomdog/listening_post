@@ -6,7 +6,7 @@ import inspect#needed?
 import json
 import nltk
 from nltk.corpus import stopwords
-
+import random
 #-------------- aidan's notes --------------------
 #layer of action TRACKS in web *****!!!
 #sem_edges have hash of two connecting words creating unique key for pairs of words
@@ -285,21 +285,56 @@ class sw:
         #}
 
     def export_to_json(self):
-        json_node_form = {}
-
+        json_node_form = []
+        json_edge_form = []
+        final_json = {}
+        diff_ents = []
+        diff_spk = ["symbolic"]
+        diff_spk_y = [0]
+        bumpbool = False
+        #ry = r = lambda: random.randint()
         for row in range(0, len(self.semWeb)):
             for nodec in range(0, len(self.semWeb[row].track)):
                 if(self.semWeb[row].track[nodec].qual == "node" or self.semWeb[row].track[nodec].qual == "entity_node"):
                     #self.semWeb[row].track[nodec].text
-                    toadd = {'key':str(row)+'-'+str(nodec),'label':self.semWeb[row].track[nodec].text,'tag':None,'url':'','cluster':self.semWeb[row].track[nodec].speaker,'x':nodec,'y':row}
-                    json_node_form.update(toadd)
+                    if(self.semWeb[row].track[nodec].entity_tag not in diff_ents):
+                        diff_ents.append(self.semWeb[row].track[nodec].entity_tag)
+                    if(self.semWeb[row].track[nodec].qual != "entity_node"):
+                        if(self.semWeb[row].speaker not in diff_spk):
+                            diff_spk.append(self.semWeb[row].speaker)
+                            diff_spk_y.append(10)
+                        x_start = (diff_spk.index(self.semWeb[row].speaker)*20)+20
+                        y_start = diff_spk_y[diff_spk.index(self.semWeb[row].speaker)]
+                        toadd = {'key':str(row)+'-'+str(nodec),'label':self.semWeb[row].track[nodec].text,'tag':self.semWeb[row].track[nodec].entity_tag,'url':'','cluster':self.semWeb[row].speaker,'x':x_start+nodec,'y':y_start}
+                    else:
+                        toadd={'key':str(row)+'-'+str(nodec),'label':self.semWeb[row].track[nodec].text,'tag':self.semWeb[row].track[nodec].entity_tag,'url':'','cluster':'symbolic','x':nodec,'y':row}
+                    json_node_form.append(toadd)
+            if(self.semWeb[row].speaker!=None):
+                diff_spk_y[diff_spk.index(self.semWeb[row].speaker)]+=2
         for x in range(0, len(self.traces)):
-            json_edge_form[x] = {"startkey": None, "endkey": None}
-            json_edge_form[x]["startkey"] = str(self.traces[x].ax) +'-'+str(self.traces[x].ay)
-            json_edge_form[x]["endkey"] = str(self.traces[x].bx) +'-'+str(self.traces[x].by)
-        json_node_form['edges'] = json_edge_form
-        with open('interface/assets/imprisoned_web.json', 'w') as outfile:
-            json.dump(json_node_form, outfile)
+            target_node_x = self.semWeb[self.traces[x].ay].track[self.traces[x].ax]
+            if(target_node_x.qual == "entity_node" or target_node_x.qual == "node"):
+                s = str(self.traces[x].ay) +'-'+str(self.traces[x].ax)
+                e = str(self.traces[x].by) +'-'+str(self.traces[x].bx)
+            if([s,e] not in json_edge_form):
+                json_edge_form.append([s,e])
+        final_json['nodes'] = json_node_form
+
+        final_json['edges'] = json_edge_form
+
+        tagbuilder = []
+        clusterbuilder = []
+        r = lambda: random.randint(0,255)
+
+        for x in range(0, len(diff_spk)):
+            clusterbuilder.append({'key': diff_spk[x], "color": '#%02X%02X%02X' % (r(),r(),r()), "clusterLabel":str(diff_spk[x])})
+        for x in range(0, len(diff_ents)):
+            tagbuilder.append({'key': diff_ents[x], "image":str(diff_ents[x])+".svg"})
+        final_json['tags']=tagbuilder
+        final_json['clusters']=clusterbuilder
+        print(final_json)
+        with open('./viz/sigma.js-main/demo/public/imprisoned_web.json', 'w') as outfile:
+            json.dump(final_json, outfile)
 
     def hash_word_combo(self, wordText, pos_tag):
         return(hashlib.md5((wordText+pos_tag).encode()))
@@ -408,24 +443,33 @@ class sw:
         self.traces = []
         totrace = {}
         for iterator in range(0, len(self.nodeList)):
-            print(str(iterator)+ " of " + str(len(self.nodeList))+" (Entities)")
+            print(str(iterator)+ " of " + str(len(self.nodeList))+" (nodes)")
             cx = self.nodeList[iterator].node_x
             cy = self.nodeList[iterator].node_y
             self.nodeList[iterator].individual_traces = []
             self.semWeb[cy].track[cx].individual_traces = []
-            if((self.nodeList[iterator].text in nltk.corpus.stopwords.words('english') or self.nodeList[iterator].text == " ") and self.nodeList[iterator].entity_tag!='none'):
+            if((self.nodeList[iterator].text in nltk.corpus.stopwords.words('english') or self.nodeList[iterator].text == " " or self.nodeList[iterator].text == "")):
                 pass
             else:
+                if(self.nodeList[iterator].qual == 'node'):
+                    cnode = self.nodeList[iterator]
+                    cx = self.nodeList[iterator].node_x
+                    cy = self.nodeList[iterator].node_y
+                    found = self.find_web_index_by_text(self.semWeb[cy].track[cx].text)
+                    for x in range(0, len(found)):
+                        self.semWeb[cy].track[cx].individual_traces.append(sem_trace(cx, cy, found[x][0], found[x][1]))
+                        self.nodeList[iterator].individual_traces.append(sem_trace(cx, cy, found[x][0], found[x][1]))
+                        self.traces.append(sem_trace(cx, cy, found[x][0], found[x][1]))
                 if(self.nodeList[iterator].entity_tag!='none' and self.nodeList[iterator].qual != 'entity_node'):
                     targetx = self.type_lookup[self.nodeList[iterator].entity_tag]
                     print(targetx)
-                    #cnode = self.nodeList[iterator]
+                    cnode = self.nodeList[iterator]
                     #print(self.semWeb[0].track[targetx].entity_tag + ": " + cnode.text)
-                    #print(str(cnode.node_x) + ", " + str(cnode.node_y) + "--->" + str(targetx) + ', 0')
-                    #self.semWeb[cnode.node_y].track[cnode.node_x].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, 0))
-                    #self.semWeb[0].track[targetx].individual_traces.append(sem_trace(targetx, 0, cnode.node_x, cnode.node_y))
-                    #self.nodeList[iterator].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, 0))
-                    #self.traces.append(sem_trace(cnode.node_x,cnode.node_y, targetx, 0))
+                    print(str(cnode.node_x) + ", " + str(cnode.node_y) + "--->" + str(targetx) + ', 0')
+                    self.semWeb[cnode.node_y].track[cnode.node_x].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, 0))
+                    self.semWeb[0].track[targetx].individual_traces.append(sem_trace(targetx, 0, cnode.node_x, cnode.node_y))
+                    self.nodeList[iterator].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, 0))
+                    self.traces.append(sem_trace(cnode.node_x,cnode.node_y, targetx, 0))
                     if(not(self.nodeList[iterator].text in totrace)):
                         totrace[self.nodeList[iterator].text] = []
                         totrace[self.nodeList[iterator].text].append(iterator)

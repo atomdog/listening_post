@@ -1,0 +1,233 @@
+{ 
+    
+    "nodes": [
+{
+    "tag": "numbers", 
+    "key": "017f22fbdf2b8e52b875c15f1910ad94",
+    "Label": "kakil",
+    "cluster": "3",
+    "x": 2,
+     "y": 6,
+     "score" : 0.0027
+},
+
+{
+    "tag": "dates",
+    "key": "633a6c7a6b9958f8174250094daf1e6a",
+    "Label": "havemore",
+    "cluster": "0",
+    "x": 0,
+     "y": 2,
+     "score" : 0.0012
+},
+
+ {
+     "tag": "events", 
+     "key": "030d962d0faa148f02848881a3b4fdb6",
+     "Label": "Jordan",
+     "cluster": "2",
+     "x": 0,
+      "y": 4,
+      "score" : 0.002
+    },
+
+{   
+    "tag": "facilities",
+    "key": "2e99b8fe5c63d36b32ddbcbd2b9db17e",
+    "Label": "James",
+    "cluster": "1",
+    "x": 0,
+    "y": 6,
+    "score": 0.00
+    },
+    {
+        "key": "microsoft excel",
+        "label": "Microsoft Excel",
+        "tag": "Tool",
+        "URL": "https://en.wikipedia.org/wiki/Microsoft%20Excel",
+        "cluster": "1",
+        "x": -857.2847900390625,
+        "y": 602.7734375,
+        "score": 0.0018317394731443256
+      },
+      {
+        "key": "gephi",
+        "label": "Gephi",
+        "tag": "Tool",
+        "URL": "https://en.wikipedia.org/wiki/Gephi",
+        "cluster": "0",
+        "x": 343.4423828125,
+        "y": -749.0428466796875,
+        "score": 0.0010242079745792347
+      },
+      {
+        "key": "microsoft power bi",
+        "label": "Microsoft Power BI",
+        "tag": "Tool",
+        "URL": "https://en.wikipedia.org/wiki/Microsoft%20Power%20BI",
+        "cluster": "1",
+        "x": -900.3515014648438,
+        "y": 633.4600830078125,
+        "score": 0.0000049571249591405295
+      },
+      {
+        "key": "qlik",
+        "label": "Qlik",
+        "tag": "Tool",
+        "URL": "https://en.wikipedia.org/wiki/Qlik",
+        "cluster": "1",
+        "x": -627.0659790039062,
+        "y": 459.9796447753906,
+        "score": 0
+      },
+      {
+        "key": "venn diagram",
+        "label": "Venn diagram",
+        "tag": "Chart type",
+        "URL": "https://en.wikipedia.org/wiki/Venn%20diagram",
+        "cluster": "3",
+        "x": -237.4854736328125,
+        "y": -1150.8712158203125,
+        "score": 0.007071322614031072
+      },
+      {
+        "key": "radar chart",
+        "label": "Radar chart",
+        "tag": "Chart type",
+        "URL": "https://en.wikipedia.org/wiki/Radar%20chart",
+        "cluster": "2",
+        "x": 330.8612365722656,
+        "y": 203.5203857421875,
+        "score": 0
+      },
+      {
+        "key": "flowchart",
+        "label": "Flowchart",
+        "tag": "Chart type",
+        "URL": "https://en.wikipedia.org/wiki/Flowchart",
+        "cluster": "0",
+        "x": -476.044677734375,
+        "y": 692.1626586914062,
+        "score": 0.01584614746684067
+      },
+      {
+        "key": "box plot",
+        "label": "Box plot",
+        "tag": "Chart type",
+        "URL": "https://en.wikipedia.org/wiki/Box%20plot",
+        "cluster": "0",
+        "x": 600.8757934570312,
+        "y": 1116.4998779296875,
+        "score": 0.004182562905931715
+      },
+      {
+        "key": "treemap",
+        "label": "Treemap",
+        "tag": "Chart type",
+        "URL": "https://en.wikipedia.org/wiki/Treemap",
+        "cluster": "0",
+        "x": -47.31597137451172,
+        "y": 626.2732543945312,
+        "score": 0.00013330980758652467
+      },
+      {
+        "key": "line chart",
+        "label": "Line chart",
+        "tag": "Chart type",
+        "URL": "https://en.wikipedia.org/wiki/Line%20chart",
+        "cluster": "3",
+        "x": 427.3127136230469,
+        "y": 564.1660766601562,
+        "score": 0.0008676497465946685
+      },
+      {
+        "key": "network chart",
+        "label": "Network chart",
+        "tag": "Chart type",
+        "URL": "https://en.wikipedia.org/wiki/Network%20chart",
+        "cluster": "1",
+        "x": 128.4100341796875,
+        "y": 1197.5357666015625,
+        "score": 0
+      },
+      {
+        "key": "pareto chart",
+        "label": "Pareto chart",
+        "tag": "Chart type",
+        "URL": "https://en.wikipedia.org/wiki/Pareto%20chart",
+        "cluster": "1",
+        "x": 777.5546875,
+        "y": 850.110107421875,
+        "score": 0.006791135145885246
+      },
+      {
+        "key": "control chart",
+        "label": "Control chart",
+        "tag": "Chart type",
+        "URL": "https://en.wikipedia.org/wiki/Control%20chart",
+        "cluster": "1",
+        "x": 458.7308044433594,
+        "y": 1091.70458984375,
+        "score": 0.004527940052048223
+      },
+      {
+        "key": "run chart",
+        "label": "Run chart",
+        "tag": "Chart type",
+        "URL": "https://en.wikipedia.org/wiki/Run%20chart",
+        "cluster": "2",
+        "x": 231.94883728027344,
+        "y": 866.6333618164062,
+        "score": 0
+      },
+      {
+        "key": "scatter plot",
+        "label": "Scatter plot",
+        "tag": "Chart type",
+        "URL": "https://en.wikipedia.org/wiki/Scatter%20plot",
+        "cluster": "2",
+        "x": 583.4140625,
+        "y": 789.25634765625,
+        "score": 0
+      },
+      {
+        "key": "histogram",
+        "label": "Histogram",
+        "tag": "Chart type",
+        "URL": "https://en.wikipedia.org/wiki/Histogram",
+        "cluster": "2",
+        "x": 848.766357421875,
+        "y": 836.5435791015625,
+        "score": 0.00818393070072517
+      }
+   
+],
+"edges" : [ 
+    ["histogram", "2e99b8fe5c63d36b32ddbcbd2b9db17e" ],
+    ["scatter plot","030d962d0faa148f02848881a3b4fdb6" ],
+    ["2e99b8fe5c63d36b32ddbcbd2b9db17e", "030d962d0faa148f02848881a3b4fdb6"],
+    ["030d962d0faa148f02848881a3b4fdb6", "633a6c7a6b9958f8174250094daf1e6a"],
+    ["633a6c7a6b9958f8174250094daf1e6a","2e99b8fe5c63d36b32ddbcbd2b9db17e"],
+    ["2e99b8fe5c63d36b32ddbcbd2b9db17e","017f22fbdf2b8e52b875c15f1910ad94"]
+    
+],
+
+"clusters": [
+    { "key": "0", "color": "#6c3e81", "clusterLabel": "Left" },
+    { "key": "1", "color": "#666666", "clusterLabel": "Right" },
+    { "key": "3", "color": "#57a835", "clusterLabel": "Neutral" }
+
+  ],
+  "tags": [
+    { "key": "017f22fbdf2b8e52b875c15f1910ad94", "image": "charttype.svg" },
+    { "key": "633a6c7a6b9958f8174250094daf1e6a", "image": "company.svg" },
+    { "key": "030d962d0faa148f02848881a3b4fdb6", "image": "concept.svg" },
+    { "key": "2e99b8fe5c63d36b32ddbcbd2b9db17e", "image": "field.svg" }
+    
+  ]
+
+
+}
+
+
+

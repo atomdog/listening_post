@@ -519,7 +519,16 @@ class sw:
 
         print(totrace)
         #self.export_to_json()
-
+    def similarity_by_speaker(self,spk1,spk2):
+        collected_1 = []
+        collected_2 = []
+        for x in range(0, len(self.semWeb)):
+            if(self.semWeb[x].speaker == spk1):
+                collected_1.append(self.semWeb[x])
+            if(self.semWeb[x].speaker == spk2):
+                collected_2.append(self.semWeb[x])
+        
+        pass
 
 #while loop for mutex, parse if semicolon
 

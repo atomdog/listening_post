@@ -160,5 +160,3 @@ def readMail():
 
 def readAllMail():
     return(fetch_all_messages(initservice(), "usatodaytwitter7@gmail.com", 'SPAM') + fetch_all_messages(initservice(), "usatodaytwitter7@gmail.com", 'INBOX'))
-#fetch_messages(initservice(), "cleomessaging@gmail.com")
-#send_message(initservice(), "cleomessaging@gmail.com", create_message("cleomessaging@gmail.com", "8438197750@mms.att.net", " ",  "hi"))

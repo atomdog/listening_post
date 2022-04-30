@@ -299,6 +299,7 @@ class sw:
         diff_spk = ["symbolic"]
         diff_spk_y = [0]
         diff_source = [""]
+        diff_date =[""]
         bumpbool = False
         #ry = r = lambda: random.randint()
         for row in range(0, len(self.semWeb)):
@@ -313,6 +314,8 @@ class sw:
                             diff_spk_y.append(10)
                         if(self.semWeb[row].source not in diff_source):
                             diff_source.append(self.semWeb[row].source)
+                        if(self.semWeb[row].t not in diff_source):
+                            diff_date.append(self.semWeb[row].t)
                         x_start = (diff_spk.index(self.semWeb[row].speaker)*20)+20
                         y_start = diff_spk_y[diff_spk.index(self.semWeb[row].speaker)]
                         toadd = {'key':str(row)+'-'+str(nodec),'label':self.semWeb[row].track[nodec].text,'tag':self.semWeb[row].track[nodec].entity_tag,'date_spoken':self.semWeb[row].t,'score':self.semWeb[row].track[nodec].score, 'source':self.semWeb[row].source,'url':self.semWeb[row].url, 'cluster':self.semWeb[row].speaker,'x':x_start+nodec,'y':y_start}
@@ -329,12 +332,12 @@ class sw:
             if([s,e] not in json_edge_form):
                 json_edge_form.append([s,e])
         final_json['nodes'] = json_node_form
-
         final_json['edges'] = json_edge_form
-
+        final_json['date'] = json_edge_form
         tagbuilder = []
         clusterbuilder = []
         sourcebuilder = []
+        date_builder = []
         r = lambda: random.randint(0,255)
 
         for x in range(0, len(diff_spk)):
@@ -343,9 +346,11 @@ class sw:
             tagbuilder.append({'key': diff_ents[x], "image":str(diff_ents[x])+".svg"})
         for x in range(0, len(diff_source)):
             sourcebuilder.append({'key': diff_source[x], "image":str(diff_source[x])+".svg"})
+
         final_json['tags']=tagbuilder
         final_json['clusters']=clusterbuilder
         final_json['sources']=sourcebuilder
+        final_json['date']=date_builder
         #print(final_json)
         with open('./viz/sigma.js-main/demo/public/dataset.json', 'w') as outfile:
             json.dump(final_json, outfile)
@@ -516,10 +521,9 @@ class sw:
                     self.semWeb[targety].track[targetx].individual_traces.append(sem_trace(targetx, targety, cnode.node_x, cnode.node_y))
                     self.nodeList[totrace[key][x]].individual_traces.append(sem_trace(cnode.node_x, cnode.node_y, targetx, targety))
                     self.traces.append(sem_trace(cnode.node_x,cnode.node_y, targetx, targety))
-
         print(totrace)
         #self.export_to_json()
-    def similarity_by_speaker(self,spk1,spk2):
+    def similarity_by_speaker_text(self,spk1,spk2):
         collected_1 = []
         collected_2 = []
         for x in range(0, len(self.semWeb)):
@@ -527,8 +531,25 @@ class sw:
                 collected_1.append(self.semWeb[x])
             if(self.semWeb[x].speaker == spk2):
                 collected_2.append(self.semWeb[x])
-        
-        pass
+        collected_1 = dict(collected_1)
+        collected_2 = dict(collected_2)
+        intersection = collected_1.intersection(collected_2)
+        union = collected_1.union(collected_1)
+        return float(len(intersection)) / len(union)
+
+    def similarity_by_speaker_entity_text(self,spk1,spk2):
+        collected_1 = []
+        collected_2 = []
+        for x in range(0, len(self.semWeb)):
+            if(self.semWeb[x].speaker == spk1):
+                collected_1.append(self.semWeb[x])
+            if(self.semWeb[x].speaker == spk2):
+                collected_2.append(self.semWeb[x])
+        collected_1 = dict(collected_1)
+        collected_2 = dict(collected_2)
+        intersection = collected_1.intersection(collected_2)
+        union = collected_1.union(collected_1)
+        return float(len(intersection)) / len(union)
 
 #while loop for mutex, parse if semicolon
 

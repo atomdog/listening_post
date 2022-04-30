@@ -17,6 +17,9 @@ a3-81eSGpw4,37,61,hobbs
 NxAnu-gfnIY,start,finish,lafave
 fV1F3rEWVkU,start,finish,hobbs
 3M8Xw0IJ7eo,start,finish,paine
+T_bnH-2LfHU,start,finish,trump
+aorwt3gLigk,start,finish,larose
+llt6mU3EQfU,start,finish,larose
 Ixda_cI0UdY,start,finish,raffensperger
 QQAvlhTvC4Y,start,finish,raffensperger
 pvmGFZodLgc,start,finish,crockett

@@ -1,0 +1,103 @@
+benson: the latest weather alerts., 1.934, 6.807, 2021-10-04
+benson:  a general election in metro , 4.337, 6.64, 2021-10-04
+benson: detroit is less than one month , 8.808, 2.402, 2021-10-04
+benson: away., 11.044, 1.668, 2021-10-04
+benson: that means voters are gearing up, 11.277, 4.07, 2021-10-04
+benson: to cast millions of ballots in , 12.779, 4.07, 2021-10-04
+benson: another round of big races right, 15.414, 3.237, 2021-10-04
+benson: here in metro detroit., 16.916, 4.138, 2021-10-04
+benson: that includes the detroit , 18.718, 5.639, 2021-10-04
+benson: mayoral race dearborn mayoral , 21.121, 5.572, 2021-10-04
+benson: race and the state senate seat , 24.424, 4.737, 2021-10-04
+benson: in macomb county., 26.759, 4.471, 2021-10-04
+benson:  president biden is making a , 29.228, 4.238, 2021-10-04
+benson: stop in metro detroit visiting , 31.297, 4.371, 2021-10-04
+benson: howell where he's expected to , 33.533, 4.204, 2021-10-04
+benson: discuss his build back better , 35.735, 2.235, 2021-10-04
+benson: agenda., 37.804, 1.734, 2021-10-04
+benson:  tonight michigan secretary of, 38.037, 3.87, 2021-10-04
+benson: state jocelyn benson is joining , 39.605, 3.003, 2021-10-04
+benson: us live., 41.974, 3.17, 2021-10-04
+benson: we thank you so much for being , 42.675, 3.804, 2021-10-04
+benson: with us tonight., 45.211, 2.503, 2021-10-04
+benson:  thanks for having me., 46.545, 2.436, 2021-10-04
+benson:  our first question is , 47.78, 2.703, 2021-10-04
+benson: michigan ready for the general , 49.048, 1.702, 2021-10-04
+benson: election?, 50.55, 2.335, 2021-10-04
+benson:  you know our clerks have , 50.817, 2.769, 2021-10-04
+benson: done such extraordinary things , 52.952, 2.703, 2021-10-04
+benson: over the past two years , 53.652, 2.837, 2021-10-04
+benson: particularly overseeing the most, 55.722, 2.268, 2021-10-04
+benson: successful election last year in, 56.556, 2.902, 2021-10-04
+benson: recent history with more people , 58.057, 2.702, 2021-10-04
+benson: voting than ever before., 59.525, 2.669, 2021-10-04
+benson: they've overcome so much in the , 60.826, 3.003, 2021-10-04
+benson: midst of a pandemic they're , 62.261, 2.703, 2021-10-04
+benson: ready for november again., 63.896, 3.036, 2021-10-04
+benson: and they're ready to again , 65.031, 3.303, 2021-10-04
+benson: prepare to give citizens , 66.999, 2.736, 2021-10-04
+benson: options whether you vote from , 68.401, 2.803, 2021-10-04
+benson: home or in person on election , 69.802, 2.969, 2021-10-04
+benson: day our clerks are there to , 71.271, 3.169, 2021-10-04
+benson: make sure your vote is counted , 72.838, 3.804, 2021-10-04
+benson: and your voices heard., 74.507, 4.938, 2021-10-04
+benson:  last night we saw governor , 76.709, 3.904, 2021-10-04
+benson: whitmer veto four election bills, 79.512, 2.469, 2021-10-04
+benson: at the naacp dinner., 80.68, 2.702, 2021-10-04
+benson: what does that mean for the , 82.047, 2.704, 2021-10-04
+benson: upcoming election?, 83.449, 2.069, 2021-10-04
+benson:  nothing really., 84.817, 3.003, 2021-10-04
+benson: it means business as usual., 85.584, 3.971, 2021-10-04
+benson: it means the secure protocols in, 87.887, 4.037, 2021-10-04
+benson: place in 2020 remain in place., 89.622, 4.438, 2021-10-04
+benson: it means your options for voting, 91.991, 3.17, 2021-10-04
+benson: remain accessible., 94.127, 2.468, 2021-10-04
+benson: it means that the way democracy , 95.228, 3.236, 2021-10-04
+benson: is working which is better than, 96.662, 3.07, 2021-10-04
+benson: ever before based on the number , 98.531, 3.336, 2021-10-04
+benson: of people participanting is , 99.799, 3.437, 2021-10-04
+benson: going to continue in michigan., 101.934, 2.77, 2021-10-04
+benson: we're going to continue to make , 103.302, 2.369, 2021-10-04
+benson: sure that's the case following , 104.771, 2.569, 2021-10-04
+benson: the data listening to what , 105.738, 3.637, 2021-10-04
+benson: voters want and delivering a , 107.406, 3.437, 2021-10-04
+benson: democracy that's secure and , 109.442, 2.235, 2021-10-04
+benson: accessible for all., 110.91, 2.97, 2021-10-04
+benson:  we have the pandemic in mind., 111.744, 3.37, 2021-10-04
+benson: any changes voters can expect , 113.947, 3.77, 2021-10-04
+benson: when they cast their ballot or , 115.181, 4.104, 2021-10-04
+benson: similar to last year?, 117.784, 3.236, 2021-10-04
+benson:  i think the same thing voters, 119.352, 3.203, 2021-10-04
+benson: saw last year they can expect , 121.087, 2.135, 2021-10-04
+benson: this year., 122.622, 2.102, 2021-10-04
+benson: no. 1 they have options., 123.289, 2.569, 2021-10-04
+benson: they can vote absentee., 124.791, 2.702, 2021-10-04
+benson: if they do they can return , 125.925, 2.936, 2021-10-04
+benson: their ballots through the mail , 127.56, 3.536, 2021-10-04
+benson: which they have time to do., 128.928, 3.937, 2021-10-04
+benson: or at a local drop box which are, 131.163, 2.803, 2021-10-04
+benson: in place in local communities , 132.932, 2.936, 2021-10-04
+benson: all across the state., 134.033, 4.304, 2021-10-04
+benson: if they choose to vote in person, 135.935, 4.972, 2021-10-04
+benson: on election day wear masks., 138.404, 4.371, 2021-10-04
+benson: they'll be met with poll workers, 140.974, 3.203, 2021-10-04
+benson: wearing masks with secure , 142.842, 2.369, 2021-10-04
+benson: protocols in place to protect , 144.244, 2.101, 2021-10-04
+benson: the health and safety of all., 145.278, 2.736, 2021-10-04
+benson: we've been through this before., 146.412, 3.203, 2021-10-04
+benson: we know the drill., 148.081, 3.503, 2021-10-04
+benson: our clerks our administrations , 149.682, 3.003, 2021-10-04
+benson: are true professionals as are , 151.651, 2.402, 2021-10-04
+benson: our co-workers., 152.785, 3.203, 2021-10-04
+benson: they'll be working as hard as , 154.12, 3.003, 2021-10-04
+benson: last year to make sure this , 156.055, 2.703, 2021-10-04
+benson: fall's elections go as smoothly , 157.223, 3.036, 2021-10-04
+benson: if not better than before., 158.825, 3.536, 2021-10-04
+benson:  having our residents have , 160.326, 3.637, 2021-10-04
+benson: access jocelyn benson thank , 162.428, 3.036, 2021-10-04
+benson: you so much michigan secretary , 164.03, 2.369, 2021-10-04
+benson: of state joining us this evening, 165.531, 2.67, 2021-10-04
+benson: to talk about the upcoming , 166.466, 2.202, 2021-10-04
+benson: election., 168.268, 1.801, 2021-10-04
+benson: we appreciate your time., 168.735, 6.506, 2021-10-04
+benson:  people can go to michigan, 170.136, 5.105, 2021-10-04

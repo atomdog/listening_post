@@ -1,0 +1,777 @@
+crocket: [music], 3.2, 7.88, 2022-02-28
+crocket: welcome to republican roundtable i'm, 11.44, 4.319, 2022-02-28
+crocket: your host max reimer, 13.28, 5.36, 2022-02-28
+crocket: security is going to be a big issue in, 15.759, 5.121, 2022-02-28
+crocket: 2022 and beyond because it was a big, 18.64, 5.36, 2022-02-28
+crocket: issue in 2020 we saw some of the flaws, 20.88, 6.399, 2022-02-28
+crocket: in our system today i have a candidate, 24.0, 6.08, 2022-02-28
+crocket: for secretary of state in studio one of, 27.279, 5.681, 2022-02-28
+crocket: my good friends kim crockett kim thanks, 30.08, 4.56, 2022-02-28
+crocket: for coming on the republican roundtable, 32.96, 4.8, 2022-02-28
+crocket: welcome so you're running for secretary, 34.64, 4.8, 2022-02-28
+crocket: of state yeah it's kind of wild isn't, 37.76, 3.04, 2022-02-28
+crocket: that crazy, 39.44, 3.36, 2022-02-28
+crocket: tell us about yourself tell the viewers, 40.8, 4.239, 2022-02-28
+crocket: who may not know you right now who is, 42.8, 4.079, 2022-02-28
+crocket: kim crockett and why is she running for, 45.039, 4.321, 2022-02-28
+crocket: secretary of state, 46.879, 6.561, 2022-02-28
+crocket: well i'm a long time advocate of limited, 49.36, 5.44, 2022-02-28
+crocket: government, 53.44, 3.279, 2022-02-28
+crocket: rule of law, 54.8, 4.079, 2022-02-28
+crocket: living under the constitution, 56.719, 4.32, 2022-02-28
+crocket: been doing that for over 30 years, 58.879, 3.441, 2022-02-28
+crocket: actually, 61.039, 4.48, 2022-02-28
+crocket: as a lawyer and an advocate um, 62.32, 4.479, 2022-02-28
+crocket: you know, 65.519, 3.441, 2022-02-28
+crocket: when i was younger i was in private, 66.799, 3.68, 2022-02-28
+crocket: practice, 68.96, 3.68, 2022-02-28
+crocket: as an attorney also stayed home with my, 70.479, 4.32, 2022-02-28
+crocket: kids when they were little to raise them, 72.64, 4.24, 2022-02-28
+crocket: and went went back into law and the, 74.799, 3.68, 2022-02-28
+crocket: policy world, 76.88, 5.36, 2022-02-28
+crocket: when that all worked for my family but, 78.479, 6.881, 2022-02-28
+crocket: i have been focused most recently on, 82.24, 5.36, 2022-02-28
+crocket: election integrity issues, 85.36, 5.36, 2022-02-28
+crocket: my spidey sense kind of went off in 2019, 87.6, 5.68, 2022-02-28
+crocket: as i looked ahead i had been, 90.72, 6.48, 2022-02-28
+crocket: volunteering in the election space, 93.28, 5.76, 2022-02-28
+crocket: i've been familiar with our election, 97.2, 3.919, 2022-02-28
+crocket: laws for a long time because i've been a, 99.04, 3.759, 2022-02-28
+crocket: critic, 101.119, 2.561, 2022-02-28
+crocket: i, 102.799, 2.801, 2022-02-28
+crocket: characterize them as sloppy, 103.68, 4.32, 2022-02-28
+crocket: they are sloppy, 105.6, 5.6, 2022-02-28
+crocket: minnesota used to you know have great, 108.0, 6.72, 2022-02-28
+crocket: election laws back in the day when i was, 111.2, 6.08, 2022-02-28
+crocket: a kid and you probably weren't born yet, 114.72, 4.24, 2022-02-28
+crocket: we had a secretary of state named joan, 117.28, 2.56, 2022-02-28
+crocket: grow, 118.96, 3.04, 2022-02-28
+crocket: and i think she turned us from being a, 119.84, 4.4, 2022-02-28
+crocket: state where everybody could wake up, 122.0, 5.28, 2022-02-28
+crocket: after election day saying yeah you know, 124.24, 5.28, 2022-02-28
+crocket: that was was fair, 127.28, 5.52, 2022-02-28
+crocket: except the outcome we began to become a, 129.52, 5.92, 2022-02-28
+crocket: progressive state in the mid 70s, 132.8, 4.96, 2022-02-28
+crocket: eventually abandoning really basic, 135.44, 4.24, 2022-02-28
+crocket: common sense things like, 137.76, 3.92, 2022-02-28
+crocket: voter id right, 139.68, 5.68, 2022-02-28
+crocket: adding crazy stuff like vouching, 141.68, 5.279, 2022-02-28
+crocket: so, 145.36, 3.599, 2022-02-28
+crocket: we can go into details on what those, 146.959, 3.201, 2022-02-28
+crocket: laws are, 148.959, 2.241, 2022-02-28
+crocket: but then, 150.16, 2.96, 2022-02-28
+crocket: in 2020, 151.2, 3.92, 2022-02-28
+crocket: the way i would characterize the, 153.12, 4.0, 2022-02-28
+crocket: election in minnesota, 155.12, 4.479, 2022-02-28
+crocket: is that our secretary of state has kind, 157.12, 5.28, 2022-02-28
+crocket: of perfected turning his office into a, 159.599, 4.881, 2022-02-28
+crocket: partisan operation, 162.4, 5.36, 2022-02-28
+crocket: and some outrageous things happened, 164.48, 6.0, 2022-02-28
+crocket: here but also across the country yeah, 167.76, 4.64, 2022-02-28
+crocket: and we can get into the details on that, 170.48, 3.839, 2022-02-28
+crocket: well i would you know i would like to, 172.4, 4.4, 2022-02-28
+crocket: get into those details because kim you, 174.319, 5.28, 2022-02-28
+crocket: know we have time we do to do that this, 176.8, 4.48, 2022-02-28
+crocket: evening we do have that's kind of an, 179.599, 3.761, 2022-02-28
+crocket: overview yeah, 181.28, 4.319, 2022-02-28
+crocket: and i would just top it off by saying i, 183.36, 4.08, 2022-02-28
+crocket: don't think i'd be sitting here with you, 185.599, 4.161, 2022-02-28
+crocket: tonight as a candidate for secretary of, 187.44, 3.519, 2022-02-28
+crocket: state, 189.76, 2.16, 2022-02-28
+crocket: if, 190.959, 3.92, 2022-02-28
+crocket: the state of virginia had not flipped, 191.92, 5.12, 2022-02-28
+crocket: in november, 194.879, 4.561, 2022-02-28
+crocket: virginia has bad rules just like, 197.04, 4.8, 2022-02-28
+crocket: minnesota things like 45 days of early, 199.44, 4.879, 2022-02-28
+crocket: voting like why, 201.84, 3.6, 2022-02-28
+crocket: why, 204.319, 2.801, 2022-02-28
+crocket: it's not even voting anymore right, 205.44, 4.0, 2022-02-28
+crocket: that's an election season right not, 207.12, 4.96, 2022-02-28
+crocket: election day, 209.44, 4.24, 2022-02-28
+crocket: and no voter id, 212.08, 3.28, 2022-02-28
+crocket: so they have bad rules, 213.68, 3.839, 2022-02-28
+crocket: but i saw people that i think have, 215.36, 5.84, 2022-02-28
+crocket: integrity who will run the state better, 217.519, 5.201, 2022-02-28
+crocket: governor younkin, 221.2, 3.28, 2022-02-28
+crocket: and others win, 222.72, 5.04, 2022-02-28
+crocket: and i looked at the details, 224.48, 5.6, 2022-02-28
+crocket: i know a lot about the task force that, 227.76, 4.8, 2022-02-28
+crocket: won that state, 230.08, 5.04, 2022-02-28
+crocket: and i said okay if they can do this we, 232.56, 5.28, 2022-02-28
+crocket: can do that in minnesota, 235.12, 5.119, 2022-02-28
+crocket: i'm part of a national election, 237.84, 5.119, 2022-02-28
+crocket: integrity network we meet twice a week, 240.239, 5.28, 2022-02-28
+crocket: oh wow it's a serious real network then, 242.959, 4.721, 2022-02-28
+crocket: it's a real network, 245.519, 4.8, 2022-02-28
+crocket: um and just to tell your viewers a, 247.68, 4.24, 2022-02-28
+crocket: little bit about that network it's the, 250.319, 4.48, 2022-02-28
+crocket: election integrity network ein is led by, 251.92, 4.8, 2022-02-28
+crocket: an extraordinary attorney her name is, 254.799, 3.521, 2022-02-28
+crocket: cleta mitchell, 256.72, 3.44, 2022-02-28
+crocket: a former democrat, 258.32, 4.159, 2022-02-28
+crocket: okay she became a republican somewhere, 260.16, 5.68, 2022-02-28
+crocket: along the line she was an oklahoma, 262.479, 5.601, 2022-02-28
+crocket: state legislator and eventually ended up, 265.84, 7.2, 2022-02-28
+crocket: in d.c specializing in election law, 268.08, 4.96, 2022-02-28
+crocket: campaign finance all of those things and, 273.12, 3.92, 2022-02-28
+crocket: i've actually known her for quite some, 275.36, 5.2, 2022-02-28
+crocket: time and she leads us, 277.04, 5.76, 2022-02-28
+crocket: and the heritage action group is also, 280.56, 3.28, 2022-02-28
+crocket: very, 282.8, 3.36, 2022-02-28
+crocket: active they leave the tuesday call cleto, 283.84, 4.88, 2022-02-28
+crocket: leads the friday call so i have access, 286.16, 5.12, 2022-02-28
+crocket: to all of this information i got to see, 288.72, 6.8, 2022-02-28
+crocket: the task force in virginia put together, 291.28, 5.76, 2022-02-28
+crocket: and, 295.52, 3.84, 2022-02-28
+crocket: a lot of what my campaign, 297.04, 4.96, 2022-02-28
+crocket: is about is, 299.36, 4.48, 2022-02-28
+crocket: setting up minnesota to be able to do, 302.0, 4.56, 2022-02-28
+crocket: the same thing here and what is that, 303.84, 5.76, 2022-02-28
+crocket: well it's winning yeah but how, 306.56, 4.96, 2022-02-28
+crocket: and i call it putting eyes on every, 309.6, 2.879, 2022-02-28
+crocket: ballot, 311.52, 2.48, 2022-02-28
+crocket: and we'll talk about that that's, 312.479, 3.761, 2022-02-28
+crocket: actually on this little card there's a, 314.0, 4.56, 2022-02-28
+crocket: qr code it's on every ballot, 316.24, 3.6, 2022-02-28
+crocket: eyes on every ballot where do you, 318.56, 3.52, 2022-02-28
+crocket: suppose that qr code goes, 319.84, 5.6, 2022-02-28
+crocket: this has gone viral by the way, 322.08, 4.16, 2022-02-28
+crocket: well, 325.44, 3.04, 2022-02-28
+crocket: you tell me a little viral little v, 326.24, 3.36, 2022-02-28
+crocket: [music], 328.48, 2.24, 2022-02-28
+crocket: when people, 329.6, 3.92, 2022-02-28
+crocket: uh scan the the qr code it goes straight, 330.72, 4.72, 2022-02-28
+crocket: to the minnesota republican party where, 333.52, 6.48, 2022-02-28
+crocket: you can sign up to be an election judge, 335.44, 7.28, 2022-02-28
+crocket: either for election day or on a ballot, 340.0, 3.6, 2022-02-28
+crocket: board, 342.72, 2.24, 2022-02-28
+crocket: and that's how we're going to put eyes, 343.6, 2.159, 2022-02-28
+crocket: on, 344.96, 2.56, 2022-02-28
+crocket: every ballot, 345.759, 3.601, 2022-02-28
+crocket: virginia went from, 347.52, 4.8, 2022-02-28
+crocket: about a 20 coverage of the polls with, 349.36, 5.6, 2022-02-28
+crocket: republicans showing up raising their, 352.32, 4.4, 2022-02-28
+crocket: hand getting off the couch and saying we, 354.96, 4.239, 2022-02-28
+crocket: want to help they went from 20 percent, 356.72, 4.56, 2022-02-28
+crocket: to covering the about 90 percent of the, 359.199, 4.641, 2022-02-28
+crocket: polls a little over 90 of the polls, 361.28, 5.44, 2022-02-28
+crocket: and so as i crisscross the state, 363.84, 5.68, 2022-02-28
+crocket: i've been recruiting election judges, 366.72, 5.28, 2022-02-28
+crocket: actually before i announced my candidacy, 369.52, 4.799, 2022-02-28
+crocket: i was a consultant for american majority, 372.0, 4.88, 2022-02-28
+crocket: on election integrity using my expertise, 374.319, 3.761, 2022-02-28
+crocket: for them, 376.88, 2.159, 2022-02-28
+crocket: and then, 378.08, 2.8, 2022-02-28
+crocket: when i stepped down from that role and, 379.039, 4.401, 2022-02-28
+crocket: announced i continued talking to people, 380.88, 3.84, 2022-02-28
+crocket: about that, 383.44, 3.68, 2022-02-28
+crocket: so i wouldn't be sitting here, 384.72, 3.44, 2022-02-28
+crocket: today, 387.12, 3.28, 2022-02-28
+crocket: running as secretary of state, 388.16, 4.479, 2022-02-28
+crocket: if there weren't two things one i felt, 390.4, 3.6, 2022-02-28
+crocket: that i had the background in the, 392.639, 4.321, 2022-02-28
+crocket: credentials long-time policy advocate, 394.0, 5.44, 2022-02-28
+crocket: and lawyer here in minnesota, 396.96, 4.959, 2022-02-28
+crocket: um with those national, 399.44, 5.199, 2022-02-28
+crocket: and state kind of network connections if, 401.919, 4.481, 2022-02-28
+crocket: you will, 404.639, 5.521, 2022-02-28
+crocket: and i describe myself as an outsider, 406.4, 4.56, 2022-02-28
+crocket: right, 410.16, 2.96, 2022-02-28
+crocket: with an inside track, 410.96, 3.44, 2022-02-28
+crocket: um, 413.12, 3.519, 2022-02-28
+crocket: and then to they won, 414.4, 4.239, 2022-02-28
+crocket: and i saw how they did it, 416.639, 4.4, 2022-02-28
+crocket: and it's a great story if you think your, 418.639, 4.081, 2022-02-28
+crocket: listeners would be interested in what, 421.039, 4.081, 2022-02-28
+crocket: happened in virginia so we can imagine, 422.72, 5.12, 2022-02-28
+crocket: doing it here, 425.12, 2.72, 2022-02-28
+crocket: the republican national committee knew, 428.56, 7.039, 2022-02-28
+crocket: that they'd missed the mark in 2020 yep, 431.36, 6.559, 2022-02-28
+crocket: uh and we can talk about some of the big, 435.599, 5.201, 2022-02-28
+crocket: trends that they failed to address that, 437.919, 4.241, 2022-02-28
+crocket: steve simon, 440.8, 4.56, 2022-02-28
+crocket: uh brought to our state like zuckerberg, 442.16, 4.0, 2022-02-28
+crocket: uh, 445.36, 3.2, 2022-02-28
+crocket: you know consent decrees we'll get into, 446.16, 4.64, 2022-02-28
+crocket: that, 448.56, 3.44, 2022-02-28
+crocket: well, 450.8, 3.44, 2022-02-28
+crocket: in some detail if you want, 452.0, 5.28, 2022-02-28
+crocket: the rnc looked at what happened in 2020, 454.24, 4.48, 2022-02-28
+crocket: and said we've got to get ahead of that, 457.28, 2.479, 2022-02-28
+crocket: trend, 458.72, 4.8, 2022-02-28
+crocket: and we need to reach out to virginians, 459.759, 4.88, 2022-02-28
+crocket: to help us, 463.52, 2.48, 2022-02-28
+crocket: well there's a lot of virginians that, 464.639, 3.201, 2022-02-28
+crocket: don't like the republican party right, 466.0, 3.599, 2022-02-28
+crocket: but they're conservatives, 467.84, 4.24, 2022-02-28
+crocket: they see themselves as patriots but not, 469.599, 5.201, 2022-02-28
+crocket: big fans of the rnc sure and the rnc, 472.08, 5.28, 2022-02-28
+crocket: said look we know that we missed the, 474.8, 3.76, 2022-02-28
+crocket: mark, 477.36, 4.08, 2022-02-28
+crocket: a lot of crow being eaten a lot of, 478.56, 4.96, 2022-02-28
+crocket: uh you know humbleness, 481.44, 4.4, 2022-02-28
+crocket: that i've seen on the part of of those, 483.52, 4.72, 2022-02-28
+crocket: leaders pretty rare in politics i've, 485.84, 4.72, 2022-02-28
+crocket: been blown away by it i've spent some, 488.24, 4.32, 2022-02-28
+crocket: time with some of these national leaders, 490.56, 4.0, 2022-02-28
+crocket: and they are truly sorry that that, 492.56, 4.16, 2022-02-28
+crocket: happened and that they didn't listen, 494.56, 5.28, 2022-02-28
+crocket: and they didn't work with the grassroots, 496.72, 4.879, 2022-02-28
+crocket: and they really wanted to win they, 499.84, 4.72, 2022-02-28
+crocket: really wanted to flip virginia, 501.599, 5.921, 2022-02-28
+crocket: so uh the way they've put it is we lay, 504.56, 4.88, 2022-02-28
+crocket: down our labels, 507.52, 4.32, 2022-02-28
+crocket: uh set aside our egos put down our, 509.44, 3.76, 2022-02-28
+crocket: weapons that you know because they're, 511.84, 3.759, 2022-02-28
+crocket: like cats and dogs right right, 513.2, 4.079, 2022-02-28
+crocket: and they said to jenny beth martin at, 515.599, 4.32, 2022-02-28
+crocket: the tea party patriots and other civic, 517.279, 4.401, 2022-02-28
+crocket: groups patriot groups, 519.919, 3.841, 2022-02-28
+crocket: how about we work together, 521.68, 4.96, 2022-02-28
+crocket: because we need to flip virginia, 523.76, 6.16, 2022-02-28
+crocket: so that we can manage the state properly, 526.64, 6.639, 2022-02-28
+crocket: from a fiscal standpoint but also, 529.92, 5.52, 2022-02-28
+crocket: what am i calling tell, 533.279, 4.641, 2022-02-28
+crocket: parents well that they have no business, 535.44, 4.56, 2022-02-28
+crocket: in their kids schools right yeah, 537.92, 4.08, 2022-02-28
+crocket: yeah like back off these are our kids, 540.0, 3.92, 2022-02-28
+crocket: not yours right and he stepped in it big, 542.0, 3.12, 2022-02-28
+crocket: time right, 543.92, 3.76, 2022-02-28
+crocket: so there's the crt the gender fluidity, 545.12, 4.399, 2022-02-28
+crocket: all that crazy stuff, 547.68, 3.839, 2022-02-28
+crocket: and then the health freedom issues, 549.519, 5.201, 2022-02-28
+crocket: around covid vaccine lockdowns, 551.519, 5.601, 2022-02-28
+crocket: and the people of virginia were up in, 554.72, 4.48, 2022-02-28
+crocket: arms over these things so there was a, 557.12, 4.24, 2022-02-28
+crocket: real opportunity there, 559.2, 5.04, 2022-02-28
+crocket: and um and it worked they laid down, 561.36, 5.44, 2022-02-28
+crocket: their weapons their egos and the cats, 564.24, 4.64, 2022-02-28
+crocket: and the dogs got together but you know, 566.8, 4.08, 2022-02-28
+crocket: when you have patriot groups working, 568.88, 4.24, 2022-02-28
+crocket: with the rnc, 570.88, 4.16, 2022-02-28
+crocket: it's a neat i mean it's an exciting, 573.12, 3.839, 2022-02-28
+crocket: thing and it's the message i have for, 575.04, 3.6, 2022-02-28
+crocket: minnesotans is, 576.959, 3.841, 2022-02-28
+crocket: let's see if we can't bring that here, 578.64, 4.56, 2022-02-28
+crocket: right uh if we show up, 580.8, 4.479, 2022-02-28
+crocket: big time we get off the couch stop, 583.2, 4.16, 2022-02-28
+crocket: complaining, 585.279, 5.12, 2022-02-28
+crocket: oh we can't win you know all that stuff, 587.36, 6.08, 2022-02-28
+crocket: and and show up by, 590.399, 5.921, 2022-02-28
+crocket: people signing up to help, 593.44, 4.959, 2022-02-28
+crocket: instead of saying it's somebody else's, 596.32, 4.32, 2022-02-28
+crocket: job right then i think we can attract, 598.399, 4.961, 2022-02-28
+crocket: the national resources to our state i, 600.64, 5.439, 2022-02-28
+crocket: can't run a task force no math i mean, 603.36, 4.64, 2022-02-28
+crocket: i'm running a statewide right you know, 606.079, 3.601, 2022-02-28
+crocket: i'm a candidate, 608.0, 4.32, 2022-02-28
+crocket: uh in a statewide campaign and i need to, 609.68, 5.279, 2022-02-28
+crocket: be the candidate so i can't be the task, 612.32, 5.44, 2022-02-28
+crocket: force right so i'm doing uh you know, 614.959, 5.921, 2022-02-28
+crocket: this to the rnc come to our state help, 617.76, 4.079, 2022-02-28
+crocket: us, 620.88, 3.04, 2022-02-28
+crocket: you know we're not much further away you, 621.839, 3.44, 2022-02-28
+crocket: know than, 623.92, 3.2, 2022-02-28
+crocket: something like virginia was right we're, 625.279, 3.921, 2022-02-28
+crocket: not in the top six or the top eight, 627.12, 3.76, 2022-02-28
+crocket: states that they're looking at but i'm, 629.2, 3.84, 2022-02-28
+crocket: trying to get us into the top ten sure, 630.88, 4.399, 2022-02-28
+crocket: so we get those resources so that's my, 633.04, 4.08, 2022-02-28
+crocket: plan to win, 635.279, 5.521, 2022-02-28
+crocket: and i think it it it lifts all boats on, 637.12, 5.76, 2022-02-28
+crocket: the republican ticket, 640.8, 4.56, 2022-02-28
+crocket: and that's a terrific thing, 642.88, 4.8, 2022-02-28
+crocket: but you and i were talking before the, 645.36, 4.32, 2022-02-28
+crocket: show about how, 647.68, 5.12, 2022-02-28
+crocket: republicans have to be attractive to, 649.68, 5.44, 2022-02-28
+crocket: more than republicans, 652.8, 5.599, 2022-02-28
+crocket: right it can't be just about us, 655.12, 6.0, 2022-02-28
+crocket: we have to find a way to communicate to, 658.399, 4.721, 2022-02-28
+crocket: uh people who don't like the republican, 661.12, 2.959, 2022-02-28
+crocket: party, 663.12, 2.88, 2022-02-28
+crocket: or you know they would never vote for a, 664.079, 4.0, 2022-02-28
+crocket: republican or whatever, 666.0, 4.079, 2022-02-28
+crocket: to give us a chance yeah, 668.079, 3.041, 2022-02-28
+crocket: yeah, 670.079, 1.461, 2022-02-28
+crocket: um, 671.12, 1.6, 2022-02-28
+crocket: [music], 671.54, 3.58, 2022-02-28
+crocket: i testified this morning, 672.72, 5.44, 2022-02-28
+crocket: in a senate hearing uh on uh in favor of, 675.12, 6.24, 2022-02-28
+crocket: two bills that mary kiffmeyer, 678.16, 5.28, 2022-02-28
+crocket: put forward this morning for election, 681.36, 3.44, 2022-02-28
+crocket: integrity, 683.44, 2.24, 2022-02-28
+crocket: and, 684.8, 2.8, 2022-02-28
+crocket: you know one of my old buddies down, 685.68, 3.92, 2022-02-28
+crocket: there in the senate he and i have mixed, 687.6, 3.919, 2022-02-28
+crocket: it up many times and i won't say who it, 689.6, 4.72, 2022-02-28
+crocket: was but you know he's coming after me, 691.519, 3.841, 2022-02-28
+crocket: and, 694.32, 3.36, 2022-02-28
+crocket: for just you know for questioning the, 695.36, 5.36, 2022-02-28
+crocket: outcome of of 2020, 697.68, 4.48, 2022-02-28
+crocket: and bringing up all he was bringing up, 700.72, 3.359, 2022-02-28
+crocket: all sorts of crazy stuff and it got, 702.16, 3.919, 2022-02-28
+crocket: really divisive and unpleasant for a, 704.079, 3.121, 2022-02-28
+crocket: while, 706.079, 4.961, 2022-02-28
+crocket: and that's exactly what i want to end, 707.2, 5.84, 2022-02-28
+crocket: we should be able to talk about our, 711.04, 5.12, 2022-02-28
+crocket: elections and the outcomes of elections, 713.04, 4.799, 2022-02-28
+crocket: as minnesotans, 716.16, 4.64, 2022-02-28
+crocket: so that we have confidence in them, 717.839, 5.041, 2022-02-28
+crocket: whether we're a democrat, 720.8, 5.44, 2022-02-28
+crocket: you know a bernie sanders socialist uh, 722.88, 5.68, 2022-02-28
+crocket: you know a christian conservative, 726.24, 4.8, 2022-02-28
+crocket: whatever we are i want to get us to the, 728.56, 4.24, 2022-02-28
+crocket: point where we, 731.04, 4.64, 2022-02-28
+crocket: wake up after elections and say job well, 732.8, 4.64, 2022-02-28
+crocket: done, 735.68, 3.92, 2022-02-28
+crocket: the candidate who got the most legal, 737.44, 4.0, 2022-02-28
+crocket: votes won, 739.6, 4.32, 2022-02-28
+crocket: and we can have thanksgiving together, 741.44, 5.04, 2022-02-28
+crocket: right again without tearing each other, 743.92, 4.88, 2022-02-28
+crocket: apart you know that's my goal that's, 746.48, 4.799, 2022-02-28
+crocket: good yeah it'll take longer than than, 748.8, 4.719, 2022-02-28
+crocket: one term i think yeah yeah it's kind of, 751.279, 4.56, 2022-02-28
+crocket: a cultural shift it's a cultural shift, 753.519, 4.0, 2022-02-28
+crocket: but i don't you think people are ready, 755.839, 3.44, 2022-02-28
+crocket: for that so i think we're getting there, 757.519, 5.201, 2022-02-28
+crocket: yeah i think they're getting there um, 759.279, 4.321, 2022-02-28
+crocket: so, 762.72, 2.32, 2022-02-28
+crocket: with um, 763.6, 3.6, 2022-02-28
+crocket: i want to talk about i guess a couple, 765.04, 5.799, 2022-02-28
+crocket: things so with the 2020 election, 767.2, 6.96, 2022-02-28
+crocket: what what did we do wrong what, 770.839, 5.401, 2022-02-28
+crocket: what did you kind of analyze and say, 774.16, 3.2, 2022-02-28
+crocket: like hey, 776.24, 3.839, 2022-02-28
+crocket: based on your your expertise like, 777.36, 5.52, 2022-02-28
+crocket: these are the things the rnc or whatever, 780.079, 5.361, 2022-02-28
+crocket: group should have been doing differently, 782.88, 4.079, 2022-02-28
+crocket: and then just the second piece of that, 785.44, 3.12, 2022-02-28
+crocket: question kim, 786.959, 2.961, 2022-02-28
+crocket: what, 788.56, 2.959, 2022-02-28
+crocket: what would you change i guess as, 789.92, 4.24, 2022-02-28
+crocket: secretary of state so two-part question, 791.519, 4.241, 2022-02-28
+crocket: what do we do wrong what would you do, 794.16, 3.84, 2022-02-28
+crocket: different well, 795.76, 5.04, 2022-02-28
+crocket: just briefly not to pick on the rnc but, 798.0, 5.68, 2022-02-28
+crocket: but there were people in the state, 800.8, 4.8, 2022-02-28
+crocket: me included, 803.68, 3.52, 2022-02-28
+crocket: who were trying to get them focused on, 805.6, 3.039, 2022-02-28
+crocket: election judges, 807.2, 3.12, 2022-02-28
+crocket: they wouldn't listen, 808.639, 3.2, 2022-02-28
+crocket: they were like no it's all about poll, 810.32, 3.519, 2022-02-28
+crocket: watchers it's like pool watchers can't, 811.839, 4.24, 2022-02-28
+crocket: do a damn thing in minnesota we used to, 813.839, 3.44, 2022-02-28
+crocket: be able to, 816.079, 3.281, 2022-02-28
+crocket: i've been an election day, 817.279, 4.161, 2022-02-28
+crocket: operation attorney for the state for, 819.36, 5.52, 2022-02-28
+crocket: over 20 years as a volunteer not paid, 821.44, 5.04, 2022-02-28
+crocket: just there's a whole group of us that, 824.88, 4.16, 2022-02-28
+crocket: just did our civic duty year after year, 826.48, 4.64, 2022-02-28
+crocket: and we'd meet at republican headquarters, 829.04, 4.32, 2022-02-28
+crocket: and spend the day fielding phone calls, 831.12, 4.959, 2022-02-28
+crocket: sure on precincts and they'd send me and, 833.36, 5.52, 2022-02-28
+crocket: other people out to the really bad ones, 836.079, 4.961, 2022-02-28
+crocket: where we'd go in you know all right the, 838.88, 4.399, 2022-02-28
+crocket: sheriff's here knock it off they brought, 841.04, 4.0, 2022-02-28
+crocket: the attorney right, 843.279, 3.281, 2022-02-28
+crocket: right yeah um, 845.04, 3.68, 2022-02-28
+crocket: and it was helpful and we could actually, 846.56, 3.519, 2022-02-28
+crocket: do things, 848.72, 4.559, 2022-02-28
+crocket: um it would become weaker and weaker, 850.079, 6.401, 2022-02-28
+crocket: over time the the election integrity, 853.279, 5.92, 2022-02-28
+crocket: operations on election day have had, 856.48, 4.799, 2022-02-28
+crocket: degraded significantly over that 20, 859.199, 3.601, 2022-02-28
+crocket: years where we've had mark richie for, 861.279, 3.12, 2022-02-28
+crocket: eight years and now steve simon we're, 862.8, 3.52, 2022-02-28
+crocket: heading into eight you know where they, 864.399, 4.321, 2022-02-28
+crocket: tie our hands and literally push us away, 866.32, 4.16, 2022-02-28
+crocket: from the table so we can't even see, 868.72, 3.359, 2022-02-28
+crocket: what's going on, 870.48, 2.4, 2022-02-28
+crocket: so, 872.079, 2.88, 2022-02-28
+crocket: but the bigger trends i want to cover, 872.88, 4.399, 2022-02-28
+crocket: what steve simon did yeah and it wasn't, 874.959, 4.88, 2022-02-28
+crocket: just simon it was other constitutional, 877.279, 5.12, 2022-02-28
+crocket: officers across the country, 879.839, 3.921, 2022-02-28
+crocket: working with a group called the, 882.399, 4.24, 2022-02-28
+crocket: democracy docket look it up folks it's, 883.76, 6.56, 2022-02-28
+crocket: mark elias spelled with a c m-a-r-c, 886.639, 6.0, 2022-02-28
+crocket: he is uh one of the, 890.32, 4.16, 2022-02-28
+crocket: authors if you will of the steele, 892.639, 5.2, 2022-02-28
+crocket: dossier one of clinton's lawyers his law, 894.48, 4.64, 2022-02-28
+crocket: partner, 897.839, 3.68, 2022-02-28
+crocket: sussman was just indicted for lying to, 899.12, 3.76, 2022-02-28
+crocket: the fbi, 901.519, 4.241, 2022-02-28
+crocket: these are law partners, 902.88, 5.84, 2022-02-28
+crocket: and why is he still practicing law right, 905.76, 5.04, 2022-02-28
+crocket: if this is the way he conducts himself, 908.72, 3.52, 2022-02-28
+crocket: right you can't make this stuff you, 910.8, 3.76, 2022-02-28
+crocket: can't make it up right so that's who he, 912.24, 3.839, 2022-02-28
+crocket: is well he runs something called the, 914.56, 3.6, 2022-02-28
+crocket: democracy docket, 916.079, 3.521, 2022-02-28
+crocket: which filed, 918.16, 3.76, 2022-02-28
+crocket: dozens of suits in states across the, 919.6, 4.56, 2022-02-28
+crocket: country including minnesota the, 921.92, 5.12, 2022-02-28
+crocket: important one was a case called larose, 924.16, 5.44, 2022-02-28
+crocket: so he files a suit he's the dnc lawyer, 927.04, 4.239, 2022-02-28
+crocket: he's the most powerful democrat in the, 929.6, 4.4, 2022-02-28
+crocket: country who is not an elected official, 931.279, 6.321, 2022-02-28
+crocket: he pretends to sue steve simon, 934.0, 5.92, 2022-02-28
+crocket: you know who is a favored son, 937.6, 4.64, 2022-02-28
+crocket: uh in the in the dnc, 939.92, 4.96, 2022-02-28
+crocket: uh very popular friendly, 942.24, 4.959, 2022-02-28
+crocket: secretary of state and they you know, 944.88, 4.639, 2022-02-28
+crocket: have this little fake lawsuit, 947.199, 4.241, 2022-02-28
+crocket: where the democracy docket says look, 949.519, 3.201, 2022-02-28
+crocket: it's covid, 951.44, 3.36, 2022-02-28
+crocket: we need to change your election laws to, 952.72, 5.359, 2022-02-28
+crocket: protect voters before election day, 954.8, 5.92, 2022-02-28
+crocket: and what they were looking for were, 958.079, 4.161, 2022-02-28
+crocket: three things or what they actually ended, 960.72, 4.559, 2022-02-28
+crocket: up getting through a settlement, 962.24, 5.839, 2022-02-28
+crocket: with the secretary, 965.279, 4.401, 2022-02-28
+crocket: number one, 968.079, 4.161, 2022-02-28
+crocket: the election was extended for seven days, 969.68, 4.56, 2022-02-28
+crocket: so you could count ballots, 972.24, 6.48, 2022-02-28
+crocket: after november third for seven days, 974.24, 4.48, 2022-02-28
+crocket: the other things they changed are, 979.279, 3.841, 2022-02-28
+crocket: waiving postmarks, 980.88, 4.56, 2022-02-28
+crocket: yeah so the election wasn't over for, 983.12, 5.279, 2022-02-28
+crocket: some people yeah on november 3rd, 985.44, 5.04, 2022-02-28
+crocket: and then the witness signature on the, 988.399, 4.0, 2022-02-28
+crocket: absentee ballots that are supposed to, 990.48, 3.76, 2022-02-28
+crocket: make us feel better, 992.399, 3.761, 2022-02-28
+crocket: about those absentee ballots those two, 994.24, 3.92, 2022-02-28
+crocket: things that they waived right it's like, 996.16, 4.64, 2022-02-28
+crocket: fsd ballots are a compromise, 998.16, 5.76, 2022-02-28
+crocket: and it violates the trust right to waive, 1000.8, 5.44, 2022-02-28
+crocket: those it's at least and at very least, 1003.92, 5.68, 2022-02-28
+crocket: right it's just one more layer of, 1006.24, 5.76, 2022-02-28
+crocket: something right of just, 1009.6, 4.239, 2022-02-28
+crocket: you got to write a signature on the, 1012.0, 4.079, 2022-02-28
+crocket: ballot you know like because it's harder, 1013.839, 4.881, 2022-02-28
+crocket: to get another person to cheat yeah, 1016.079, 3.841, 2022-02-28
+crocket: right yeah, 1018.72, 2.96, 2022-02-28
+crocket: if you're not who you really say you are, 1019.92, 3.68, 2022-02-28
+crocket: you got to convince somebody else to do, 1021.68, 4.159, 2022-02-28
+crocket: that that's the way a senator put it uh, 1023.6, 4.64, 2022-02-28
+crocket: last night when i was out speaking, 1025.839, 4.0, 2022-02-28
+crocket: so um, 1028.24, 3.76, 2022-02-28
+crocket: right it's just one it's just one well, 1029.839, 4.401, 2022-02-28
+crocket: in the postmark come on, 1032.0, 2.959, 2022-02-28
+crocket: so, 1034.24, 2.88, 2022-02-28
+crocket: we're not talking about rocket science, 1034.959, 5.36, 2022-02-28
+crocket: no so um you've got a, 1037.12, 5.6, 2022-02-28
+crocket: dean's a powerful dnc lawyer washington, 1040.319, 4.321, 2022-02-28
+crocket: lawyer coming in and suing a friendly, 1042.72, 3.76, 2022-02-28
+crocket: secretary of state and they land in, 1044.64, 4.24, 2022-02-28
+crocket: ramsey county court in front of a judge, 1046.48, 4.24, 2022-02-28
+crocket: who's the former political director for, 1048.88, 4.96, 2022-02-28
+crocket: amy klobuchar great right okay, 1050.72, 5.04, 2022-02-28
+crocket: perfect doesn't that look, 1053.84, 2.959, 2022-02-28
+crocket: bad, 1055.76, 3.44, 2022-02-28
+crocket: yes and my little joke about it is, 1056.799, 4.721, 2022-02-28
+crocket: always uh and if i get to debate, 1059.2, 3.839, 2022-02-28
+crocket: secretary simon i'm gonna say did you, 1061.52, 2.88, 2022-02-28
+crocket: guys go out for drinks and dinner, 1063.039, 3.681, 2022-02-28
+crocket: afterwards did you you know did you, 1064.4, 4.159, 2022-02-28
+crocket: high-five yeah, 1066.72, 5.12, 2022-02-28
+crocket: they probably did un-ironically, 1068.559, 4.081, 2022-02-28
+crocket: i mean, 1071.84, 4.0, 2022-02-28
+crocket: good for you boy they saved democracy is, 1072.64, 5.84, 2022-02-28
+crocket: how they put it great right, 1075.84, 3.52, 2022-02-28
+crocket: um, 1078.48, 2.4, 2022-02-28
+crocket: not understanding that we're actually a, 1079.36, 4.16, 2022-02-28
+crocket: constitutional republic so that's one, 1080.88, 4.159, 2022-02-28
+crocket: thing and that was going on all over the, 1083.52, 3.36, 2022-02-28
+crocket: country it happened here, 1085.039, 4.561, 2022-02-28
+crocket: um and it's not kim crockett criticizing, 1086.88, 4.48, 2022-02-28
+crocket: all of that from a legal standpoint the, 1089.6, 3.439, 2022-02-28
+crocket: eighth circuit court of appeals actually, 1091.36, 3.6, 2022-02-28
+crocket: found that consent decree to be, 1093.039, 3.601, 2022-02-28
+crocket: unconstitutional, 1094.96, 4.0, 2022-02-28
+crocket: so that was one big thing it didn't help, 1096.64, 4.0, 2022-02-28
+crocket: us by the way and i won't get into the, 1098.96, 4.0, 2022-02-28
+crocket: legal weeds on why not but, 1100.64, 4.0, 2022-02-28
+crocket: eric lucero was actually one of the, 1102.96, 4.24, 2022-02-28
+crocket: plaintiffs one of your other one of your, 1104.64, 4.96, 2022-02-28
+crocket: other guests, 1107.2, 3.839, 2022-02-28
+crocket: the other trend was letting mark, 1109.6, 3.52, 2022-02-28
+crocket: zuckerberg come into our state he spent, 1111.039, 4.0, 2022-02-28
+crocket: over 400 million dollars more than, 1113.12, 3.12, 2022-02-28
+crocket: congress, 1115.039, 3.441, 2022-02-28
+crocket: through a non-profit of his call the, 1116.24, 5.2, 2022-02-28
+crocket: center for tech and civic life, 1118.48, 5.199, 2022-02-28
+crocket: ctcl, 1121.44, 4.16, 2022-02-28
+crocket: to essentially get out the vote, 1123.679, 3.761, 2022-02-28
+crocket: sure in blue areas, 1125.6, 4.079, 2022-02-28
+crocket: minnesota attracted seven million of, 1127.44, 4.88, 2022-02-28
+crocket: those dollars, 1129.679, 5.281, 2022-02-28
+crocket: spent in traditionally blue areas like, 1132.32, 5.2, 2022-02-28
+crocket: minneapolis hennepin county duluth, 1134.96, 4.24, 2022-02-28
+crocket: places like that a couple bucks, 1137.52, 4.24, 2022-02-28
+crocket: sprinkled into some red areas just, 1139.2, 5.68, 2022-02-28
+crocket: so the nonprofit could say oh no it was, 1141.76, 5.2, 2022-02-28
+crocket: it was nonpartisan sure right it's like, 1144.88, 4.159, 2022-02-28
+crocket: how stupid do you think we are i think, 1146.96, 3.68, 2022-02-28
+crocket: they think we're very stupid yeah i mean, 1149.039, 6.241, 2022-02-28
+crocket: mobile voting units ballot boxes um, 1150.64, 9.2, 2022-02-28
+crocket: all sorts of personnel computers, 1155.28, 5.6, 2022-02-28
+crocket: huge, 1159.84, 3.04, 2022-02-28
+crocket: huge expenditures to get out the vote, 1160.88, 5.2, 2022-02-28
+crocket: for democrats so thumb on the scale, 1162.88, 5.84, 2022-02-28
+crocket: right and simon let that happen in our, 1166.08, 5.12, 2022-02-28
+crocket: state keith ellison and the governor, 1168.72, 4.64, 2022-02-28
+crocket: let that happen those constitutional, 1171.2, 5.12, 2022-02-28
+crocket: officers did not protect the integrity, 1173.36, 4.24, 2022-02-28
+crocket: of the vote, 1176.32, 2.719, 2022-02-28
+crocket: um, 1177.6, 3.36, 2022-02-28
+crocket: and then really one other thing and, 1179.039, 3.681, 2022-02-28
+crocket: these are big trends there's tons of, 1180.96, 4.0, 2022-02-28
+crocket: other stuff we could talk for days about, 1182.72, 3.6, 2022-02-28
+crocket: the problems, 1184.96, 2.56, 2022-02-28
+crocket: um, 1186.32, 3.04, 2022-02-28
+crocket: so on election day you walk into a, 1187.52, 3.92, 2022-02-28
+crocket: precinct if you vote in person, 1189.36, 4.4, 2022-02-28
+crocket: and there's a republican judge, 1191.44, 4.32, 2022-02-28
+crocket: sitting there next to a democrat judge, 1193.76, 4.08, 2022-02-28
+crocket: ideally state law requires something, 1195.76, 4.32, 2022-02-28
+crocket: called party balance where the major, 1197.84, 4.319, 2022-02-28
+crocket: parties work together to do what why, 1200.08, 4.32, 2022-02-28
+crocket: would that work well in a precinct well, 1202.159, 4.4, 2022-02-28
+crocket: be to maintain fairness to maintain the, 1204.4, 4.159, 2022-02-28
+crocket: perception of fairness right and, 1206.559, 3.6, 2022-02-28
+crocket: hopefully not just the perception but, 1208.559, 2.561, 2022-02-28
+crocket: actual, 1210.159, 3.361, 2022-02-28
+crocket: like i hope so right yeah like we work, 1211.12, 4.4, 2022-02-28
+crocket: together to keep each other honest yeah, 1213.52, 2.8, 2022-02-28
+crocket: right, 1215.52, 2.32, 2022-02-28
+crocket: um, 1216.32, 3.04, 2022-02-28
+crocket: same thing is supposed to apply to, 1217.84, 4.959, 2022-02-28
+crocket: ballots absentee ballots, 1219.36, 6.98, 2022-02-28
+crocket: state law says that a county a county, 1222.799, 4.721, 2022-02-28
+crocket: [music], 1226.34, 2.94, 2022-02-28
+crocket: auditor is supposed to form a ballot, 1227.52, 2.639, 2022-02-28
+crocket: board, 1229.28, 3.36, 2022-02-28
+crocket: and it's subject to that party balance, 1230.159, 4.241, 2022-02-28
+crocket: rule again where you have, 1232.64, 4.08, 2022-02-28
+crocket: republicans and democrats across the, 1234.4, 4.48, 2022-02-28
+crocket: table from each other accepting and, 1236.72, 4.319, 2022-02-28
+crocket: rejecting ballots looking at the outside, 1238.88, 3.679, 2022-02-28
+crocket: envelope there's a whole checklist, 1241.039, 3.76, 2022-02-28
+crocket: they're supposed to go through examining, 1242.559, 4.48, 2022-02-28
+crocket: the ballot before it goes into the, 1244.799, 4.801, 2022-02-28
+crocket: count pile sure versus the oh we got a, 1247.039, 4.64, 2022-02-28
+crocket: problem here right got to contact the, 1249.6, 4.4, 2022-02-28
+crocket: voter maybe they can cure, 1251.679, 6.161, 2022-02-28
+crocket: or this is just not a good ballot right, 1254.0, 6.84, 2022-02-28
+crocket: well simon has been telling county, 1257.84, 6.16, 2022-02-28
+crocket: auditors that they can deputize their, 1260.84, 4.6, 2022-02-28
+crocket: own staff, 1264.0, 3.76, 2022-02-28
+crocket: okay okay these are people that owe the, 1265.44, 3.99, 2022-02-28
+crocket: auditor their job, 1267.76, 2.88, 2022-02-28
+crocket: [music], 1269.43, 4.33, 2022-02-28
+crocket: yikes that's probably not a good posture, 1270.64, 5.919, 2022-02-28
+crocket: for people that are counting the vote, 1273.76, 4.72, 2022-02-28
+crocket: or just hire whoever they want which is, 1276.559, 4.401, 2022-02-28
+crocket: what minneapolis does about 100 and some, 1278.48, 4.0, 2022-02-28
+crocket: people, 1280.96, 4.4, 2022-02-28
+crocket: instead of following the law, 1282.48, 4.72, 2022-02-28
+crocket: so he rewrites the law and it's not the, 1285.36, 3.679, 2022-02-28
+crocket: only place that he does it, 1287.2, 4.16, 2022-02-28
+crocket: you know the statutory law and if you go, 1289.039, 4.961, 2022-02-28
+crocket: and look at his uh guide, 1291.36, 4.48, 2022-02-28
+crocket: for county auditors and other election, 1294.0, 3.6, 2022-02-28
+crocket: officials he has tweaks, 1295.84, 3.92, 2022-02-28
+crocket: things that he thinks are better, 1297.6, 4.24, 2022-02-28
+crocket: last time i checked great he's just the, 1299.76, 3.36, 2022-02-28
+crocket: secretary of state he's not the, 1301.84, 2.719, 2022-02-28
+crocket: legislature right, 1303.12, 3.679, 2022-02-28
+crocket: right, 1304.559, 2.24, 2022-02-28
+crocket: and and also we're seeing lacks, 1306.88, 4.64, 2022-02-28
+crocket: enforcement for things like, 1308.799, 4.561, 2022-02-28
+crocket: the tabulators, 1311.52, 3.84, 2022-02-28
+crocket: are not supposed to be connected to the, 1313.36, 3.199, 2022-02-28
+crocket: internet, 1315.36, 4.0, 2022-02-28
+crocket: until after the polls are closed at, 1316.559, 4.321, 2022-02-28
+crocket: eight o'clock, 1319.36, 5.52, 2022-02-28
+crocket: sure we have eyewitnesses telling us, 1320.88, 6.24, 2022-02-28
+crocket: that at least in minneapolis and some, 1324.88, 4.72, 2022-02-28
+crocket: other blue areas again that those are, 1327.12, 4.559, 2022-02-28
+crocket: hooked up all day long okay, 1329.6, 5.36, 2022-02-28
+crocket: head judge is firing up the, 1331.679, 4.88, 2022-02-28
+crocket: wi-fi connection first thing in the, 1334.96, 2.64, 2022-02-28
+crocket: morning, 1336.559, 2.881, 2022-02-28
+crocket: so that's hope that's running all day, 1337.6, 4.4, 2022-02-28
+crocket: long the only reason why you need one, 1339.44, 4.88, 2022-02-28
+crocket: is when you are done at the end of the, 1342.0, 3.2, 2022-02-28
+crocket: day, 1344.32, 3.2, 2022-02-28
+crocket: to send results electronically but, 1345.2, 4.719, 2022-02-28
+crocket: that's not even necessary sure you can, 1347.52, 3.92, 2022-02-28
+crocket: do a tape you can do it the, 1349.919, 3.041, 2022-02-28
+crocket: old-fashioned preferred, 1351.44, 3.599, 2022-02-28
+crocket: i'm in electronics and i you know i'd, 1352.96, 5.04, 2022-02-28
+crocket: prefer to not be that way right i've had, 1355.039, 4.801, 2022-02-28
+crocket: tech people walk up to me and data, 1358.0, 3.52, 2022-02-28
+crocket: people walk up to me, 1359.84, 3.199, 2022-02-28
+crocket: well you know these couple months that, 1361.52, 3.2, 2022-02-28
+crocket: i've been running saying, 1363.039, 4.481, 2022-02-28
+crocket: it's really a bad idea to be using yes, 1364.72, 5.12, 2022-02-28
+crocket: insecure technology i don't want wi-fi i, 1367.52, 4.399, 2022-02-28
+crocket: don't want wi-fi running our elections, 1369.84, 4.56, 2022-02-28
+crocket: sorry you know i don't too easy to crawl, 1371.919, 4.321, 2022-02-28
+crocket: in it's not decentralized because that's, 1374.4, 4.08, 2022-02-28
+crocket: a kim that is like the what we are, 1376.24, 4.08, 2022-02-28
+crocket: pitched right our elections are too, 1378.48, 4.0, 2022-02-28
+crocket: decentralized to be, 1380.32, 5.28, 2022-02-28
+crocket: manipulated in some form or fashion but, 1382.48, 6.8, 2022-02-28
+crocket: what wi-fi and what you know, 1385.6, 5.92, 2022-02-28
+crocket: what the internet of things gives us is, 1389.28, 5.2, 2022-02-28
+crocket: the ability to unify processes get on, 1391.52, 5.68, 2022-02-28
+crocket: the same page i don't i don't want our, 1394.48, 4.4, 2022-02-28
+crocket: elections to be i want it to be a, 1397.2, 3.599, 2022-02-28
+crocket: precinct by precinct process like it's, 1398.88, 3.919, 2022-02-28
+crocket: supposed to be right so and it worked, 1400.799, 6.0, 2022-02-28
+crocket: really well it did yeah it really did so, 1402.799, 6.801, 2022-02-28
+crocket: those are the big things that happened, 1406.799, 3.681, 2022-02-28
+crocket: um, 1409.6, 3.199, 2022-02-28
+crocket: i spent a lot of time trying to wrap my, 1410.48, 6.88, 2022-02-28
+crocket: brain around some of the other, 1412.799, 7.36, 2022-02-28
+crocket: really controversial things about, 1417.36, 5.76, 2022-02-28
+crocket: that machinery being manipulated, 1420.159, 5.441, 2022-02-28
+crocket: i have a legal mind, 1423.12, 5.919, 2022-02-28
+crocket: and what i can prove to you, 1425.6, 6.48, 2022-02-28
+crocket: i just i just i just described yeah i, 1429.039, 4.64, 2022-02-28
+crocket: don't there's i don't you don't have to, 1432.08, 3.12, 2022-02-28
+crocket: have any special, 1433.679, 2.801, 2022-02-28
+crocket: training, 1435.2, 2.959, 2022-02-28
+crocket: everything i just told you is something, 1436.48, 3.36, 2022-02-28
+crocket: that i can prove, 1438.159, 4.721, 2022-02-28
+crocket: and i think it's best to confine my, 1439.84, 5.6, 2022-02-28
+crocket: campaign to those things that where i, 1442.88, 4.64, 2022-02-28
+crocket: can prove yeah i don't need to have, 1445.44, 4.08, 2022-02-28
+crocket: experts right i don't have to have an, 1447.52, 4.08, 2022-02-28
+crocket: expert war, 1449.52, 4.0, 2022-02-28
+crocket: with steve simon, 1451.6, 3.31, 2022-02-28
+crocket: or anyone else, 1453.52, 3.2, 2022-02-28
+crocket: [music], 1454.91, 3.49, 2022-02-28
+crocket: i'm going to ask him to defend what i, 1456.72, 4.4, 2022-02-28
+crocket: consider to be the indefensible, 1458.4, 4.399, 2022-02-28
+crocket: so those are the big things that, 1461.12, 3.84, 2022-02-28
+crocket: happened so that i came to the, 1462.799, 5.681, 2022-02-28
+crocket: conclusion uh after 2020, 1464.96, 6.16, 2022-02-28
+crocket: that our election, 1468.48, 4.72, 2022-02-28
+crocket: was lawless, 1471.12, 4.4, 2022-02-28
+crocket: it disregarded the law, 1473.2, 4.32, 2022-02-28
+crocket: whether that means the outcome was wrong, 1475.52, 4.96, 2022-02-28
+crocket: or not i can't tell you right, 1477.52, 5.039, 2022-02-28
+crocket: but like a lot of americans a lot of, 1480.48, 4.36, 2022-02-28
+crocket: minnesotans i looked at it and, 1482.559, 6.161, 2022-02-28
+crocket: said i don't trust it, 1484.84, 5.8, 2022-02-28
+crocket: and i'm frustrated living in a state, 1488.72, 2.8, 2022-02-28
+crocket: where, 1490.64, 2.88, 2022-02-28
+crocket: election after election, 1491.52, 4.32, 2022-02-28
+crocket: i'm not coming to a conclusion that that, 1493.52, 4.32, 2022-02-28
+crocket: was fair, 1495.84, 4.88, 2022-02-28
+crocket: and it started in 2008, 1497.84, 5.12, 2022-02-28
+crocket: if i can just connect that sure remember, 1500.72, 4.64, 2022-02-28
+crocket: mark elias yeah, 1502.96, 4.24, 2022-02-28
+crocket: guess who ran the recount for the, 1505.36, 4.48, 2022-02-28
+crocket: democrats in 2008. what was it him it, 1507.2, 3.68, 2022-02-28
+crocket: was him, 1509.84, 3.92, 2022-02-28
+crocket: he cut his teeth here in minnesota great, 1510.88, 4.799, 2022-02-28
+crocket: finding that he's the king of finding, 1513.76, 3.2, 2022-02-28
+crocket: dallas okay, 1515.679, 4.0, 2022-02-28
+crocket: so this is the land of 10 000 close, 1516.96, 4.24, 2022-02-28
+crocket: elections, 1519.679, 3.761, 2022-02-28
+crocket: i think kind of starting, 1521.2, 5.359, 2022-02-28
+crocket: i mean you're more of the savant on, 1523.44, 5.68, 2022-02-28
+crocket: numbers and who won when and how close, 1526.559, 5.041, 2022-02-28
+crocket: it was and than i am, 1529.12, 4.799, 2022-02-28
+crocket: but i think starting in 08 we became the, 1531.6, 5.52, 2022-02-28
+crocket: land of 10 000 close elections, 1533.919, 5.041, 2022-02-28
+crocket: and over time, 1537.12, 4.24, 2022-02-28
+crocket: this is one of my favorite phrases, 1538.96, 4.24, 2022-02-28
+crocket: uh the land of ten thousand close, 1541.36, 4.799, 2022-02-28
+crocket: elections where voting season, 1543.2, 6.24, 2022-02-28
+crocket: seems to last longer than hunting season, 1546.159, 4.801, 2022-02-28
+crocket: i like that i'm gonna copyright that, 1549.44, 2.8, 2022-02-28
+crocket: yeah, 1550.96, 4.16, 2022-02-28
+crocket: we vote for 46 days before election day, 1552.24, 4.72, 2022-02-28
+crocket: now well, 1555.12, 4.4, 2022-02-28
+crocket: um kif meyer said recently when i was, 1556.96, 4.079, 2022-02-28
+crocket: having a conversation with her and some, 1559.52, 3.92, 2022-02-28
+crocket: other legislators that, 1561.039, 4.0, 2022-02-28
+crocket: chaos, 1563.44, 3.28, 2022-02-28
+crocket: breeds fraud, 1565.039, 3.601, 2022-02-28
+crocket: fraud does really well in a chaotic, 1566.72, 5.04, 2022-02-28
+crocket: environment so if we go back to 2020, 1568.64, 5.36, 2022-02-28
+crocket: you've had you've got ballot boxes being, 1571.76, 4.799, 2022-02-28
+crocket: added in in the metro, 1574.0, 5.52, 2022-02-28
+crocket: as i said those mobile units and all, 1576.559, 4.641, 2022-02-28
+crocket: these people coming into the state to, 1579.52, 3.12, 2022-02-28
+crocket: get out the vote, 1581.2, 3.76, 2022-02-28
+crocket: 46 days of voting, 1582.64, 4.48, 2022-02-28
+crocket: absentee ballots take a guess at the, 1584.96, 4.319, 2022-02-28
+crocket: percentage of votes that was absentee in, 1587.12, 6.64, 2022-02-28
+crocket: 2012 over over 50 percent it was 58 yeah, 1589.279, 9.041, 2022-02-28
+crocket: yeah so you got 6 out of 10 ballots um, 1593.76, 6.48, 2022-02-28
+crocket: being counted by, 1598.32, 4.239, 2022-02-28
+crocket: public sector union employees that have, 1600.24, 4.799, 2022-02-28
+crocket: been deputized and or their friends, 1602.559, 3.761, 2022-02-28
+crocket: right, 1605.039, 5.361, 2022-02-28
+crocket: with no democrats or republicans who are, 1606.32, 6.239, 2022-02-28
+crocket: just regular citizens right, 1610.4, 3.6, 2022-02-28
+crocket: right i mean you you're you have a, 1612.559, 4.24, 2022-02-28
+crocket: nostalgia for like i do precinct level, 1614.0, 4.159, 2022-02-28
+crocket: voting, 1616.799, 4.24, 2022-02-28
+crocket: well and i have a nostalgia for, 1618.159, 3.921, 2022-02-28
+crocket: um, 1621.039, 3.041, 2022-02-28
+crocket: democrats and republicans working, 1622.08, 4.64, 2022-02-28
+crocket: together because i grew up that way yeah, 1624.08, 4.16, 2022-02-28
+crocket: i've seen it, 1626.72, 3.36, 2022-02-28
+crocket: and i think the people that are ending, 1628.24, 4.559, 2022-02-28
+crocket: up on the ballot boards are not that are, 1630.08, 5.52, 2022-02-28
+crocket: counting six out of ten votes max, 1632.799, 4.641, 2022-02-28
+crocket: they're not the same democrats that you, 1635.6, 3.679, 2022-02-28
+crocket: go to church with, 1637.44, 4.16, 2022-02-28
+crocket: maybe your family members where you, 1639.279, 4.801, 2022-02-28
+crocket: would you would bet, 1641.6, 4.72, 2022-02-28
+crocket: that your democratic family members or, 1644.08, 4.319, 2022-02-28
+crocket: friends would never cheat they would, 1646.32, 3.599, 2022-02-28
+crocket: never cheat, 1648.399, 4.321, 2022-02-28
+crocket: kim with the last minute of our program, 1649.919, 5.201, 2022-02-28
+crocket: just tell us about how people can learn, 1652.72, 4.16, 2022-02-28
+crocket: more about your campaign get involved, 1655.12, 3.6, 2022-02-28
+crocket: and what do you need help with right now, 1656.88, 3.44, 2022-02-28
+crocket: well like all candidates i need, 1658.72, 3.36, 2022-02-28
+crocket: donations, 1660.32, 4.0, 2022-02-28
+crocket: which is easy to do through my fabulous, 1662.08, 4.88, 2022-02-28
+crocket: website it's kimsos.com, 1664.32, 5.76, 2022-02-28
+crocket: i think that's the simplest uh website, 1666.96, 5.439, 2022-02-28
+crocket: i've ever heard of i knew i liked it, 1670.08, 5.199, 2022-02-28
+crocket: couldn't spell crockett right msos and, 1672.399, 6.16, 2022-02-28
+crocket: sos it is like save our ship baby right, 1675.279, 5.441, 2022-02-28
+crocket: save our state save our save our soul, 1678.559, 4.801, 2022-02-28
+crocket: you know right however you want it yeah, 1680.72, 6.559, 2022-02-28
+crocket: and uh and uh yeah kimsos.com donations, 1683.36, 5.76, 2022-02-28
+crocket: we've got a lot of great volunteers, 1687.279, 3.601, 2022-02-28
+crocket: right now who are helping me with, 1689.12, 3.76, 2022-02-28
+crocket: conventions we're surrogates but we'll, 1690.88, 4.0, 2022-02-28
+crocket: need more, 1692.88, 5.039, 2022-02-28
+crocket: and i've got a growing facebook audience, 1694.88, 4.0, 2022-02-28
+crocket: um, 1697.919, 3.681, 2022-02-28
+crocket: really fast uh growing audience but come, 1698.88, 5.2, 2022-02-28
+crocket: on to facebook as much as i dislike mark, 1701.6, 3.679, 2022-02-28
+crocket: zuckerberg, 1704.08, 3.68, 2022-02-28
+crocket: unfortunately facebook's a reality, 1705.279, 4.081, 2022-02-28
+crocket: yeah for a client, 1707.76, 3.84, 2022-02-28
+crocket: for a candidate so well kim thank you so, 1709.36, 3.76, 2022-02-28
+crocket: much for joining the republican, 1711.6, 4.0, 2022-02-28
+crocket: roundtable i'm so shy i just have a, 1713.12, 4.559, 2022-02-28
+crocket: whole time talking about all this i have, 1715.6, 3.6, 2022-02-28
+crocket: nothing to say, 1717.679, 3.921, 2022-02-28
+crocket: thank you, 1719.2, 4.32, 2022-02-28
+crocket: this has been the republican roundtable, 1721.6, 7.079, 2022-02-28
+crocket: i'm your host max reimer until next time, 1723.52, 5.159, 2022-02-28
+crocket: [music], 1736.16, 12.06, 2022-02-28
+crocket: you, 1753.6, 2.079, 2022-02-28

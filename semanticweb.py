@@ -7,6 +7,11 @@ import json
 import nltk
 from nltk.corpus import stopwords
 import random
+import itertools
+from datetime import datetime
+
+import networkx as nx
+import matplotlib.pyplot as plt
 #-------------- aidan's notes --------------------
 #layer of action TRACKS in web *****!!!
 #sem_edges have hash of two connecting words creating unique key for pairs of words
@@ -333,7 +338,7 @@ class sw:
                 json_edge_form.append([s,e])
         final_json['nodes'] = json_node_form
         final_json['edges'] = json_edge_form
-        final_json['date'] = json_edge_form
+
         tagbuilder = []
         clusterbuilder = []
         sourcebuilder = []
@@ -346,7 +351,9 @@ class sw:
             tagbuilder.append({'key': diff_ents[x], "image":str(diff_ents[x])+".svg"})
         for x in range(0, len(diff_source)):
             sourcebuilder.append({'key': diff_source[x], "image":str(diff_source[x])+".svg"})
-
+        diff_date = diff_date.sort(key=lambda date: datetime.strptime(date, "%d-%m-%y"))
+        for y in range(0, len(diff_date)):
+            date_builder.append({'key': y, 'date':diff_date[y]})
         final_json['tags']=tagbuilder
         final_json['clusters']=clusterbuilder
         final_json['sources']=sourcebuilder
@@ -380,7 +387,6 @@ class sw:
             if(rev_nodeList[x].text == to_locate_text):
                 indices.append([rev_nodeList[x].node_x, rev_nodeList[x].node_y])
         return(indices)
-
     #nodeEncounter, add semnode
     def nodeEncounter(self, frame, current):
         #get relevant information out of the sentence frame
@@ -528,28 +534,47 @@ class sw:
         collected_2 = []
         for x in range(0, len(self.semWeb)):
             if(self.semWeb[x].speaker == spk1):
-                collected_1.append(self.semWeb[x])
+                for y in range(0, len(self.semWeb[x].text)):
+                    collected_1.append(self.semWeb[x].text[y])
             if(self.semWeb[x].speaker == spk2):
-                collected_2.append(self.semWeb[x])
-        collected_1 = dict(collected_1)
-        collected_2 = dict(collected_2)
+                for y in range(0, len(self.semWeb[x].text)):
+                    collected_2.append(self.semWeb[x].text[y])
+        collected_1 = set(collected_1)
+        collected_2 = set(collected_2)
         intersection = collected_1.intersection(collected_2)
-        union = collected_1.union(collected_1)
+        union = collected_1.union(collected_2)
         return float(len(intersection)) / len(union)
 
-    def similarity_by_speaker_entity_text(self,spk1,spk2):
-        collected_1 = []
-        collected_2 = []
+    def compare_all_speakers(self):
+        known_speakers = []
+        known_speakers_dict = {}
+        similarities = {}
         for x in range(0, len(self.semWeb)):
-            if(self.semWeb[x].speaker == spk1):
-                collected_1.append(self.semWeb[x])
-            if(self.semWeb[x].speaker == spk2):
-                collected_2.append(self.semWeb[x])
-        collected_1 = dict(collected_1)
-        collected_2 = dict(collected_2)
-        intersection = collected_1.intersection(collected_2)
-        union = collected_1.union(collected_1)
-        return float(len(intersection)) / len(union)
+            if(not(self.semWeb[x].speaker in known_speakers) and self.semWeb[x].speaker != None):
+                known_speakers.append(self.semWeb[x].speaker)
+                known_speakers_dict[self.semWeb[x].speaker] = {}
+        total_permutations = list(itertools.permutations(known_speakers, 2))
+        for y in range(0, len(total_permutations)):
+            if(total_permutations[y][0]!=total_permutations[y][1]):
+                known_speakers_dict[total_permutations[y][0]][total_permutations[y][1]] = (self.similarity_by_speaker_text(total_permutations[y][0],total_permutations[y][1]))
+        G = nx.Graph()
+        added = []
+        for key in known_speakers_dict:
+            G.add_node(key)
+            added.append(key)
+            print(key)
+            print(known_speakers_dict[key])
+            for key2 in known_speakers_dict[key]:
+                if(key in added):
+                    G.add_edge(key,key2,weight=known_speakers_dict[key][key2]*10)
+        pos = nx.spring_layout(G)
+        nx.draw(G,pos,with_labels=True)
+        plt.show()
+
+
+        return(known_speakers_dict)
+
+
 
 #while loop for mutex, parse if semicolon
 

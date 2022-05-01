@@ -26,9 +26,12 @@ class stream():
         print("< ------- Traces Spun ------ >")
         semanticweb.freeze_web(self.webo)
         self.webo.export_to_json()
+    def compare_speakers(self):
+        print('<-- comparing speakers -->')
+        self.webo.compare_all_speakers()
     def routine(self):
         print("<--- Thawing Semantic Web --->")
-        self.webo = semanticweb.torch_web()
+        #self.webo = semanticweb.torch_web()
         self.webo = semanticweb.thaw_web()
         print("<--- Semantic Web Thawed --->")
         #instantiate coroutines

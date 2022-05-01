@@ -183,8 +183,8 @@ class language_loop:
                     self.flow.send([speaker, words, 0, "https://www.youtube.com/watch?v="+vid_ext[0:len(vid_ext)-4], timespoken,"https://www.youtube.com/watch?v="+vid_ext[0:len(vid_ext)-4]+"?t="+str(timestart)+"s"])
     def spin(self):
         self.tfobj.spin_trace()
-
-
+    def compare(self):
+        self.tfobj.compare_speakers()
 def print_author_tweets(authorUSN):
     tweet_row = birdnest.t_dump_by_row('text')
     retweet_row = birdnest.t_dump_by_row('retweetsNum')
@@ -201,8 +201,9 @@ def print_author_tweets(authorUSN):
             print("============")
 
 q = language_loop()
-q.read_complete_youtube()
-q.spin()
+#q.read_complete_youtube()
+#q.spin()
+q.compare()
 #q.read_complete_youtube()
 #q.spin()
 #q.spin()

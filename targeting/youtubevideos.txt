@@ -23,8 +23,13 @@ llt6mU3EQfU,start,finish,larose
 Ixda_cI0UdY,start,finish,raffensperger
 QQAvlhTvC4Y,start,finish,raffensperger
 pvmGFZodLgc,start,finish,crockett
-rGXrxp6EjJk,start,finish,raffensberger
+rGXrxp6EjJk,start,finish,raffensperger
 vs1t82oOIag,start,finish,eaves
-hNBaUE6QQKI,start,finish,crocket
+hNBaUE6QQKI,start,finish,crockett
 oaLbKIyKECM,start,finish,eaves
-rHh7-yR8fqw,start,finish,crocket
+rHh7-yR8fqw,start,finish,crockett
+SwR46sgGMV0,start,finish,larose
+pzcCNJK2LjI,start,finish,trump
+mMv07BsGfVY,start,finish,larose
+jlYGVwWNuck,start,finish,larose
+K_ESXL7J6DY,start,finish,trump

@@ -559,6 +559,8 @@ class sw:
                 known_speakers_dict[total_permutations[y][0]][total_permutations[y][1]] = (self.similarity_by_speaker_text(total_permutations[y][0],total_permutations[y][1]))
         G = nx.Graph()
         added = []
+        count = 0
+        summedweight = 0
         for key in known_speakers_dict:
             G.add_node(key)
             added.append(key)
@@ -566,11 +568,18 @@ class sw:
             print(known_speakers_dict[key])
             for key2 in known_speakers_dict[key]:
                 if(key in added):
-                    G.add_edge(key,key2,weight=known_speakers_dict[key][key2]*10)
-        pos = nx.spring_layout(G)
-        nx.draw(G,pos,with_labels=True)
-        plt.show()
+                    summedweight+=known_speakers_dict[key][key2]
+                    count+=1
 
+        for key in known_speakers_dict:
+            for key2 in known_speakers_dict[key]:
+                G.add_edge(key,key2,weight=((known_speakers_dict[key][key2]*count)/summedweight))
+
+        edge_weight = list(nx.get_edge_attributes(G,'weight').values())
+
+        pos = nx.spring_layout(G, iterations=1000, k=0.1)
+        nx.draw(G,pos, width=edge_weight, with_labels=True)
+        plt.show()
 
         return(known_speakers_dict)
 

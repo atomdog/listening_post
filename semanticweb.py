@@ -12,8 +12,7 @@ from datetime import datetime
 
 import networkx as nx
 import matplotlib.pyplot as plt
-from matplotlib_venn import venn3
-
+from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 #-------------- aidan's notes --------------------
 #layer of action TRACKS in web *****!!!
 #sem_edges have hash of two connecting words creating unique key for pairs of words
@@ -353,7 +352,7 @@ class sw:
             tagbuilder.append({'key': diff_ents[x], "image":str(diff_ents[x])+".svg"})
         for x in range(0, len(diff_source)):
             sourcebuilder.append({'key': diff_source[x], "image":str(diff_source[x])+".svg"})
-        diff_date = diff_date.sort(key=lambda date: datetime.strptime(date, "%d-%m-%y"))
+        #diff_date = diff_date.sort(key=lambda date: datetime.strptime(date, "%y-%m-%d"))
         for y in range(0, len(diff_date)):
             date_builder.append({'key': y, 'date':diff_date[y]})
         final_json['tags']=tagbuilder
@@ -565,26 +564,26 @@ class sw:
         intersection = collected_1.intersection(collected_2)
         union = collected_1.union(collected_2)
         return float(len(intersection)) / len(union)
-def set_by_speaker_entities(self,spk1):
-    collected_1 = []
-    for x in range(0, len(self.semWeb)):
-        if(self.semWeb[x].speaker == spk1):
-            for y in range(0, len(self.semWeb[x].track)):
-                if(self.semWeb[x].track[y].qual=="node"):
-                    if(self.semWeb[x].track[y].entity_tag!="none"):
-                        collected_1.append(self.semWeb[x].track[y].text)
-    collected_1 = set(collected_1)
-    return(collected_1)
+    def set_by_speaker_entities(self,spk1):
+        collected_1 = []
+        for x in range(0, len(self.semWeb)):
+            if(self.semWeb[x].speaker == spk1):
+                for y in range(0, len(self.semWeb[x].track)):
+                    if(self.semWeb[x].track[y].qual=="node"):
+                        if(self.semWeb[x].track[y].entity_tag!="none"):
+                            collected_1.append(self.semWeb[x].track[y].text)
+        collected_1 = set(collected_1)
+        return(collected_1)
 
-def set_by_speaker_text(self,spk1):
-    collected_1 = []
-    collected_2 = []
-    for x in range(0, len(self.semWeb)):
-        if(self.semWeb[x].speaker == spk1):
-            for y in range(0, len(self.semWeb[x].text)):
-                collected_1.append(self.semWeb[x].text[y])
-    collected_1 = set(collected_1)
-    return(collected_1)
+    def set_by_speaker_text(self,spk1):
+        collected_1 = []
+        collected_2 = []
+        for x in range(0, len(self.semWeb)):
+            if(self.semWeb[x].speaker == spk1):
+                for y in range(0, len(self.semWeb[x].text)):
+                    collected_1.append(self.semWeb[x].text[y])
+        collected_1 = set(collected_1)
+        return(collected_1)
 
     def venn_all_speakers(self):
         known_speakers = []
@@ -603,13 +602,10 @@ def set_by_speaker_text(self,spk1):
         for key in known_speakers_dict:
             textvenlist.append(known_speakers_dict[key]['text'])
             entityvenlist.append(known_speakers_dict[key]['entities'])
+            wordcloud = WordCloud(background_color="white").generate(" ".join(known_speakers_dict[key]['entities']))
+            wordcloud.to_file(key+"_e_word_cloud.png")
             titlevenlist.append(key)
-        venn3(textvenlist, titlevenlist)
-        plt.show()
-        venn3(entityvenlist, titlevenlist)
-        plt.show()
-        #print(e_known_speakers_dict)
-
+        titlevenlist = tuple(titlevenlist)
         return(known_speakers_dict)
     def compare_all_speakers(self):
         known_speakers = []
@@ -637,19 +633,19 @@ def set_by_speaker_text(self,spk1):
         added = []
         count = 0
         summedweight = 0
-        for key in known_speakers_dict:
+        for key in e_known_speakers_dict:
             G.add_node(key)
             added.append(key)
             #print(key)
             #print(known_speakers_dict[key])
-            for key2 in known_speakers_dict[key]:
+            for key2 in e_known_speakers_dict[key]:
                 if(key in added):
-                    summedweight+=known_speakers_dict[key][key2]
+                    summedweight+=e_known_speakers_dict[key][key2]
                     count+=1
 
-        for key in known_speakers_dict:
-            for key2 in known_speakers_dict[key]:
-                G.add_edge(key,key2,weight=((known_speakers_dict[key][key2]*count)/summedweight))
+        for key in e_known_speakers_dict:
+            for key2 in e_known_speakers_dict[key]:
+                G.add_edge(key,key2,weight=((e_known_speakers_dict[key][key2]*count)/summedweight))
 
         edge_weight = list(nx.get_edge_attributes(G,'weight').values())
 

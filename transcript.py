@@ -72,6 +72,8 @@ def pull_by_file():
                         q[b][key] = q[b][key].lower()
                     towrite += str(q[b][key]) + ", "
                 towrite += str(dt)
+                if(dt==""):
+                    dt = "0000-00-00"
                 transcripts_item.append(str(towrite))
                 out.write(str(towrite))
                 out.write("\n")

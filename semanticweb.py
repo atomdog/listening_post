@@ -12,6 +12,8 @@ from datetime import datetime
 
 import networkx as nx
 import matplotlib.pyplot as plt
+from matplotlib_venn import venn3
+
 #-------------- aidan's notes --------------------
 #layer of action TRACKS in web *****!!!
 #sem_edges have hash of two connecting words creating unique key for pairs of words
@@ -529,6 +531,25 @@ class sw:
                     self.traces.append(sem_trace(cnode.node_x,cnode.node_y, targetx, targety))
         print(totrace)
         #self.export_to_json()
+    def similarity_by_speaker_entities(self,spk1,spk2):
+        collected_1 = []
+        collected_2 = []
+        for x in range(0, len(self.semWeb)):
+            if(self.semWeb[x].speaker == spk1):
+                for y in range(0, len(self.semWeb[x].track)):
+                    if(self.semWeb[x].track[y].qual=="node"):
+                        if(self.semWeb[x].track[y].entity_tag!="none"):
+                            collected_1.append(self.semWeb[x].track[y].text)
+            if(self.semWeb[x].speaker == spk2):
+                for y in range(0, len(self.semWeb[x].track)):
+                    if(self.semWeb[x].track[y].qual=="node"):
+                        if(self.semWeb[x].track[y].entity_tag!="none"):
+                            collected_2.append(self.semWeb[x].track[y].text)
+        collected_1 = set(collected_1)
+        collected_2 = set(collected_2)
+        intersection = collected_1.intersection(collected_2)
+        union = collected_1.union(collected_2)
+        return float(len(intersection)) / len(union)
     def similarity_by_speaker_text(self,spk1,spk2):
         collected_1 = []
         collected_2 = []
@@ -544,8 +565,28 @@ class sw:
         intersection = collected_1.intersection(collected_2)
         union = collected_1.union(collected_2)
         return float(len(intersection)) / len(union)
+def set_by_speaker_entities(self,spk1):
+    collected_1 = []
+    for x in range(0, len(self.semWeb)):
+        if(self.semWeb[x].speaker == spk1):
+            for y in range(0, len(self.semWeb[x].track)):
+                if(self.semWeb[x].track[y].qual=="node"):
+                    if(self.semWeb[x].track[y].entity_tag!="none"):
+                        collected_1.append(self.semWeb[x].track[y].text)
+    collected_1 = set(collected_1)
+    return(collected_1)
 
-    def compare_all_speakers(self):
+def set_by_speaker_text(self,spk1):
+    collected_1 = []
+    collected_2 = []
+    for x in range(0, len(self.semWeb)):
+        if(self.semWeb[x].speaker == spk1):
+            for y in range(0, len(self.semWeb[x].text)):
+                collected_1.append(self.semWeb[x].text[y])
+    collected_1 = set(collected_1)
+    return(collected_1)
+
+    def venn_all_speakers(self):
         known_speakers = []
         known_speakers_dict = {}
         similarities = {}
@@ -553,19 +594,54 @@ class sw:
             if(not(self.semWeb[x].speaker in known_speakers) and self.semWeb[x].speaker != None):
                 known_speakers.append(self.semWeb[x].speaker)
                 known_speakers_dict[self.semWeb[x].speaker] = {}
+                known_speakers_dict[self.semWeb[x].speaker] = {}
+                known_speakers_dict[self.semWeb[x].speaker]['text'] = self.set_by_speaker_text(self.semWeb[x].speaker)
+                known_speakers_dict[self.semWeb[x].speaker]['entities'] = self.set_by_speaker_entities(self.semWeb[x].speaker)
+        textvenlist = []
+        entityvenlist = []
+        titlevenlist = []
+        for key in known_speakers_dict:
+            textvenlist.append(known_speakers_dict[key]['text'])
+            entityvenlist.append(known_speakers_dict[key]['entities'])
+            titlevenlist.append(key)
+        venn3(textvenlist, titlevenlist)
+        plt.show()
+        venn3(entityvenlist, titlevenlist)
+        plt.show()
+        #print(e_known_speakers_dict)
+
+        return(known_speakers_dict)
+    def compare_all_speakers(self):
+        known_speakers = []
+        known_speakers_dict = {}
+        e_known_speakers_dict = {}
+        similarities = {}
+        for x in range(0, len(self.semWeb)):
+            if(not(self.semWeb[x].speaker in known_speakers) and self.semWeb[x].speaker != None):
+                known_speakers.append(self.semWeb[x].speaker)
+                known_speakers_dict[self.semWeb[x].speaker] = {}
+                e_known_speakers_dict[self.semWeb[x].speaker] = {}
         total_permutations = list(itertools.permutations(known_speakers, 2))
+        e_total_permutations = list(itertools.permutations(known_speakers, 2))
         for y in range(0, len(total_permutations)):
             if(total_permutations[y][0]!=total_permutations[y][1]):
                 known_speakers_dict[total_permutations[y][0]][total_permutations[y][1]] = (self.similarity_by_speaker_text(total_permutations[y][0],total_permutations[y][1]))
+        for y in range(0, len(e_total_permutations)):
+            if(e_total_permutations[y][0]!=e_total_permutations[y][1]):
+                e_known_speakers_dict[total_permutations[y][0]][total_permutations[y][1]] = (self.similarity_by_speaker_entities(e_total_permutations[y][0],e_total_permutations[y][1]))
+
+
+        #print(e_known_speakers_dict)
         G = nx.Graph()
+
         added = []
         count = 0
         summedweight = 0
         for key in known_speakers_dict:
             G.add_node(key)
             added.append(key)
-            print(key)
-            print(known_speakers_dict[key])
+            #print(key)
+            #print(known_speakers_dict[key])
             for key2 in known_speakers_dict[key]:
                 if(key in added):
                     summedweight+=known_speakers_dict[key][key2]
@@ -580,7 +656,8 @@ class sw:
         pos = nx.spring_layout(G, iterations=1000, k=0.1)
         nx.draw(G,pos, width=edge_weight, with_labels=True)
         plt.show()
-
+        plt.clf()
+        self.venn_all_speakers()
         return(known_speakers_dict)
 
 

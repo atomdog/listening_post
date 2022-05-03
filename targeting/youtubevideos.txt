@@ -17,10 +17,8 @@ a3-81eSGpw4,37,61,hobbs
 NxAnu-gfnIY,start,finish,lafave
 fV1F3rEWVkU,start,finish,hobbs
 3M8Xw0IJ7eo,start,finish,paine
-T_bnH-2LfHU,start,finish,trump
 aorwt3gLigk,start,finish,larose
 llt6mU3EQfU,start,finish,larose
-Ixda_cI0UdY,start,finish,raffensperger
 QQAvlhTvC4Y,start,finish,raffensperger
 pvmGFZodLgc,start,finish,crockett
 rGXrxp6EjJk,start,finish,raffensperger
@@ -32,4 +30,11 @@ SwR46sgGMV0,start,finish,larose
 pzcCNJK2LjI,start,finish,trump
 mMv07BsGfVY,start,finish,larose
 jlYGVwWNuck,start,finish,larose
-K_ESXL7J6DY,start,finish,trump
+2i4JxWkSYzU,start,finish,trump
+pzcCNJK2LjI,start,finish,trump
+CdzGHBUEMY8,start,finish,biden
+DqXJaJbbk1M,233,871,biden
+AcRGZLi8pL0,start,finish,hice
+B1yiGEhHglo,start,60,obama
+G59yHXkD-5k,60,97,benson
+ejw2h2O4pdQ,start,finish,pate

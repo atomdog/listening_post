@@ -104,6 +104,7 @@ separates JSON formatted text:
 
 > {'Subject': "e", 'From': "plurbus@wincampaign.com" 'Message': "unum"}
 
+ie:
 
 
 `
@@ -138,4 +139,6 @@ separates JSON formatted text:
 
 
 ## twitter
-you can likely mostly ignore this part.
+you can likely mostly ignore this part, although it is by far the most built out and well-formatted. 
+
+[birdnest.py](birdnest.py) contains a library for a custom h5 database containing users and tweets. 

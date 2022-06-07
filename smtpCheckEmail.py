@@ -13,6 +13,7 @@ import time
 import chunkGen
 import re
 import sys
+from datetime import date
 sys.path.insert(0, './google-apis')
 import gmailfunctions
 
@@ -49,16 +50,14 @@ def remove_tags(em):
             return(rt)
     except:
         return(em)
-def readFullInbox():
-    #thanks to https://gist.github.com/tihawk/afd7a68648324d9033a77abe8751b8ab
-    #for fixing imaplib etc for current python
-    q = chunkGen.docprocgen()
-    while(next(q)!=True):
-        time.sleep(0.01)
 
 def readNewInbox():
+    today = date.today()
+
+    d1 = today.strftime("%d|%m|%Y")
+
     q = gmailfunctions.readAllMail()
-    with open("memory/inbox.txt", 'w') as out:
+    with open("memory/inbox_"+d1+".txt", 'w') as out:
         for x in range(0, len(q)):
             towrite = q[x]
             out.write(str(towrite))

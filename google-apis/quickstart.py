@@ -52,4 +52,6 @@ def main():
 
 
 if __name__ == '__main__':
+    if os.path.exists('./google-apis/token.json'):
+        os.remove('./google-apis/token.json')
     main()

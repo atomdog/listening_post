@@ -88,8 +88,54 @@ give listening_post all permissions. it will say that listening_post is not a ve
 now you're all set. you may need to refer back to this to re-authenticate when your token expires.
 
 #### collecting emails
-to collect the emails, you can now run [smtpCheckEmail.py](smtpCheckEmail.py) this will read the entire inbox. to get only new emails, refer to the [gmailfunctions.py](/google-apis/gmailfunctions.py), and swap functions in the smtpCheckEmail to the 'readMail()' function. 
+to collect the emails, you can now run [smtpCheckEmail.py](smtpCheckEmail.py) 
+
+this will read the entire inbox. to get only new emails, refer to the [gmailfunctions.py](/google-apis/gmailfunctions.py), and swap functions in the smtpCheckEmail to the 'readMail()' function. 
 
 Regardless of which function you use, the inbox will be saved to [memory/inbox.txt](/memory) with a datestring appended to the end, in the format 'm|d|y'
+
+The email inbox uses custom delimiters. Many emails use non-standard formatting and they do not all use the same non-standard formatting. Detecting and properly parsing each one proved too much in the time frame given to write this library, so the output had to reflect and handle that. 
+
+The delimiter; 
+
+`==INTERRUPT==`
+
+separates JSON formatted text:
+
+> {'Subject': "e", 'From': "plurbus@wincampaign.com" 'Message': "unum"}
+
+
+
+`
+==INTERRUPT==
+{
+  'Subject': 'Happy Mothers Day from Eddie Joe Williams', 
+  'From': 'Vote GoEddieJoe <info@goeddiejoe.com>', 
+  'Message': [<p>My wife DeLona of 49 years and ALL mothers deserve to be honored and loved.
+    View this email in your browser (https://mailchi.mp/66399deba7dc/happy-mothers-day-from-eddie-joe-williams?e=fefe785530)
+    ** Happy Mothers Day!
+    ------------------------------------------------------------
+    My wife DeLona of 49 years, and my four daughters, are great Christian women and great moms. We take this day to honor and thank those women who put    their heart and souls into their family, children, and grandchildren. We cannot thank the mothers out there enough who stand with us through struggles    and triumphs to make our families the best they can be. We will forever be grateful, such as I am, to all the moms out there who make it all possible.    God has blessed us in many ways. He has definitely blessed me with a better half that everyday I am proud to call my wife and my daughters mom.
+    P.S. The eleven grandkids love her to!
+    -Eddie Joe Williams
+    ============================================================
+    ** GoEddieJoe4SOS (http://www.twitter.com/GoEddieJoe4SOS)
+    ** GoEddieJoe (http://www.facebook.com/GoEddieJoe)
+    ** GoEddieJoe4SOS (http://instagram.com/GoEddieJoe4SOS)
+    Copyright Â© 2022 Paid for by Elect Eddie Joe Williams Arkansas Secretary of State, All rights reserved.
+    You are receiving this email because you had an interest in Arkansas, politics, voting, or specific hobbies.
+    Our mailing address is:
+    Paid for by Elect Eddie Joe Williams Arkansas Secretary of State
+    401 Cobblestone Dr
+    Cabot, AR 72023-9458
+    USA
+    Want to change how you receive these emails?
+    You can ** update your preferences 
+    or ** unsubscribe from this list 
+}
+==INTERRUPT==
+`
+
+
 ## twitter
 you can likely mostly ignore this part.

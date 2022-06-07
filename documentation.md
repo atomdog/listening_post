@@ -11,6 +11,11 @@ you should follow the documentation from inputs to analysis, in order, to get th
 
 ## youtube
 to start: this project does NOT use the official youtube api. that proved too much of a hassle. as you will see when we get to the gmail api, if you can avoid interacting with any google api's, you should.
+
+#### getting started
+the api should work sans any key or whatnot. 
+#### to add a youtube video to the list of targeted youtube videos:
+
 ## gmail
 as of recently, gmail squashed third party access to its smtp servers. if you decide to rewrite this, you will see many resources that seem far simpler. those used to work, but do not any longer. 
 
@@ -34,6 +39,7 @@ give listening_post all permissions. it will say that listening_post is not a ve
 
 now you're all set. you may need to refer back to this to re-authenticate when your token expires.
 
+#### collecting emails
 to collect the emails, you can now run [smtpCheckEmail.py] this will read the entire inbox. to get only new emails, refer to the [gmailfunctions.py](/google-apis/gmailfunctions.py), and swap functions in the smtpCheckEmail to the 'readMail()' function. 
 
 Regardless of which function you use, the inbox will be saved to [memory/inbox.txt](/memory) with a datestring appended to the end, in the format 'm|d|y'

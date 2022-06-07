@@ -1,14 +1,23 @@
 
 import tweepy
 import csv
-
+import credLib
 #============not relevant functions===========
+
 def tweet(text, api):
     api.update_status(text)
 def replybyid(id, user, text, tuser):
     api.update_status('@'+str(user)+' ' + str(text),tweetId)
 #=============================================
 
+#===========auth functions===================
+def ret_auth():
+    a,b,c,d= credLib.returnbykey("twitter", "api"), credLib.returnbykey("twitter", "api_secret"), credLib.returnbykey("twitter", "access_token"), credLib.returnbykey("twitter", "access_token_secret")
+    auth = tweepy.OAuthHandler(a, b)
+    auth.set_access_token(c, d)
+    api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
+    return(api)
+#=============================================
 #===========in progress functions===========
 def tweets_since_x_by_user(screen_name, api, since):
     alltweets = []

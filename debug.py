@@ -7,3 +7,8 @@ def printfull():
         print("---------------")
         print(author[x][0])
         print(tweet_row[x][0])
+
+def convert_youtube_spreadsheet():
+    pass
+def convert_email_spreadsheet():
+    pass

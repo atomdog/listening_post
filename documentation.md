@@ -88,7 +88,7 @@ give listening_post all permissions. it will say that listening_post is not a ve
 now you're all set. you may need to refer back to this to re-authenticate when your token expires.
 
 #### collecting emails
-to collect the emails, you can now run [smtpCheckEmail.py] this will read the entire inbox. to get only new emails, refer to the [gmailfunctions.py](/google-apis/gmailfunctions.py), and swap functions in the smtpCheckEmail to the 'readMail()' function. 
+to collect the emails, you can now run [smtpCheckEmail.py](smtpCheckEmail.py) this will read the entire inbox. to get only new emails, refer to the [gmailfunctions.py](/google-apis/gmailfunctions.py), and swap functions in the smtpCheckEmail to the 'readMail()' function. 
 
 Regardless of which function you use, the inbox will be saved to [memory/inbox.txt](/memory) with a datestring appended to the end, in the format 'm|d|y'
 ## twitter

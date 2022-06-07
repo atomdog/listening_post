@@ -28,7 +28,10 @@ like this:
 the videoid can be found conveniently in the youtube url;
 
 > https://www.youtube.com/watch?v=SYxZfksAyco
+
 > v=SYxZfksAyco
+
+
 > videoid = SYxZfksAyco
 
 start and end time are in seconds. this can be found from the sharing url for both points, or you can do the math. 

@@ -15,6 +15,51 @@ to start: this project does NOT use the official youtube api. that proved too mu
 #### getting started
 the api should work sans any key or whatnot. 
 #### to add a youtube video to the list of targeted youtube videos:
+navigate to [/targeting/youtubevideos.txt](/targeting/youtubevideos.txt)
+
+the file uses the following format:
+
+> videoid,start_time,end_time,speaker
+
+like this:
+
+> DqXJaJbbk1M,233,871,biden
+
+the videoid can be found conveniently in the youtube url;
+
+> https://www.youtube.com/watch?v=SYxZfksAyco
+> v=SYxZfksAyco
+> videoid = SYxZfksAyco
+
+start and end time are in seconds. this can be found from the sharing url for both points, or you can do the math. 
+
+to target the entire video, you can simply use:
+
+> pzcCNJK2LjI,start,finish,trump
+
+#### collecting youtube videos
+
+run 'python3 transcript.py' from the main directory. 
+the script will asynchronously collect the videos' subtitles and deposit them to [memory/youtube/](memory/youtube/)
+
+the files are named in the following format: 
+
+> speaker_videoid.txt
+
+like this:
+
+> benson_eWTs-EwMjdA.txt
+
+the transcript is stored in a quasi-csv format. 
+
+each line follows the format:
+
+> speaker: transcript_text, start_time, duration, date_published
+
+such as:
+
+> hice: that the the u.s army says it's going to, 10.559, 4.881, 2022-02-02
+
 
 ## gmail
 as of recently, gmail squashed third party access to its smtp servers. if you decide to rewrite this, you will see many resources that seem far simpler. those used to work, but do not any longer. 

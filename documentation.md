@@ -167,7 +167,9 @@ The create_empty_logs() function overwrites the main logs with new ones, and is 
 
 Each database has a read and append function, both straightforward. Encoding is important. Do not throw non-utf8 characters into the database, check your string encoding when parsing anything. 
 
-Twitter was handled by the mostly depreciated acquisition authority, discussed below. 
+the [tw_ctrl.py](tw_ctrl.py) is a wrapper for the API via [twitterInterface.py](twitterInterface.py). It handles OAuth and related tasks, and is straightforward to use. You can use twitterInterface.py alone by calling ret_auth(), and passing the returned authenticated api object to the other twitterInterface functions. 
+
+Twitter was primarily handled by the mostly depreciated acquisition authority, discussed below. 
 
 ## [acquisition_authority.py](acquisition_authority.py)
 
@@ -181,9 +183,19 @@ This file is large and relatively aged so it is not extremely relevant to the do
 
 The analysis authority contains the beginning of the analysis, including the language loop which is a natural language engine from [oslo](https://github.com/atomdog/oslo). It also contains a multiprocessing sentiment analysis function, ideally run with as many cores as you can offer it, otherwise it will take a very long time. 
 
-`
-q = language_loop()
-q.read_complete_youtube()
-q.spin()
-q.compare()
-`
+This code:
+
+`q = language_loop()`
+`q.read_complete_youtube()`
+`q.spin()`
+`q.compare()`
+
+creates a language loop, reads in the youtube videos, makes the connections between them, and compares speakers. 
+
+The language loop itself, and associated files such as the semantic web, modwern, and the Language folder in general are large and complex files involving co-routines, suspended execution, and various NLP concepts which do not have a place being documented here. You are best off creating your own version of these files or reading through them yourself.
+
+It is advised you carry out whatever analysis you plan on doing using the dataflows provided, and your own implementation of a semantic network, or another readily available. 
+
+If you are absolutely set on using them, the associated documentation can be found on the [oslo](https://github.com/atomdog/oslo) project page. 
+
+

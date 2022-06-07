@@ -203,4 +203,5 @@ If you are absolutely set on using them, the associated documentation can be fou
 
 # useful part
 
+[debug.py](debug.py) will export your data to spreadsheets for later use by others. 
 

@@ -1,4 +1,5 @@
 # intro
+* THE REPOSITORY IS NOT CLEAN OF CREDENTIALS. BEFORE YOU MAKE THIS PUBLIC CHECK DILIGENTLY FOR LEFTOVER PLAINTEXT PASSWORDS. *
 listening_post is a framework to monitor political speech online. Current inputs include Twitter, Youtube, and GMail. These are fed into a common analysis engine. 
 
 you should follow the documentation from inputs to analysis, in order, to get things started. do not configure things out of order, it will not work.

@@ -57,7 +57,7 @@ def pull_by_file():
             print("Exception...")
             print(e)
             print("Ignoring video.......")
-        #print(q)
+
         dt = get_metadata(line[0])
         transcripts_item = []
         with open("memory/youtube/"+ line[3]+"_"+line[0] + ".txt", 'w') as out:

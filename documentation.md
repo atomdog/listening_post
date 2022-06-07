@@ -142,3 +142,41 @@ ie:
 you can likely mostly ignore this part, although it is by far the most built out and well-formatted. 
 
 [birdnest.py](birdnest.py) contains a library for a custom h5 database containing users and tweets. 
+
+the code is very straightforward and readable, however,
+
+tweets are formatted in columns like so:
+
+> tweetID|time|text|authorUsername|authorID|likes|retweets
+
+users are formatted in columns like so: 
+
+> ID|Username|time_observed|username|bio
+
+I don't remember why I added a second column for usernames. I don't believed it is used, but it may have been a check as some users change their username
+
+There is also an edge database.
+
+> IDa|IDb|type
+
+This can store interactions between users and tweets or users and users. The type is a string which can be 'follows', 'liked', 'retweeted'.
+
+The snapshot() function creates a snapshot of the database at the current time, cloning it and allowing reference to the state of things at that time. 
+
+The create_empty_logs() function overwrites the main logs with new ones, and is called when initializing or deleting the non-snapshotted database.
+
+Each database has a read and append function, both straightforward. Encoding is important. Do not throw non-utf8 characters into the database, check your string encoding when parsing anything. 
+
+Twitter was handled by the mostly depreciated acquisition authority, discussed below. 
+
+## [acquisition_authority.py](acquisition_authority.py)
+
+Back when Twitter was a main focus, the acquisition_authority formatted the names of the candidates and metadata about them and tied these to users. The target parameters in [conf.json](conf.json) created a dictionary to store information on them to access in the context of tweets and other things. 
+
+This file is large and relatively aged so it is not extremely relevant to the documentation.
+
+# analysis, etc
+
+## [analysis_authority.py](analysis_authority.py)
+
+The analysis authority contains the beginning of the analysis, including the language loop which is a natural language engine from [oslo](github.com/atomdog/oslo). It also contains a multiprocessing sentiment analysis function, ideally run with as many cores as you can offer it, otherwise it will take a very long time. 

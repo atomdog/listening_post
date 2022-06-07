@@ -186,8 +186,11 @@ The analysis authority contains the beginning of the analysis, including the lan
 This code:
 
 `q = language_loop()`
+
 `q.read_complete_youtube()`
+
 `q.spin()`
+
 `q.compare()`
 
 creates a language loop, reads in the youtube videos, makes the connections between them, and compares speakers. 

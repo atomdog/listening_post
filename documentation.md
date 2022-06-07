@@ -179,4 +179,4 @@ This file is large and relatively aged so it is not extremely relevant to the do
 
 ## [analysis_authority.py](analysis_authority.py)
 
-The analysis authority contains the beginning of the analysis, including the language loop which is a natural language engine from [oslo](github.com/atomdog/oslo). It also contains a multiprocessing sentiment analysis function, ideally run with as many cores as you can offer it, otherwise it will take a very long time. 
+The analysis authority contains the beginning of the analysis, including the language loop which is a natural language engine from [oslo](https://github.com/atomdog/oslo). It also contains a multiprocessing sentiment analysis function, ideally run with as many cores as you can offer it, otherwise it will take a very long time. 

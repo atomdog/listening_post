@@ -20,8 +20,12 @@ python3 quickstart.py.
 this will open a browser window and begin an authentification flow. 
 login to the email 
 >'usatodaytwitter7@gmail.com' 
+
 with the password 
+
+
 >'HUBXC410B1' 
+
 give listening_post all permissions. it will say that listening_post is not a verified app, ignore this.
 
 now you're all set. you may need to refer back to this to re-authenticate when your token expires.
